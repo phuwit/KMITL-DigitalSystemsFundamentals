@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue Jul 23 13:42:00 2024
+# Process ID: 7981
+# Log file: /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/planAhead_run_1/planAhead.log
+# Journal file: /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/pa.fromHdl.tcl
+# create_project -name Lab4 -dir "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Lab4.ucf" [current_fileset -constrset]
+Adding file '/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/Lab4.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {Lab4.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Lab4 $srcset
+# add_files [list {Lab4.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/Lab4.vf" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/Lab4.ucf]
+Finished Parsing UCF File [/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/Lab4.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 83903d05
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P82 [get_ports L0_P82]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports L1_P81]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports L2_P80]
+endgroup
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property package_pin P80 [get_ports L2_P80]'
+INFO: [Common 17-17] undo 'startgroup'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'set_property package_pin P81 [get_ports L1_P81]'
+INFO: [Common 17-17] undo 'startgroup'
+redo
+INFO: [Common 17-16] redo 'startgroup'
+INFO: [Common 17-16] redo 'set_property package_pin P81 [get_ports L1_P81]'
+INFO: [Common 17-16] redo 'endgroup'
+startgroup
+set_property package_pin P80 [get_ports L2_P80]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports SW0_P66]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports SW0_P66]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports SW1_P62]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports SW2_P61]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports SW2_P61]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports SW3_P59]
+endgroup
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+ (See /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/planAhead_pid7981.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Jul 23 13:42:58 2024...
+INFO: [Common 17-83] Releasing license: PlanAhead

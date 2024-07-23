@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue Jul 23 13:42:00 2024
+# Process ID: 7981
+# Log file: /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/planAhead_run_1/planAhead.log
+# Journal file: /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab4/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P82 [get_ports L0_P82]
+endgroup
+startgroup
+set_property package_pin P81 [get_ports L1_P81]
+endgroup
+startgroup
+set_property package_pin P80 [get_ports L2_P80]
+endgroup
+undo
+undo
+redo
+startgroup
+set_property package_pin P80 [get_ports L2_P80]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports SW0_P66]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports SW0_P66]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports SW1_P62]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports SW2_P61]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports SW2_P61]
+endgroup
+startgroup
+set_property package_pin P59 [get_ports SW3_P59]
+endgroup
+save_constraints

@@ -6,8 +6,8 @@ ise -dd _ngo -nt timestamp -uc HalfAdderConstraints.ucf -p xc6slx9-tqg144-3
 HalfAdder.ngc HalfAdder.ngd
 
 Reading NGO file
-"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/HalfAdder.ngc"
-...
+"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Tutorial/HalfAdder/Ha
+lfAdder.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -29,7 +29,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 388324 kilobytes
+Total memory usage is 388372 kilobytes
 
 Writing NGD file "HalfAdder.ngd" ...
 Total REAL time to NGDBUILD completion:  1 sec

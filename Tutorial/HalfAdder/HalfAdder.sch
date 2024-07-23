@@ -6,15 +6,14 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="XLXN_1" />
         <signal name="SW0_P66" />
         <signal name="SW1_P62" />
-        <signal name="L0_P82" />
         <signal name="L1_P81" />
+        <signal name="L0_P82" />
         <port polarity="Input" name="SW0_P66" />
         <port polarity="Input" name="SW1_P62" />
-        <port polarity="Output" name="L0_P82" />
         <port polarity="Output" name="L1_P81" />
+        <port polarity="Output" name="L0_P82" />
         <blockdef name="xor2">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-64" x1="0" />
@@ -40,12 +39,12 @@
         <block symbolname="xor2" name="XLXI_1">
             <blockpin signalname="SW0_P66" name="I0" />
             <blockpin signalname="SW1_P62" name="I1" />
-            <blockpin signalname="L1_P81" name="O" />
+            <blockpin signalname="L0_P82" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_2">
             <blockpin signalname="SW1_P62" name="I0" />
             <blockpin signalname="SW0_P66" name="I1" />
-            <blockpin signalname="L0_P82" name="O" />
+            <blockpin signalname="L1_P81" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -65,13 +64,15 @@
         </branch>
         <iomarker fontsize="28" x="1312" y="736" name="SW0_P66" orien="R180" />
         <iomarker fontsize="28" x="1312" y="800" name="SW1_P62" orien="R180" />
-        <branch name="L0_P82">
-            <wire x2="1856" y1="768" y2="768" x1="1824" />
-        </branch>
-        <iomarker fontsize="28" x="1856" y="768" name="L0_P82" orien="R0" />
         <branch name="L1_P81">
-            <wire x2="1904" y1="1024" y2="1024" x1="1872" />
+            <wire x2="1840" y1="768" y2="768" x1="1824" />
+            <wire x2="1904" y1="768" y2="768" x1="1840" />
         </branch>
-        <iomarker fontsize="28" x="1904" y="1024" name="L1_P81" orien="R0" />
+        <branch name="L0_P82">
+            <wire x2="1888" y1="1024" y2="1024" x1="1872" />
+            <wire x2="1904" y1="1024" y2="1024" x1="1888" />
+        </branch>
+        <iomarker fontsize="28" x="1904" y="1024" name="L0_P82" orien="R0" />
+        <iomarker fontsize="28" x="1904" y="768" name="L1_P81" orien="R0" />
     </sheet>
 </drawing>

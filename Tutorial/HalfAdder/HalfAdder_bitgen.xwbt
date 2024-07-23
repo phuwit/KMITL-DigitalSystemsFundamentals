@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/HalfAdder.ncd
-OUTFILE=/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/HalfAdder.bit
+INFILE=/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Tutorial/HalfAdder/HalfAdder.ncd
+OUTFILE=/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Tutorial/HalfAdder/HalfAdder.bit
 FAMILY=Spartan6
 PART=xc6slx9-3tqg144
-WORKINGDIR=/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3
+WORKINGDIR=/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Tutorial/HalfAdder
 LICENSE=WebPack
 USER_INFO=213101706_0_0_838

@@ -108,7 +108,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/HalfAdder.vf" into library work
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Tutorial/HalfAdder/HalfAdder.vf" into library work
 Parsing module <HalfAdder>.
 
 =========================================================================
@@ -126,7 +126,7 @@ Elaborating module <AND2>.
 =========================================================================
 
 Synthesizing Unit <HalfAdder>.
-    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/HalfAdder.vf".
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Tutorial/HalfAdder/HalfAdder.vf".
     Summary:
 	no macro.
 Unit <HalfAdder> synthesized.
@@ -255,19 +255,19 @@ Timing constraint: Default path analysis
   Total number of paths / destination ports: 4 / 2
 -------------------------------------------------------------------------
 Delay:               5.556ns (Levels of Logic = 3)
-  Source:            SW1_P62 (PAD)
+  Source:            SW0_P66 (PAD)
   Destination:       L0_P82 (PAD)
 
-  Data Path: SW1_P62 to L0_P82
+  Data Path: SW0_P66 to L0_P82
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             2   1.222   0.961  SW1_P62_IBUF (SW1_P62_IBUF)
-     XOR2:I1->O            1   0.223   0.579  XLXI_1 (L1_P81_OBUF)
-     OBUF:I->O                 2.571          L1_P81_OBUF (L1_P81)
+     IBUF:I->O             2   1.222   0.981  SW0_P66_IBUF (SW0_P66_IBUF)
+     XOR2:I0->O            1   0.203   0.579  XLXI_1 (L0_P82_OBUF)
+     OBUF:I->O                 2.571          L0_P82_OBUF (L0_P82)
     ----------------------------------------
-    Total                      5.556ns (4.016ns logic, 1.540ns route)
-                                       (72.3% logic, 27.7% route)
+    Total                      5.556ns (3.996ns logic, 1.560ns route)
+                                       (71.9% logic, 28.1% route)
 
 =========================================================================
 
@@ -278,7 +278,7 @@ Cross Clock Domains Report:
 
 
 Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.64 secs
+Total CPU time to Xst completion: 1.88 secs
  
 --> 
 

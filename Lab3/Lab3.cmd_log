@@ -1,0 +1,27 @@
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/Lab3.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab3.ngc Lab3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab3_map.ncd Lab3.ngd Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Lab3_map.ncd Lab3.ncd Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab3.twx Lab3.ncd -o Lab3.twr Lab3.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab3.ucf -p xc6slx9-tqg144-3 Lab3.ngc Lab3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab3_map.ncd Lab3.ngd Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Lab3_map.ncd Lab3.ncd Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab3.twx Lab3.ncd -o Lab3.twr Lab3.pcf -ucf Lab3.ucf 
+bitgen -intstyle ise -f Lab3.ut Lab3.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/Lab3.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab3.ucf -p xc6slx9-tqg144-3 Lab3.ngc Lab3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab3_map.ncd Lab3.ngd Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Lab3_map.ncd Lab3.ncd Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab3.twx Lab3.ncd -o Lab3.twr Lab3.pcf -ucf Lab3.ucf 
+bitgen -intstyle ise -f Lab3.ut Lab3.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/Lab3.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab3/Lab3.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab3.ucf -p xc6slx9-tqg144-3 Lab3.ngc Lab3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab3_map.ncd Lab3.ngd Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Lab3_map.ncd Lab3.ncd Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab3.twx Lab3.ncd -o Lab3.twr Lab3.pcf -ucf Lab3.ucf 
+bitgen -intstyle ise -f Lab3.ut Lab3.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab3.ucf -p xc6slx9-tqg144-3 Lab3.ngc Lab3.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab3_map.ncd Lab3.ngd Lab3.pcf 
+par -w -intstyle ise -ol high -mt off Lab3_map.ncd Lab3.ncd Lab3.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab3.twx Lab3.ncd -o Lab3.twr Lab3.pcf -ucf Lab3.ucf 
+bitgen -intstyle ise -f Lab3.ut Lab3.ncd 
