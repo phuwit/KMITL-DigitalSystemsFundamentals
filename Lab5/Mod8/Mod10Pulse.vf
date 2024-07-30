@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Mod10Pulse.vf
-// /___/   /\     Timestamp : 07/30/2024 21:04:57
+// /___/   /\     Timestamp : 07/30/2024 21:32:29
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -69,38 +69,38 @@ module Mod10Pulse(CLK_IN,
    
    wire XLXN_13;
    wire XLXN_14;
-   wire XLXN_16;
    wire XLXN_18;
    wire XLXN_20;
    wire XLXN_23;
+   wire XLXN_26;
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_0" *) 
+   (* HU_SET = "XLXI_1_9" *) 
    FJKC_HXILINX_Mod10Pulse  XLXI_1 (.C(CLK_IN), 
                                    .CLR(CLK_OUT_DUMMY), 
                                    .J(XLXN_13), 
                                    .K(XLXN_13), 
-                                   .Q(XLXN_16));
-   (* HU_SET = "XLXI_2_1" *) 
+                                   .Q(XLXN_26));
+   (* HU_SET = "XLXI_2_10" *) 
    FJKC_HXILINX_Mod10Pulse  XLXI_2 (.C(CLK_IN), 
                                    .CLR(CLK_OUT_DUMMY), 
                                    .J(J), 
                                    .K(K), 
                                    .Q(XLXN_18));
-   (* HU_SET = "XLXI_4_3" *) 
+   (* HU_SET = "XLXI_4_12" *) 
    FJKC_HXILINX_Mod10Pulse  XLXI_4 (.C(CLK_IN), 
                                    .CLR(CLK_OUT_DUMMY), 
                                    .J(XLXN_18), 
                                    .K(XLXN_18), 
                                    .Q(XLXN_23));
-   (* HU_SET = "XLXI_6_2" *) 
+   (* HU_SET = "XLXI_6_11" *) 
    FJKC_HXILINX_Mod10Pulse  XLXI_6 (.C(CLK_IN), 
                                    .CLR(CLK_OUT_DUMMY), 
                                    .J(XLXN_20), 
                                    .K(XLXN_20), 
                                    .Q(XLXN_14));
-   AND2  XLXI_7 (.I0(XLXN_16), 
+   AND2  XLXI_7 (.I0(XLXN_23), 
                 .I1(XLXN_14), 
                 .O(CLK_OUT_DUMMY));
    AND2  XLXI_8 (.I0(XLXN_18), 
@@ -108,6 +108,6 @@ module Mod10Pulse(CLK_IN,
                 .O(XLXN_13));
    AND3  XLXI_9 (.I0(XLXN_18), 
                 .I1(XLXN_23), 
-                .I2(XLXN_16), 
+                .I2(XLXN_26), 
                 .O(XLXN_20));
 endmodule

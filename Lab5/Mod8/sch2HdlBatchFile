@@ -1,3 +1,5 @@
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/main.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/Mod10Pulse.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/Mod10Pulse.sch
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sch
 sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/main.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sch
