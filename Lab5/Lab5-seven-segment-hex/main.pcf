@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jul 30 15:51:08 2024
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SSEG_OUT<0>" LOCATE = SITE "P27" LEVEL 1;
+COMP "SSEG_OUT<1>" LOCATE = SITE "P29" LEVEL 1;
+COMP "SSEG_OUT<2>" LOCATE = SITE "P32" LEVEL 1;
+COMP "SSEG_OUT<3>" LOCATE = SITE "P34" LEVEL 1;
+COMP "SSEG_OUT<4>" LOCATE = SITE "P35" LEVEL 1;
+COMP "SSEG_OUT<5>" LOCATE = SITE "P40" LEVEL 1;
+COMP "SSEG_OUT<6>" LOCATE = SITE "P41" LEVEL 1;
+COMP "BCD<0>" LOCATE = SITE "P66" LEVEL 1;
+COMP "BCD<1>" LOCATE = SITE "P62" LEVEL 1;
+COMP "BCD<2>" LOCATE = SITE "P61" LEVEL 1;
+COMP "BCD<3>" LOCATE = SITE "P59" LEVEL 1;
+SCHEMATIC END;
+

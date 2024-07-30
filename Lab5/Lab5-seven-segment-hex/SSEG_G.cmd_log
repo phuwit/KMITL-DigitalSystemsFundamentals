@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan6 -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sym 

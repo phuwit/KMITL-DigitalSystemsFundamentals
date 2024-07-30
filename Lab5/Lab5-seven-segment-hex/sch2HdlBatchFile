@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_DEC.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_DEC.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_DEC.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_DEC.sch

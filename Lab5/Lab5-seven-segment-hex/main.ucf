@@ -1,0 +1,14 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "BCD[3]" LOC = P59;
+NET "BCD[2]" LOC = P61;
+NET "BCD[1]" LOC = P62;
+NET "BCD[0]" LOC = P66;
+NET "SSEG_OUT[6]" LOC = P41;
+NET "SSEG_OUT[5]" LOC = P40;
+NET "SSEG_OUT[4]" LOC = P35;
+NET "SSEG_OUT[3]" LOC = P34;
+NET "SSEG_OUT[2]" LOC = P32;
+NET "SSEG_OUT[1]" LOC = P29;
+NET "SSEG_OUT[0]" LOC = P27;
