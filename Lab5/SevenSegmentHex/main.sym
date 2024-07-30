@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="main">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2024-7-30T12:46:46</timestamp>
+    <pin polarity="Input" x="64" y="63" name="BCD(3:0)" />
+    <pin polarity="Output" x="320" y="63" name="SSEG_OUT(6:0)" />
+    <pin polarity="Output" x="320" y="127" name="SSEG_COM0_P44" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-8" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="63" type="pin BCD(3:0)" />
+        <rect width="0" x="64" y="51" height="24" />
+        <line x2="64" y1="63" y2="63" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="63" type="pin SSEG_OUT(6:0)" />
+        <rect width="0" x="320" y="51" height="24" />
+        <line x2="320" y1="63" y2="63" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="127" type="pin SSEG_COM0_P44" />
+        <line x2="320" y1="127" y2="127" x1="320" />
+        <rect width="256" x="64" y="0" height="128" />
+    </graph>
+</symbol>
