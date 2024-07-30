@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : OneHz.vf
-// /___/   /\     Timestamp : 07/30/2024 21:12:35
+// /___/   /\     Timestamp : 07/30/2024 21:21:42
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -76,25 +76,25 @@ module Mod10Pulse_MUSER_OneHz(CLK_IN,
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_9" *) 
+   (* HU_SET = "XLXI_1_8" *) 
    FJKC_HXILINX_OneHz  XLXI_1 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(XLXN_13), 
                               .K(XLXN_13), 
                               .Q(XLXN_16));
-   (* HU_SET = "XLXI_2_10" *) 
+   (* HU_SET = "XLXI_2_9" *) 
    FJKC_HXILINX_OneHz  XLXI_2 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(J), 
                               .K(K), 
                               .Q(XLXN_18));
-   (* HU_SET = "XLXI_4_12" *) 
+   (* HU_SET = "XLXI_4_11" *) 
    FJKC_HXILINX_OneHz  XLXI_4 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(XLXN_18), 
                               .K(XLXN_18), 
                               .Q(XLXN_23));
-   (* HU_SET = "XLXI_6_11" *) 
+   (* HU_SET = "XLXI_6_10" *) 
    FJKC_HXILINX_OneHz  XLXI_6 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(XLXN_20), 
@@ -114,10 +114,10 @@ endmodule
 `timescale 1ns / 1ps
 
 module OneHz(CLK_IN, 
-             CLK_1Hz);
+             CLK_OUT);
 
     input CLK_IN;
-   output CLK_1Hz;
+   output CLK_OUT;
    
    wire XLXN_107;
    wire XLXN_108;
@@ -125,44 +125,35 @@ module OneHz(CLK_IN,
    wire XLXN_110;
    wire XLXN_111;
    wire XLXN_131;
-   wire XLXN_142;
-   wire XLXN_144;
-   wire XLXN_146;
+   wire XLXN_152;
    
    Mod10Pulse_MUSER_OneHz  XLXI_1 (.CLK_IN(CLK_IN), 
-                                  .J(XLXN_142), 
-                                  .K(XLXN_142), 
+                                  .J(XLXN_152), 
+                                  .K(XLXN_152), 
                                   .CLK_OUT(XLXN_107));
    Mod10Pulse_MUSER_OneHz  XLXI_2 (.CLK_IN(XLXN_107), 
-                                  .J(XLXN_142), 
-                                  .K(XLXN_142), 
+                                  .J(XLXN_152), 
+                                  .K(XLXN_152), 
                                   .CLK_OUT(XLXN_108));
    Mod10Pulse_MUSER_OneHz  XLXI_3 (.CLK_IN(XLXN_108), 
-                                  .J(XLXN_142), 
-                                  .K(XLXN_142), 
+                                  .J(XLXN_152), 
+                                  .K(XLXN_152), 
                                   .CLK_OUT(XLXN_109));
    Mod10Pulse_MUSER_OneHz  XLXI_4 (.CLK_IN(XLXN_109), 
-                                  .J(XLXN_142), 
-                                  .K(XLXN_142), 
+                                  .J(XLXN_152), 
+                                  .K(XLXN_152), 
                                   .CLK_OUT(XLXN_110));
    Mod10Pulse_MUSER_OneHz  XLXI_5 (.CLK_IN(XLXN_110), 
-                                  .J(XLXN_142), 
-                                  .K(XLXN_142), 
+                                  .J(XLXN_152), 
+                                  .K(XLXN_152), 
                                   .CLK_OUT(XLXN_111));
    Mod10Pulse_MUSER_OneHz  XLXI_6 (.CLK_IN(XLXN_111), 
-                                  .J(XLXN_142), 
-                                  .K(XLXN_142), 
+                                  .J(XLXN_152), 
+                                  .K(XLXN_152), 
                                   .CLK_OUT(XLXN_131));
-   VCC  XLXI_7 (.P(XLXN_142));
-   (* HU_SET = "XLXI_8_13" *) 
-   FJKC_HXILINX_OneHz  XLXI_8 (.C(XLXN_144), 
-                              .CLR(XLXN_146), 
-                              .J(XLXN_142), 
-                              .K(XLXN_142), 
-                              .Q(CLK_1Hz));
+   VCC  XLXI_7 (.P(XLXN_152));
    Mod10Pulse_MUSER_OneHz  XLXI_18 (.CLK_IN(XLXN_131), 
-                                   .J(XLXN_142), 
-                                   .K(XLXN_142), 
-                                   .CLK_OUT(XLXN_144));
-   GND  XLXI_21 (.G(XLXN_146));
+                                   .J(XLXN_152), 
+                                   .K(XLXN_152), 
+                                   .CLK_OUT(CLK_OUT));
 endmodule

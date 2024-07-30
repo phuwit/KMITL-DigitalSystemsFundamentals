@@ -7,12 +7,9 @@
     </attr>
     <netlist>
         <signal name="BCD(3:0)" />
-        <signal name="BCD(3)">
-        </signal>
-        <signal name="BCD(2)">
-        </signal>
-        <signal name="BCD(0)">
-        </signal>
+        <signal name="BCD(3)" />
+        <signal name="BCD(2)" />
+        <signal name="BCD(0)" />
         <signal name="SSEG_OUT(6:0)" />
         <signal name="SSEG_OUT(6)" />
         <signal name="SSEG_OUT(5)" />
@@ -22,22 +19,13 @@
         <signal name="SSEG_OUT(1)" />
         <signal name="SSEG_OUT(0)" />
         <signal name="SSEG_COM0_P44" />
-        <signal name="XLXN_4" />
         <signal name="XLXN_5" />
         <signal name="XLXN_7" />
-        <signal name="XLXN_8" />
-        <signal name="XLXN_9" />
-        <signal name="XLXN_10" />
         <signal name="OSC_P123" />
-        <signal name="XLXN_15" />
         <signal name="XLXN_16" />
         <signal name="XLXN_17" />
         <signal name="XLXN_18" />
-        <signal name="XLXN_23" />
-        <signal name="XLXN_24" />
-        <signal name="XLXN_25" />
         <signal name="BCD(1)" />
-        <signal name="XLXN_27" />
         <signal name="XLXN_29" />
         <port polarity="Output" name="SSEG_OUT(6)" />
         <port polarity="Output" name="SSEG_OUT(5)" />
@@ -79,10 +67,10 @@
             <rect width="256" x="64" y="-384" height="320" />
         </blockdef>
         <blockdef name="OneHz">
-            <timestamp>2024-7-30T14:12:23</timestamp>
+            <timestamp>2024-7-30T14:21:21</timestamp>
+            <line x2="384" y1="224" y2="224" x1="320" />
             <line x2="0" y1="160" y2="160" x1="64" />
-            <line x2="384" y1="96" y2="96" x1="320" />
-            <rect width="256" x="64" y="-64" height="256" />
+            <rect width="256" x="64" y="-64" height="320" />
         </blockdef>
         <blockdef name="vcc">
             <timestamp>2000-1-1T10:10:10</timestamp>
@@ -133,7 +121,7 @@
         </block>
         <block symbolname="OneHz" name="XLXI_23">
             <blockpin signalname="OSC_P123" name="CLK_IN" />
-            <blockpin signalname="XLXN_5" name="CLK_1Hz" />
+            <blockpin signalname="XLXN_5" name="CLK_OUT" />
         </block>
         <block symbolname="vcc" name="XLXI_24">
             <blockpin signalname="XLXN_7" name="P" />
@@ -235,11 +223,9 @@
             <wire x2="2480" y1="2048" y2="2048" x1="2432" />
         </branch>
         <instance x="2864" y="2048" name="XLXI_24" orien="M0" />
-        <iomarker fontsize="28" x="3120" y="2512" name="OSC_P123" orien="R0" />
-        <instance x="3040" y="2352" name="XLXI_23" orien="M0">
-        </instance>
         <branch name="OSC_P123">
-            <wire x2="3120" y1="2512" y2="2512" x1="3040" />
+            <wire x2="3056" y1="2384" y2="2384" x1="3040" />
+            <wire x2="3104" y1="2384" y2="2384" x1="3056" />
         </branch>
         <branch name="XLXN_16">
             <wire x2="1136" y1="2272" y2="2272" x1="896" />
@@ -293,5 +279,8 @@
             <wire x2="944" y1="2048" y2="2048" x1="928" />
             <wire x2="928" y1="2048" y2="2048" x1="896" />
         </branch>
+        <instance x="3040" y="2224" name="XLXI_23" orien="M0">
+        </instance>
+        <iomarker fontsize="28" x="3104" y="2384" name="OSC_P123" orien="R0" />
     </sheet>
 </drawing>

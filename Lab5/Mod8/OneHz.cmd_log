@@ -6,3 +6,4 @@ sch2sym -intstyle ise -family spartan6 -w -refsym OneHz /home/phuwit/Programming
 sch2sym -intstyle ise -family spartan6 -w -refsym OneHz /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym OneHz /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym OneHz /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym OneHz /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/OneHz.sym 

@@ -36,11 +36,11 @@ Clock to Setup on destination clock OSC_P123
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC_P123       |    1.819|         |         |         |
+OSC_P123       |    1.933|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Tue Jul 30 21:13:03 2024 
+Analysis completed Tue Jul 30 21:22:10 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:
