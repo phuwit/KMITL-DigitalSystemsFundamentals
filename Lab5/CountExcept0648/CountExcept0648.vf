@@ -1,0 +1,131 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CountExcept0648.vf
+// /___/   /\     Timestamp : 07/30/2024 21:50:19
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/CountExcept0648/CountExcept0648.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/CountExcept0648/CountExcept0648.sch
+//Design Name: CountExcept0648
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_CountExcept0648(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module CountExcept0648(CLK_IN, 
+                       BCD);
+
+    input CLK_IN;
+   output [3:0] BCD;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_47;
+   wire XLXN_49;
+   wire XLXN_50;
+   wire XLXN_51;
+   wire [3:0] BCD_DUMMY;
+   
+   assign BCD[3:0] = BCD_DUMMY[3:0];
+   (* HU_SET = "XLXI_1_10" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_1 (.C(CLK_IN), 
+                                        .CLR(XLXN_2), 
+                                        .J(XLXN_51), 
+                                        .K(XLXN_50), 
+                                        .Q(BCD_DUMMY[3]));
+   (* HU_SET = "XLXI_2_11" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_2 (.C(CLK_IN), 
+                                        .CLR(XLXN_5), 
+                                        .J(XLXN_49), 
+                                        .K(XLXN_49), 
+                                        .Q(BCD_DUMMY[2]));
+   (* HU_SET = "XLXI_4_12" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_4 (.C(CLK_IN), 
+                                        .CLR(XLXN_3), 
+                                        .J(XLXN_43), 
+                                        .K(BCD_DUMMY[0]), 
+                                        .Q(BCD_DUMMY[1]));
+   (* HU_SET = "XLXI_5_13" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_5 (.C(CLK_IN), 
+                                        .CLR(XLXN_4), 
+                                        .J(XLXN_8), 
+                                        .K(XLXN_9), 
+                                        .Q(BCD_DUMMY[0]));
+   VCC  XLXI_22 (.P(XLXN_8));
+   GND  XLXI_23 (.G(XLXN_2));
+   GND  XLXI_25 (.G(XLXN_3));
+   GND  XLXI_26 (.G(XLXN_4));
+   GND  XLXI_27 (.G(XLXN_5));
+   AND3B3  XLXI_28 (.I0(BCD_DUMMY[1]), 
+                   .I1(BCD_DUMMY[2]), 
+                   .I2(BCD_DUMMY[3]), 
+                   .O(XLXN_9));
+   OR2  XLXI_50 (.I0(XLXN_47), 
+                .I1(XLXN_44), 
+                .O(XLXN_43));
+   AND2  XLXI_51 (.I0(BCD_DUMMY[2]), 
+                 .I1(BCD_DUMMY[0]), 
+                 .O(XLXN_44));
+   AND2B1  XLXI_52 (.I0(BCD_DUMMY[3]), 
+                   .I1(BCD_DUMMY[0]), 
+                   .O(XLXN_47));
+   AND2  XLXI_53 (.I0(BCD_DUMMY[1]), 
+                 .I1(BCD_DUMMY[0]), 
+                 .O(XLXN_49));
+   VCC  XLXI_54 (.P(XLXN_50));
+   AND3  XLXI_55 (.I0(BCD_DUMMY[2]), 
+                 .I1(BCD_DUMMY[1]), 
+                 .I2(BCD_DUMMY[0]), 
+                 .O(XLXN_51));
+endmodule

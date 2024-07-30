@@ -1,0 +1,113 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Mod10Pulse.vf
+// /___/   /\     Timestamp : 07/30/2024 21:32:29
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/Mod10Pulse.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/Mod10Pulse.sch
+//Design Name: Mod10Pulse
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Mod10Pulse(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Mod10Pulse(CLK_IN, 
+                  J, 
+                  K, 
+                  CLK_OUT);
+
+    input CLK_IN;
+    input J;
+    input K;
+   output CLK_OUT;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_18;
+   wire XLXN_20;
+   wire XLXN_23;
+   wire XLXN_26;
+   wire CLK_OUT_DUMMY;
+   
+   assign CLK_OUT = CLK_OUT_DUMMY;
+   (* HU_SET = "XLXI_1_9" *) 
+   FJKC_HXILINX_Mod10Pulse  XLXI_1 (.C(CLK_IN), 
+                                   .CLR(CLK_OUT_DUMMY), 
+                                   .J(XLXN_13), 
+                                   .K(XLXN_13), 
+                                   .Q(XLXN_26));
+   (* HU_SET = "XLXI_2_10" *) 
+   FJKC_HXILINX_Mod10Pulse  XLXI_2 (.C(CLK_IN), 
+                                   .CLR(CLK_OUT_DUMMY), 
+                                   .J(J), 
+                                   .K(K), 
+                                   .Q(XLXN_18));
+   (* HU_SET = "XLXI_4_12" *) 
+   FJKC_HXILINX_Mod10Pulse  XLXI_4 (.C(CLK_IN), 
+                                   .CLR(CLK_OUT_DUMMY), 
+                                   .J(XLXN_18), 
+                                   .K(XLXN_18), 
+                                   .Q(XLXN_23));
+   (* HU_SET = "XLXI_6_11" *) 
+   FJKC_HXILINX_Mod10Pulse  XLXI_6 (.C(CLK_IN), 
+                                   .CLR(CLK_OUT_DUMMY), 
+                                   .J(XLXN_20), 
+                                   .K(XLXN_20), 
+                                   .Q(XLXN_14));
+   AND2  XLXI_7 (.I0(XLXN_23), 
+                .I1(XLXN_14), 
+                .O(CLK_OUT_DUMMY));
+   AND2  XLXI_8 (.I0(XLXN_18), 
+                .I1(XLXN_23), 
+                .O(XLXN_13));
+   AND3  XLXI_9 (.I0(XLXN_18), 
+                .I1(XLXN_23), 
+                .I2(XLXN_26), 
+                .O(XLXN_20));
+endmodule

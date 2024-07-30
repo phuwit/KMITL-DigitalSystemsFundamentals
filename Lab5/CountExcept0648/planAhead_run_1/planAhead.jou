@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue Jul 30 15:27:17 2024
+# Process ID: 40528
+# Log file: /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/planAhead_run_1/planAhead.log
+# Journal file: /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P59 [get_ports {BCD[3]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {BCD[2]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {BCD[1]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {BCD[0]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports {SSEG_OUT[6]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {SSEG_OUT[5]}]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports {SSEG_OUT[4]}]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports {SSEG_OUT[3]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {SSEG_OUT[2]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {SSEG_OUT[1]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {SSEG_OUT[0]}]
+endgroup
+save_constraints
