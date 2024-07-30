@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="main">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2024-7-30T13:31:34</timestamp>
+    <pin polarity="Output" x="320" y="63" name="SSEG_OUT(6:0)" />
+    <pin polarity="Output" x="320" y="127" name="SSEG_COM0_P44" />
+    <pin polarity="Input" x="64" y="191" name="OSC_P123" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-8" type="symbol" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="63" type="pin SSEG_OUT(6:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="127" type="pin SSEG_COM0_P44" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="191" type="pin OSC_P123" />
+        <line x2="64" y1="191" y2="191" x1="64" />
+        <rect width="0" x="64" y="51" height="24" />
+        <line x2="64" y1="63" y2="63" x1="64" />
+        <rect width="0" x="320" y="51" height="24" />
+        <line x2="320" y1="63" y2="63" x1="320" />
+        <line x2="320" y1="127" y2="127" x1="320" />
+        <rect width="256" x="64" y="0" height="192" />
+    </graph>
+</symbol>

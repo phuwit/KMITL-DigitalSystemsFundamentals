@@ -1,0 +1,12 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "SSEG_OUT[6]" LOC = P41;
+NET "SSEG_OUT[5]" LOC = P40;
+NET "SSEG_OUT[4]" LOC = P35;
+NET "SSEG_OUT[3]" LOC = P34;
+NET "SSEG_OUT[2]" LOC = P32;
+NET "SSEG_OUT[1]" LOC = P29;
+NET "SSEG_OUT[0]" LOC = P27;
+NET "SSEG_COM0_P44" LOC = P44;
+NET "OSC_P123" LOC = P123;

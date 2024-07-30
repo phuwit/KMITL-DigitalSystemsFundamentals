@@ -1,0 +1,8 @@
+sch2sym -intstyle ise -family spartan6 -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/SSEG_G.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Lab5-seven-segment-hex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Lab5-seven-segment-hex/SSEG_G.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog SSEG_G_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Lab5-seven-segment-hex/SSEG_G.sch 
+sch2verilog -intstyle ise -family spartan6 -tionly {} -tiext tfi -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Lab5-seven-segment-hex/SSEG_G.sch SSEG_G.tfi 
+sch2hdl -intstyle ise -family spartan6 -verilog SSEG_G.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Lab5-seven-segment-hex/SSEG_G.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym SSEG_G /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/SevenSegmentHex/SSEG_G.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/SevenSegmentHex/SSEG_G.sym 

@@ -1,0 +1,10 @@
+// Verilog instantiation template created from schematic /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Lab5-seven-segment-hex/SSEG_G.sch - Tue Jul 30 19:43:47 2024
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   SSEG_G UUT (
+		.BCD(    ), 
+		.SSEG_G(    )
+   );

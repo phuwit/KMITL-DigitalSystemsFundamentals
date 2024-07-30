@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -7,7 +7,6 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
-         <ClosedNode>/main |home|phuwit|Programming|KMITL-DigitalSystemsFundamentals|Lab5|SevenSegmentHex|main.sch/XLXI_14 - SSEG_DEC</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>main (/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/SevenSegmentHex/main.sch)</SelectedItem>

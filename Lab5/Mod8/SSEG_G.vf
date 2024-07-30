@@ -1,0 +1,63 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SSEG_G.vf
+// /___/   /\     Timestamp : 07/30/2024 19:43:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan6 -verilog SSEG_G.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Lab5-seven-segment-hex/SSEG_G.sch
+//Design Name: SSEG_G
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module SSEG_G(BCD, 
+              SSEG_G);
+
+    input [3:0] BCD;
+   output SSEG_G;
+   
+   wire XLXN_42;
+   wire XLXN_43;
+   wire XLXN_44;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   
+   AND2  XLXI_2 (.I0(BCD[0]), 
+                .I1(BCD[3]), 
+                .O(XLXN_42));
+   AND2B1  XLXI_3 (.I0(BCD[2]), 
+                  .I1(BCD[3]), 
+                  .O(XLXN_43));
+   AND3  XLXI_7 (.I0(XLXN_45), 
+                .I1(BCD[2]), 
+                .I2(XLXN_46), 
+                .O(XLXN_44));
+   OR5  XLXI_8 (.I0(XLXN_48), 
+               .I1(XLXN_47), 
+               .I2(XLXN_44), 
+               .I3(XLXN_43), 
+               .I4(XLXN_42), 
+               .O(SSEG_G));
+   INV  XLXI_9 (.I(BCD[3]), 
+               .O(XLXN_45));
+   INV  XLXI_10 (.I(BCD[1]), 
+                .O(XLXN_46));
+   AND2B1  XLXI_11 (.I0(BCD[2]), 
+                   .I1(BCD[1]), 
+                   .O(XLXN_48));
+   AND2B1  XLXI_12 (.I0(BCD[0]), 
+                   .I1(BCD[1]), 
+                   .O(XLXN_47));
+endmodule

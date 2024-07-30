@@ -1,0 +1,102 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/pa.fromHdl.tcl
+# create_project -name Lab5-seven-segment-hex -dir "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/planAhead_run_1" -part xc6slx9tqg144-3
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "main.ucf" [current_fileset -constrset]
+Adding file '/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {SSEG_G.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SSEG_F.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SSEG_E.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SSEG_D.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SSEG_C.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SSEG_B.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SSEG_A.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {SSEG_DEC.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {main.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top main $srcset
+# add_files [list {main.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6slx9tqg144-3
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.vf" into library work
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/ClockBuffers.xml
+Loading package pin functions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/PinFunctions.xml...
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/spartan6lx/xc6slx9/tqg144/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/IOStandards.xml
+Loading device configuration modes from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan6/ConfigModes.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan6/drc.xml
+Parsing UCF File [/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.ucf]
+Finished Parsing UCF File [/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5-seven-segment-hex/main.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 3cfe3d8c
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P59 [get_ports {BCD[3]}]
+endgroup
+startgroup
+set_property package_pin P61 [get_ports {BCD[2]}]
+endgroup
+startgroup
+set_property package_pin P62 [get_ports {BCD[1]}]
+endgroup
+startgroup
+set_property package_pin P66 [get_ports {BCD[0]}]
+endgroup
+startgroup
+set_property package_pin P41 [get_ports {SSEG_OUT[6]}]
+endgroup
+startgroup
+set_property package_pin P40 [get_ports {SSEG_OUT[5]}]
+endgroup
+startgroup
+set_property package_pin P35 [get_ports {SSEG_OUT[4]}]
+endgroup
+startgroup
+set_property package_pin P34 [get_ports {SSEG_OUT[3]}]
+endgroup
+startgroup
+set_property package_pin P32 [get_ports {SSEG_OUT[2]}]
+endgroup
+startgroup
+set_property package_pin P29 [get_ports {SSEG_OUT[1]}]
+endgroup
+startgroup
+set_property package_pin P27 [get_ports {SSEG_OUT[0]}]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Jul 30 15:28:30 2024...
+INFO: [Common 17-83] Releasing license: PlanAhead
