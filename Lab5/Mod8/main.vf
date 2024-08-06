@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : main.vf
-// /___/   /\     Timestamp : 08/06/2024 12:46:25
+// /___/   /\     Timestamp : 08/06/2024 13:56:35
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -93,25 +93,25 @@ module Mod10Pulse_MUSER_main(CLK_IN,
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_0" *) 
+   (* HU_SET = "XLXI_1_3" *) 
    FJKC_HXILINX_main  XLXI_1 (.C(CLK_IN), 
                              .CLR(CLK_OUT_DUMMY), 
                              .J(XLXN_13), 
                              .K(XLXN_13), 
                              .Q(XLXN_26));
-   (* HU_SET = "XLXI_2_1" *) 
+   (* HU_SET = "XLXI_2_2" *) 
    FJKC_HXILINX_main  XLXI_2 (.C(CLK_IN), 
                              .CLR(CLK_OUT_DUMMY), 
                              .J(J), 
                              .K(K), 
                              .Q(XLXN_18));
-   (* HU_SET = "XLXI_4_3" *) 
+   (* HU_SET = "XLXI_4_0" *) 
    FJKC_HXILINX_main  XLXI_4 (.C(CLK_IN), 
                              .CLR(CLK_OUT_DUMMY), 
                              .J(XLXN_18), 
                              .K(XLXN_18), 
                              .Q(XLXN_23));
-   (* HU_SET = "XLXI_6_2" *) 
+   (* HU_SET = "XLXI_6_1" *) 
    FJKC_HXILINX_main  XLXI_6 (.C(CLK_IN), 
                              .CLR(CLK_OUT_DUMMY), 
                              .J(XLXN_20), 
@@ -480,10 +480,12 @@ endmodule
 `timescale 1ns / 1ps
 
 module main(OSC_P123, 
+            L0_P82, 
             SSEG_COM0_P44, 
             SSEG_OUT);
 
     input OSC_P123;
+   output L0_P82;
    output SSEG_COM0_P44;
    output [6:0] SSEG_OUT;
    
@@ -492,17 +494,18 @@ module main(OSC_P123,
    wire XLXN_17;
    wire XLXN_18;
    wire XLXN_35;
-   wire XLXN_36;
    wire XLXN_37;
    wire XLXN_38;
    wire XLXN_61;
+   wire L0_P82_DUMMY;
    
+   assign L0_P82 = L0_P82_DUMMY;
    SSEG_DEC_MUSER_main  XLXI_14 (.BCD(BCD[3:0]), 
                                 .SSEG(SSEG_OUT[6:0]));
    GND  XLXI_15 (.G(SSEG_COM0_P44));
    GND  XLXI_18 (.G(BCD[3]));
    (* HU_SET = "XLXI_19_8" *) 
-   FJKC_HXILINX_main  XLXI_19 (.C(XLXN_36), 
+   FJKC_HXILINX_main  XLXI_19 (.C(L0_P82_DUMMY), 
                               .CLR(XLXN_18), 
                               .J(XLXN_61), 
                               .K(XLXN_61), 
@@ -526,7 +529,7 @@ module main(OSC_P123,
    GND  XLXI_27 (.G(XLXN_17));
    GND  XLXI_28 (.G(XLXN_18));
    INV  XLXI_29 (.I(XLXN_35), 
-                .O(XLXN_36));
+                .O(L0_P82_DUMMY));
    INV  XLXI_31 (.I(BCD[1]), 
                 .O(XLXN_38));
    INV  XLXI_32 (.I(BCD[0]), 

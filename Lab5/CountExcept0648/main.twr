@@ -36,18 +36,18 @@ Clock to Setup on destination clock OSC_P123
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC_P123       |    2.230|         |         |         |
+OSC_P123       |    0.873|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Aug  1 21:28:06 2024 
+Analysis completed Tue Aug  6 14:45:16 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 371 MB
+Peak Memory Usage: 377 MB
 
 
 

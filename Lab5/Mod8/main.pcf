@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Tue Aug 06 12:46:38 2024
+// Written by: Map P.20131013 on Tue Aug 06 13:57:11 2024
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -12,5 +12,6 @@ COMP "SSEG_COM0_P44" LOCATE = SITE "P44" LEVEL 1;
 COMP "SSEG_OUT<5>" LOCATE = SITE "P40" LEVEL 1;
 COMP "SSEG_OUT<6>" LOCATE = SITE "P41" LEVEL 1;
 COMP "OSC_P123" LOCATE = SITE "P123" LEVEL 1;
+COMP "L0_P82" LOCATE = SITE "P82" LEVEL 1;
 SCHEMATIC END;
 

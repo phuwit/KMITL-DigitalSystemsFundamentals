@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Lawnmower::  Tue Aug 06 12:46:40 2024
+Lawnmower::  Tue Aug 06 13:57:14 2024
 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 
@@ -31,21 +31,21 @@ Slice Logic Utilization:
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         46 out of   5,720    1%
-    Number used as logic:                       46 out of   5,720    1%
-      Number using O6 output only:              46
+  Number of Slice LUTs:                         47 out of   5,720    1%
+    Number used as logic:                       47 out of   5,720    1%
+      Number using O6 output only:              47
       Number using O5 output only:               0
       Number using O5 and O6:                    0
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    28 out of   1,430    1%
+  Number of occupied Slices:                    25 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:           46
-    Number with an unused Flip Flop:            14 out of      46   30%
-    Number with an unused LUT:                   0 out of      46    0%
-    Number of fully used LUT-FF pairs:          32 out of      46   69%
+  Number of LUT Flip Flop pairs used:           47
+    Number with an unused Flip Flop:            15 out of      47   31%
+    Number with an unused LUT:                   0 out of      47    0%
+    Number of fully used LUT-FF pairs:          32 out of      47   68%
     Number of slice register sites lost
       to control set restrictions:               0 out of  11,440    0%
 
@@ -56,8 +56,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         9 out of     102    8%
-    Number of LOCed IOBs:                        9 out of       9  100%
+  Number of bonded IOBs:                        10 out of     102    9%
+    Number of LOCed IOBs:                       10 out of      10  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -94,13 +94,13 @@ Finished initial Timing Analysis.  REAL time: 1 secs
 Starting Router
 
 
-Phase  1  : 161 unrouted;      REAL time: 1 secs 
+Phase  1  : 163 unrouted;      REAL time: 1 secs 
 
-Phase  2  : 158 unrouted;      REAL time: 1 secs 
+Phase  2  : 160 unrouted;      REAL time: 1 secs 
 
-Phase  3  : 11 unrouted;      REAL time: 1 secs 
+Phase  3  : 5 unrouted;      REAL time: 1 secs 
 
-Phase  4  : 11 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
+Phase  4  : 5 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
 Updating file: main.ncd with current fully routed design.
 
@@ -136,38 +136,38 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.055ns|     N/A|           0
-  I_23/XLXN_109                             | HOLD        |     0.347ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.710ns|     N/A|           0
-  I_23/XLXN_110                             | HOLD        |     0.450ns|            |       0|           0
-----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.827ns|     N/A|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.822ns|     N/A|           0
   I_23/XLXN_108                             | HOLD        |     0.424ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.243ns|     N/A|           0
-  I_23/XLXN_111                             | HOLD        |     0.413ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.183ns|     N/A|           0
+  I_23/XLXN_109                             | HOLD        |     0.306ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.822ns|     N/A|           0
-  I_23/XLXN_131                             | HOLD        |     0.424ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.212ns|     N/A|           0
+  I_23/XLXN_107                             | HOLD        |     0.418ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net BCD | SETUP       |         N/A|     0.890ns|     N/A|           0
-  <0>                                       | HOLD        |     0.453ns|            |       0|           0
+  Autotimespec constraint for clock net OSC | SETUP       |         N/A|     1.827ns|     N/A|           0
+  _P123_BUFGP                               | HOLD        |     0.465ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net BCD | SETUP       |         N/A|     0.912ns|     N/A|           0
-  <1>                                       | HOLD        |     0.470ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.725ns|     N/A|           0
+  I_23/XLXN_110                             | HOLD        |     0.425ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.962ns|     N/A|           0
-  I_23/XLXN_153                             | HOLD        |     0.494ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.921ns|     N/A|           0
+  I_23/XLXN_111                             | HOLD        |     0.424ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.909ns|     N/A|           0
-  N_35                                      | HOLD        |     0.467ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.919ns|     N/A|           0
+  I_23/XLXN_131                             | HOLD        |     0.451ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.917ns|     N/A|           0
-  I_23/XLXN_107                             | HOLD        |     0.405ns|            |       0|           0
+  Autotimespec constraint for clock net BCD | SETUP       |         N/A|     0.926ns|     N/A|           0
+  <0>                                       | HOLD        |     0.430ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net OSC | SETUP       |         N/A|     1.830ns|     N/A|           0
-  _P123_BUFGP                               | HOLD        |     0.424ns|            |       0|           0
+  Autotimespec constraint for clock net BCD | SETUP       |         N/A|     0.957ns|     N/A|           0
+  <1>                                       | HOLD        |     0.497ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.873ns|     N/A|           0
+  I_23/XLXN_153                             | HOLD        |     0.436ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net L0_ | SETUP       |         N/A|     0.884ns|     N/A|           0
+  P82_OBUF                                  | HOLD        |     0.447ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 

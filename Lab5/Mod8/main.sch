@@ -21,26 +21,11 @@
         <signal name="SSEG_COM0_P44" />
         <signal name="OSC_P123" />
         <signal name="XLXN_35" />
-        <signal name="XLXN_36" />
-        <signal name="XLXN_41" />
-        <signal name="XLXN_42" />
-        <signal name="XLXN_40" />
-        <signal name="XLXN_39" />
-        <signal name="XLXN_66" />
-        <signal name="XLXN_7" />
-        <signal name="XLXN_68" />
+        <signal name="L0_P82" />
         <signal name="BCD(1)" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
-        <signal name="XLXN_74" />
         <signal name="XLXN_61" />
-        <signal name="XLXN_73" />
         <signal name="XLXN_16" />
         <signal name="XLXN_17" />
-        <signal name="XLXN_95" />
-        <signal name="XLXN_94" />
-        <signal name="XLXN_93" />
         <signal name="XLXN_37" />
         <signal name="XLXN_38" />
         <signal name="XLXN_18" />
@@ -53,6 +38,7 @@
         <port polarity="Output" name="SSEG_OUT(0)" />
         <port polarity="Output" name="SSEG_COM0_P44" />
         <port polarity="Input" name="OSC_P123" />
+        <port polarity="Output" name="L0_P82" />
         <blockdef name="SSEG_DEC">
             <timestamp>2024-7-30T12:47:15</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
@@ -119,7 +105,7 @@
         </block>
         <block symbolname="inv" name="XLXI_29">
             <blockpin signalname="XLXN_35" name="I" />
-            <blockpin signalname="XLXN_36" name="O" />
+            <blockpin signalname="L0_P82" name="O" />
         </block>
         <block symbolname="OneHz" name="XLXI_23">
             <blockpin signalname="OSC_P123" name="CLK_IN" />
@@ -157,7 +143,7 @@
             <blockpin signalname="XLXN_18" name="G" />
         </block>
         <block symbolname="fjkc" name="XLXI_19">
-            <blockpin signalname="XLXN_36" name="C" />
+            <blockpin signalname="L0_P82" name="C" />
             <blockpin signalname="XLXN_18" name="CLR" />
             <blockpin signalname="XLXN_61" name="J" />
             <blockpin signalname="XLXN_61" name="K" />
@@ -239,13 +225,13 @@
         </branch>
         <iomarker fontsize="28" x="3328" y="2384" name="OSC_P123" orien="R0" />
         <branch name="XLXN_35">
-            <wire x2="2880" y1="2448" y2="2448" x1="2848" />
+            <wire x2="2880" y1="2448" y2="2448" x1="2784" />
         </branch>
-        <instance x="2848" y="2416" name="XLXI_29" orien="R180" />
-        <branch name="XLXN_36">
-            <wire x2="2608" y1="2224" y2="2224" x1="2432" />
-            <wire x2="2608" y1="2224" y2="2448" x1="2608" />
-            <wire x2="2624" y1="2448" y2="2448" x1="2608" />
+        <branch name="L0_P82">
+            <wire x2="2496" y1="2224" y2="2224" x1="2432" />
+            <wire x2="2496" y1="2224" y2="2448" x1="2496" />
+            <wire x2="2560" y1="2448" y2="2448" x1="2496" />
+            <wire x2="2624" y1="2224" y2="2224" x1="2496" />
         </branch>
         <branch name="BCD(0)">
             <wire x2="1280" y1="1376" y2="1696" x1="1280" />
@@ -274,11 +260,10 @@
         <instance x="800" y="2352" name="XLXI_21" orien="M0" />
         <branch name="BCD(1)">
             <wire x2="1104" y1="2224" y2="2224" x1="1056" />
-            <wire x2="1200" y1="1424" y2="1424" x1="1104" />
-            <wire x2="1104" y1="1424" y2="2096" x1="1104" />
-            <wire x2="1296" y1="2096" y2="2096" x1="1104" />
             <wire x2="1104" y1="2096" y2="2224" x1="1104" />
-            <wire x2="1200" y1="1376" y2="1424" x1="1200" />
+            <wire x2="1200" y1="2096" y2="2096" x1="1104" />
+            <wire x2="1296" y1="2096" y2="2096" x1="1200" />
+            <wire x2="1200" y1="1376" y2="2096" x1="1200" />
         </branch>
         <branch name="XLXN_37">
             <wire x2="1712" y1="2224" y2="2224" x1="1680" />
@@ -311,5 +296,7 @@
             <wire x2="2480" y1="2096" y2="2096" x1="2432" />
             <wire x2="2560" y1="1776" y2="1888" x1="2560" />
         </branch>
+        <instance x="2784" y="2416" name="XLXI_29" orien="R180" />
+        <iomarker fontsize="28" x="2624" y="2224" name="L0_P82" orien="R0" />
     </sheet>
 </drawing>

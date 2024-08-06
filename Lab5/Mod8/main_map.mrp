@@ -10,33 +10,33 @@ Target Device  : xc6slx9
 Target Package : tqg144
 Target Speed   : -3
 Mapper Version : spartan6 -- $Revision: 1.55 $
-Mapped Date    : Tue Aug  6 12:46:36 2024
+Mapped Date    : Tue Aug  6 13:57:09 2024
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:    7
+Number of warnings:    8
 Slice Logic Utilization:
   Number of Slice Registers:                    32 out of  11,440    1%
     Number used as Flip Flops:                  32
     Number used as Latches:                      0
     Number used as Latch-thrus:                  0
     Number used as AND/OR logics:                0
-  Number of Slice LUTs:                         46 out of   5,720    1%
-    Number used as logic:                       46 out of   5,720    1%
-      Number using O6 output only:              46
+  Number of Slice LUTs:                         47 out of   5,720    1%
+    Number used as logic:                       47 out of   5,720    1%
+      Number using O6 output only:              47
       Number using O5 output only:               0
       Number using O5 and O6:                    0
       Number used as ROM:                        0
     Number used as Memory:                       0 out of   1,440    0%
 
 Slice Logic Distribution:
-  Number of occupied Slices:                    28 out of   1,430    1%
+  Number of occupied Slices:                    25 out of   1,430    1%
   Number of MUXCYs used:                         0 out of   2,860    0%
-  Number of LUT Flip Flop pairs used:           46
-    Number with an unused Flip Flop:            14 out of      46   30%
-    Number with an unused LUT:                   0 out of      46    0%
-    Number of fully used LUT-FF pairs:          32 out of      46   69%
+  Number of LUT Flip Flop pairs used:           47
+    Number with an unused Flip Flop:            15 out of      47   31%
+    Number with an unused LUT:                   0 out of      47    0%
+    Number of fully used LUT-FF pairs:          32 out of      47   68%
     Number of unique control sets:              18
     Number of slice register sites lost
       to control set restrictions:             112 out of  11,440    1%
@@ -48,8 +48,8 @@ Slice Logic Distribution:
   over-mapped for a non-slice resource or if Placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         9 out of     102    8%
-    Number of LOCed IOBs:                        9 out of       9  100%
+  Number of bonded IOBs:                        10 out of     102    9%
+    Number of LOCed IOBs:                       10 out of      10  100%
 
 Specific Feature Utilization:
   Number of RAMB16BWERs:                         0 out of      32    0%
@@ -76,7 +76,7 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of SUSPEND_SYNCs:                       0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.89
+Average Fanout of Non-Clock Nets:                2.87
 
 Peak Memory Usage:  643 MB
 Total REAL time to MAP completion:  2 secs 
@@ -103,13 +103,16 @@ Section 1 - Errors
 
 Section 2 - Warnings
 --------------------
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_108 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to
+   control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_109 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_110 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_107 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_108 is sourced
+WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_110 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_111 is sourced
@@ -121,8 +124,8 @@ WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_131 is sourced
 WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_153 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
-WARNING:PhysDesignRules:372 - Gated clock. Clock net XLXI_23/XLXN_107 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to
+WARNING:PhysDesignRules:372 - Gated clock. Clock net L0_P82_OBUF is sourced by a
+   combinatorial pin. This is not good design practice. Use the CE pin to
    control the loading of data into the flip-flop.
 
 Section 3 - Informational
@@ -183,6 +186,7 @@ Section 6 - IOB Properties
 | IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
 |                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
 +---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| L0_P82                             | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | OSC_P123                           | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
 | SSEG_COM0_P44                      | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |
 | SSEG_OUT<0>                        | IOB              | OUTPUT    | LVCMOS25             |       | 12       | SLOW |              |          |          |

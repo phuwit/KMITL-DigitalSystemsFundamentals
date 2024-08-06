@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="OneHz">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2024-7-30T14:52:39</timestamp>
+    <timestamp>2024-8-6T7:44:43</timestamp>
     <pin polarity="Input" x="0" y="160" name="CLK_IN" />
     <pin polarity="Output" x="384" y="224" name="CLK_OUT" />
     <graph>

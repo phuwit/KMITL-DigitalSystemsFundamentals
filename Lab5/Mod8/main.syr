@@ -295,10 +295,10 @@ Unit <OneHz_MUSER_main> synthesized.
 
 Synthesizing Unit <Mod10Pulse_MUSER_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/main.vf".
-    Set property "HU_SET = XLXI_1_0" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_1" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_4_3" for instance <XLXI_4>.
-    Set property "HU_SET = XLXI_6_2" for instance <XLXI_6>.
+    Set property "HU_SET = XLXI_1_3" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_2" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_4_0" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_6_1" for instance <XLXI_6>.
     Summary:
 	no macro.
 Unit <Mod10Pulse_MUSER_main> synthesized.
@@ -397,8 +397,8 @@ Primitive and Black Box Usage:
 #      FDCE                        : 7
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 8
-#      OBUF                        : 8
+# IO Buffers                       : 9
+#      OBUF                        : 9
 
 Device utilization summary:
 ---------------------------
@@ -419,8 +419,8 @@ Slice Logic Distribution:
    Number of unique control sets:        32
 
 IO Utilization: 
- Number of IOs:                           9
- Number of bonded IOBs:                   9  out of    102     8%  
+ Number of IOs:                          10
+ Number of bonded IOBs:                  10  out of    102     9%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -804,6 +804,27 @@ Offset:              7.475ns (Levels of Logic = 5)
                                        (55.0% logic, 45.0% route)
 
 =========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_23/XLXN_153'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              4.819ns (Levels of Logic = 3)
+  Source:            XLXI_23/XLXI_19/Q (FF)
+  Destination:       L0_P82 (PAD)
+  Source Clock:      XLXI_23/XLXN_153 rising
+
+  Data Path: XLXI_23/XLXI_19/Q to L0_P82
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.447   0.616  Q (Q)
+     end scope: 'XLXI_23/XLXI_19:Q'
+     INV:I->O              2   0.568   0.616  XLXI_29 (L0_P82_OBUF)
+     OBUF:I->O                 2.571          L0_P82_OBUF (L0_P82)
+    ----------------------------------------
+    Total                      4.819ns (3.586ns logic, 1.232ns route)
+                                       (74.4% logic, 25.6% route)
+
+=========================================================================
 
 Cross Clock Domains Report:
 --------------------------
@@ -900,7 +921,7 @@ XLXI_23/XLXN_153|    1.950|         |         |         |
 
 
 Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.79 secs
+Total CPU time to Xst completion: 1.97 secs
  
 --> 
 

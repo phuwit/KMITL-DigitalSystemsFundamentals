@@ -10,14 +10,12 @@
          <ClosedNode>/OneHz |home|phuwit|Programming|KMITL-DigitalSystemsFundamentals|Lab5|Mod8|OneHz.sch</ClosedNode>
          <ClosedNode>/main |home|phuwit|Programming|KMITL-DigitalSystemsFundamentals|Lab5|Mod8|main.sch/XLXI_14 - SSEG_DEC</ClosedNode>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>main (/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/main.sch)</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e0000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e00000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>main (/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/main.sch)</CurrentItem>
+      <CurrentItem>XLXI_18 - Mod10Pulse (/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/Mod10Pulse.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
       <ClosedNodes>
@@ -29,13 +27,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Generate Programming File</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000166000000010000000100000000000000000000000064ffffffff000000810000000000000001000001660000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Generate Programming File</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>

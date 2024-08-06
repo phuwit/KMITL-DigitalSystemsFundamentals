@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : OneHz.vf
-// /___/   /\     Timestamp : 07/30/2024 21:32:29
+// /___/   /\     Timestamp : 08/06/2024 13:55:03
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -76,25 +76,25 @@ module Mod10Pulse_MUSER_OneHz(CLK_IN,
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_27" *) 
+   (* HU_SET = "XLXI_1_7" *) 
    FJKC_HXILINX_OneHz  XLXI_1 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(XLXN_13), 
                               .K(XLXN_13), 
                               .Q(XLXN_26));
-   (* HU_SET = "XLXI_2_28" *) 
+   (* HU_SET = "XLXI_2_6" *) 
    FJKC_HXILINX_OneHz  XLXI_2 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(J), 
                               .K(K), 
                               .Q(XLXN_18));
-   (* HU_SET = "XLXI_4_30" *) 
+   (* HU_SET = "XLXI_4_4" *) 
    FJKC_HXILINX_OneHz  XLXI_4 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(XLXN_18), 
                               .K(XLXN_18), 
                               .Q(XLXN_23));
-   (* HU_SET = "XLXI_6_29" *) 
+   (* HU_SET = "XLXI_6_5" *) 
    FJKC_HXILINX_OneHz  XLXI_6 (.C(CLK_IN), 
                               .CLR(CLK_OUT_DUMMY), 
                               .J(XLXN_20), 
@@ -158,7 +158,7 @@ module OneHz(CLK_IN,
                                    .J(XLXN_154), 
                                    .K(XLXN_154), 
                                    .CLK_OUT(XLXN_153));
-   (* HU_SET = "XLXI_19_31" *) 
+   (* HU_SET = "XLXI_19_8" *) 
    FJKC_HXILINX_OneHz  XLXI_19 (.C(XLXN_153), 
                                .CLR(XLXN_156), 
                                .J(XLXN_154), 

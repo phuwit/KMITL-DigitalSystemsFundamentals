@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Mod10Pulse.vf
-// /___/   /\     Timestamp : 07/30/2024 21:32:29
+// /___/   /\     Timestamp : 08/06/2024 14:44:55
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/Mod10Pulse.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/Mod8/Mod10Pulse.sch
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/CountExcept0648/Mod10Pulse.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab5/CountExcept0648/Mod10Pulse.sch
 //Design Name: Mod10Pulse
 //Device: spartan6
 //Purpose:
@@ -58,56 +58,54 @@ endmodule
 `timescale 1ns / 1ps
 
 module Mod10Pulse(CLK_IN, 
-                  J, 
-                  K, 
                   CLK_OUT);
 
     input CLK_IN;
-    input J;
-    input K;
    output CLK_OUT;
    
    wire XLXN_13;
    wire XLXN_14;
-   wire XLXN_18;
-   wire XLXN_20;
-   wire XLXN_23;
-   wire XLXN_26;
+   wire XLXN_40;
+   wire XLXN_46;
+   wire XLXN_47;
+   wire XLXN_48;
+   wire XLXN_49;
+   wire XLXN_50;
    wire CLK_OUT_DUMMY;
    
    assign CLK_OUT = CLK_OUT_DUMMY;
-   (* HU_SET = "XLXI_1_9" *) 
-   FJKC_HXILINX_Mod10Pulse  XLXI_1 (.C(CLK_IN), 
+   (* HU_SET = "XLXI_1_10" *) 
+   FJKC_HXILINX_Mod10Pulse  XLXI_1 (.C(XLXN_48), 
                                    .CLR(CLK_OUT_DUMMY), 
                                    .J(XLXN_13), 
                                    .K(XLXN_13), 
-                                   .Q(XLXN_26));
-   (* HU_SET = "XLXI_2_10" *) 
+                                   .Q(XLXN_46));
+   (* HU_SET = "XLXI_2_11" *) 
    FJKC_HXILINX_Mod10Pulse  XLXI_2 (.C(CLK_IN), 
                                    .CLR(CLK_OUT_DUMMY), 
-                                   .J(J), 
-                                   .K(K), 
-                                   .Q(XLXN_18));
-   (* HU_SET = "XLXI_4_12" *) 
-   FJKC_HXILINX_Mod10Pulse  XLXI_4 (.C(CLK_IN), 
+                                   .J(XLXN_13), 
+                                   .K(XLXN_13), 
+                                   .Q(XLXN_49));
+   (* HU_SET = "XLXI_4_13" *) 
+   FJKC_HXILINX_Mod10Pulse  XLXI_4 (.C(XLXN_50), 
                                    .CLR(CLK_OUT_DUMMY), 
-                                   .J(XLXN_18), 
-                                   .K(XLXN_18), 
-                                   .Q(XLXN_23));
-   (* HU_SET = "XLXI_6_11" *) 
-   FJKC_HXILINX_Mod10Pulse  XLXI_6 (.C(CLK_IN), 
+                                   .J(XLXN_13), 
+                                   .K(XLXN_13), 
+                                   .Q(XLXN_40));
+   (* HU_SET = "XLXI_6_12" *) 
+   FJKC_HXILINX_Mod10Pulse  XLXI_6 (.C(XLXN_47), 
                                    .CLR(CLK_OUT_DUMMY), 
-                                   .J(XLXN_20), 
-                                   .K(XLXN_20), 
+                                   .J(XLXN_13), 
+                                   .K(XLXN_13), 
                                    .Q(XLXN_14));
-   AND2  XLXI_7 (.I0(XLXN_23), 
+   AND2  XLXI_7 (.I0(XLXN_40), 
                 .I1(XLXN_14), 
                 .O(CLK_OUT_DUMMY));
-   AND2  XLXI_8 (.I0(XLXN_18), 
-                .I1(XLXN_23), 
-                .O(XLXN_13));
-   AND3  XLXI_9 (.I0(XLXN_18), 
-                .I1(XLXN_23), 
-                .I2(XLXN_26), 
-                .O(XLXN_20));
+   VCC  XLXI_10 (.P(XLXN_13));
+   INV  XLXI_12 (.I(XLXN_46), 
+                .O(XLXN_47));
+   INV  XLXI_13 (.I(XLXN_40), 
+                .O(XLXN_48));
+   INV  XLXI_14 (.I(XLXN_49), 
+                .O(XLXN_50));
 endmodule
