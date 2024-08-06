@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : CountExcept0648.vf
-// /___/   /\     Timestamp : 07/30/2024 21:50:19
+// /___/   /\     Timestamp : 08/01/2024 21:27:46
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -57,12 +57,124 @@ module FJKC_HXILINX_CountExcept0648(Q, C, CLR, J, K);
 endmodule
 `timescale 1ns / 1ps
 
-module CountExcept0648(CLK_IN, 
-                       BCD);
+module Mod10Pulse_MUSER_CountExcept0648(CLK_IN, 
+                                        J, 
+                                        K, 
+                                        CLK_OUT);
 
     input CLK_IN;
+    input J;
+    input K;
+   output CLK_OUT;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_18;
+   wire XLXN_20;
+   wire XLXN_23;
+   wire XLXN_26;
+   wire CLK_OUT_DUMMY;
+   
+   assign CLK_OUT = CLK_OUT_DUMMY;
+   (* HU_SET = "XLXI_1_10" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_1 (.C(CLK_IN), 
+                                        .CLR(CLK_OUT_DUMMY), 
+                                        .J(XLXN_13), 
+                                        .K(XLXN_13), 
+                                        .Q(XLXN_26));
+   (* HU_SET = "XLXI_2_11" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_2 (.C(CLK_IN), 
+                                        .CLR(CLK_OUT_DUMMY), 
+                                        .J(J), 
+                                        .K(K), 
+                                        .Q(XLXN_18));
+   (* HU_SET = "XLXI_4_13" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_4 (.C(CLK_IN), 
+                                        .CLR(CLK_OUT_DUMMY), 
+                                        .J(XLXN_18), 
+                                        .K(XLXN_18), 
+                                        .Q(XLXN_23));
+   (* HU_SET = "XLXI_6_12" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_6 (.C(CLK_IN), 
+                                        .CLR(CLK_OUT_DUMMY), 
+                                        .J(XLXN_20), 
+                                        .K(XLXN_20), 
+                                        .Q(XLXN_14));
+   AND2  XLXI_7 (.I0(XLXN_23), 
+                .I1(XLXN_14), 
+                .O(CLK_OUT_DUMMY));
+   AND2  XLXI_8 (.I0(XLXN_18), 
+                .I1(XLXN_23), 
+                .O(XLXN_13));
+   AND3  XLXI_9 (.I0(XLXN_18), 
+                .I1(XLXN_23), 
+                .I2(XLXN_26), 
+                .O(XLXN_20));
+endmodule
+`timescale 1ns / 1ps
+
+module OneHz_MUSER_CountExcept0648(CLK_IN, 
+                                   CLK_OUT);
+
+    input CLK_IN;
+   output CLK_OUT;
+   
+   wire XLXN_107;
+   wire XLXN_108;
+   wire XLXN_109;
+   wire XLXN_110;
+   wire XLXN_111;
+   wire XLXN_131;
+   wire XLXN_153;
+   wire XLXN_154;
+   wire XLXN_156;
+   
+   Mod10Pulse_MUSER_CountExcept0648  XLXI_1 (.CLK_IN(CLK_IN), 
+                                            .J(XLXN_154), 
+                                            .K(XLXN_154), 
+                                            .CLK_OUT(XLXN_107));
+   Mod10Pulse_MUSER_CountExcept0648  XLXI_2 (.CLK_IN(XLXN_107), 
+                                            .J(XLXN_154), 
+                                            .K(XLXN_154), 
+                                            .CLK_OUT(XLXN_108));
+   Mod10Pulse_MUSER_CountExcept0648  XLXI_3 (.CLK_IN(XLXN_108), 
+                                            .J(XLXN_154), 
+                                            .K(XLXN_154), 
+                                            .CLK_OUT(XLXN_109));
+   Mod10Pulse_MUSER_CountExcept0648  XLXI_4 (.CLK_IN(XLXN_109), 
+                                            .J(XLXN_154), 
+                                            .K(XLXN_154), 
+                                            .CLK_OUT(XLXN_110));
+   Mod10Pulse_MUSER_CountExcept0648  XLXI_5 (.CLK_IN(XLXN_110), 
+                                            .J(XLXN_154), 
+                                            .K(XLXN_154), 
+                                            .CLK_OUT(XLXN_111));
+   Mod10Pulse_MUSER_CountExcept0648  XLXI_6 (.CLK_IN(XLXN_111), 
+                                            .J(XLXN_154), 
+                                            .K(XLXN_154), 
+                                            .CLK_OUT(XLXN_131));
+   VCC  XLXI_7 (.P(XLXN_154));
+   Mod10Pulse_MUSER_CountExcept0648  XLXI_18 (.CLK_IN(XLXN_131), 
+                                             .J(XLXN_154), 
+                                             .K(XLXN_154), 
+                                             .CLK_OUT(XLXN_153));
+   (* HU_SET = "XLXI_19_14" *) 
+   FJKC_HXILINX_CountExcept0648  XLXI_19 (.C(XLXN_153), 
+                                         .CLR(XLXN_156), 
+                                         .J(XLXN_154), 
+                                         .K(XLXN_154), 
+                                         .Q(CLK_OUT));
+   GND  XLXI_20 (.G(XLXN_156));
+endmodule
+`timescale 1ns / 1ps
+
+module CountExcept0648(CLK_20M, 
+                       BCD);
+
+    input CLK_20M;
    output [3:0] BCD;
    
+   wire CLK_IN;
    wire XLXN_2;
    wire XLXN_3;
    wire XLXN_4;
@@ -78,25 +190,25 @@ module CountExcept0648(CLK_IN,
    wire [3:0] BCD_DUMMY;
    
    assign BCD[3:0] = BCD_DUMMY[3:0];
-   (* HU_SET = "XLXI_1_10" *) 
+   (* HU_SET = "XLXI_1_15" *) 
    FJKC_HXILINX_CountExcept0648  XLXI_1 (.C(CLK_IN), 
                                         .CLR(XLXN_2), 
                                         .J(XLXN_51), 
                                         .K(XLXN_50), 
                                         .Q(BCD_DUMMY[3]));
-   (* HU_SET = "XLXI_2_11" *) 
+   (* HU_SET = "XLXI_2_16" *) 
    FJKC_HXILINX_CountExcept0648  XLXI_2 (.C(CLK_IN), 
                                         .CLR(XLXN_5), 
                                         .J(XLXN_49), 
                                         .K(XLXN_49), 
                                         .Q(BCD_DUMMY[2]));
-   (* HU_SET = "XLXI_4_12" *) 
+   (* HU_SET = "XLXI_4_18" *) 
    FJKC_HXILINX_CountExcept0648  XLXI_4 (.C(CLK_IN), 
                                         .CLR(XLXN_3), 
                                         .J(XLXN_43), 
                                         .K(BCD_DUMMY[0]), 
                                         .Q(BCD_DUMMY[1]));
-   (* HU_SET = "XLXI_5_13" *) 
+   (* HU_SET = "XLXI_5_17" *) 
    FJKC_HXILINX_CountExcept0648  XLXI_5 (.C(CLK_IN), 
                                         .CLR(XLXN_4), 
                                         .J(XLXN_8), 
@@ -128,4 +240,6 @@ module CountExcept0648(CLK_IN,
                  .I1(BCD_DUMMY[1]), 
                  .I2(BCD_DUMMY[0]), 
                  .O(XLXN_51));
+   OneHz_MUSER_CountExcept0648  XLXI_73 (.CLK_IN(CLK_20M), 
+                                        .CLK_OUT(CLK_IN));
 endmodule

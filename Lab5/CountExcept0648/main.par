@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Lawnmower::  Tue Jul 30 21:53:28 2024
+Lawnmower::  Thu Aug 01 21:28:01 2024
 
 par -w -intstyle ise -ol high -mt off main_map.ncd main.ncd main.pcf 
 
@@ -96,27 +96,27 @@ Starting Router
 
 Phase  1  : 234 unrouted;      REAL time: 1 secs 
 
-Phase  2  : 229 unrouted;      REAL time: 2 secs 
+Phase  2  : 229 unrouted;      REAL time: 1 secs 
 
-Phase  3  : 15 unrouted;      REAL time: 2 secs 
+Phase  3  : 16 unrouted;      REAL time: 1 secs 
 
-Phase  4  : 17 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  4  : 16 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
 Updating file: main.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
-Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
-Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
-Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
-Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
 
-Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 2 secs 
-Total REAL time to Router completion: 2 secs 
-Total CPU time to Router completion: 2 secs 
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 secs 
+Total REAL time to Router completion: 1 secs 
+Total CPU time to Router completion: 1 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -136,32 +136,32 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net OSC | SETUP       |         N/A|     2.134ns|     N/A|           0
+  Autotimespec constraint for clock net OSC | SETUP       |         N/A|     2.230ns|     N/A|           0
   _P123_BUFGP                               | HOLD        |     0.418ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.186ns|     N/A|           0
-  I_23/XLXN_131                             | HOLD        |     0.418ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.209ns|     N/A|           0
+  I_33/XLXI_73/XLXN_107                     | HOLD        |     0.263ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.877ns|     N/A|           0
-  I_23/XLXN_153                             | HOLD        |     0.440ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.255ns|     N/A|           0
+  I_33/XLXI_73/XLXN_131                     | HOLD        |     0.424ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.687ns|     N/A|           0
-  N_32                                      | HOLD        |     0.447ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     0.879ns|     N/A|           0
+  I_33/XLXI_73/XLXN_153                     | HOLD        |     0.442ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.355ns|     N/A|           0
-  I_23/XLXN_107                             | HOLD        |     0.317ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     1.896ns|     N/A|           0
+  I_33/CLK_IN                               | HOLD        |     0.280ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.171ns|     N/A|           0
-  I_23/XLXN_108                             | HOLD        |     0.418ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.375ns|     N/A|           0
+  I_33/XLXI_73/XLXN_108                     | HOLD        |     0.418ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.280ns|     N/A|           0
-  I_23/XLXN_109                             | HOLD        |     0.413ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.274ns|     N/A|           0
+  I_33/XLXI_73/XLXN_109                     | HOLD        |     0.436ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.137ns|     N/A|           0
-  I_23/XLXN_110                             | HOLD        |     0.436ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.319ns|     N/A|           0
+  I_33/XLXI_73/XLXN_110                     | HOLD        |     0.152ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.094ns|     N/A|           0
-  I_23/XLXN_111                             | HOLD        |     0.412ns|            |       0|           0
+  Autotimespec constraint for clock net XLX | SETUP       |         N/A|     2.201ns|     N/A|           0
+  I_33/XLXI_73/XLXN_111                     | HOLD        |     0.413ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -177,10 +177,10 @@ Generating Pad Report.
 
 All signals are completely routed.
 
-Total REAL time to PAR completion: 2 secs 
-Total CPU time to PAR completion: 2 secs 
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 1 secs 
 
-Peak Memory Usage:  598 MB
+Peak Memory Usage:  596 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
