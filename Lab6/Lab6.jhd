@@ -1,0 +1,3 @@
+MODULE Lab6
+	SUBMODULE VirtualDice
+		INSTANCE XLXI_4

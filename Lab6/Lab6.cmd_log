@@ -1,0 +1,228 @@
+sch2sym -intstyle ise -family spartan6 -refsym Lab6 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Lab6 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Lab6_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Lab6_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.sch 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -u -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -u -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab6.ucf -p xc6slx9-tqg144-3 Lab6.ngc Lab6.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab6_map.ncd Lab6.ngd Lab6.pcf 
+par -w -intstyle ise -ol high -mt off Lab6_map.ncd Lab6.ncd Lab6.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab6.twx Lab6.ncd -o Lab6.twr Lab6.pcf -ucf Lab6.ucf 
+bitgen -intstyle ise -f Lab6.ut Lab6.ncd 

@@ -1,0 +1,13 @@
+sch2sym -intstyle ise -family spartan6 -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux4_Bus4_1E_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux4_Bus4_1E_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux4_Bus4_1E_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch 
+sch2sym -intstyle ise -family spartan6 -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux4_Bus4_1E_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog Mux4_Bus4_1E_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Mux4_Bus4_1E.sch 

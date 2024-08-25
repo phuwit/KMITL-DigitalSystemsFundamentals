@@ -1,0 +1,186 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : LEDsDriver.vf
+// /___/   /\     Timestamp : 08/25/2024 23:29:02
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch
+//Design Name: LEDsDriver
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module COMP4_HXILINX_LEDsDriver (EQ, A0, A1, A2, A3, B0, B1, B2, B3);
+    
+
+   output EQ;
+
+   input A0;
+   input A1;
+   input A2;
+   input A3;
+   input B0;
+   input B1;
+   input B2;
+   input B3;
+
+   assign EQ = ((A0==B0) && (A1==B1) && (A2==B2) && (A3==B3)) ;
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module M4_1E_HXILINX_LEDsDriver (O, D0, D1, D2, D3, E, S0, S1);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  D2;
+   input  D3;
+   input  E;
+   input  S0;
+   input  S1;
+
+   reg O;
+
+   always @ ( D0 or D1 or D2 or D3 or E or S0 or S1)
+   begin
+      if(!E)
+      O <= 1'b0;
+      else 
+      begin
+        case({S1,S0})
+        2'b00 : O <= D0;
+        2'b01 : O <= D1;
+        2'b10 : O <= D2;
+        2'b11 : O <= D3;
+        endcase
+      end
+   end
+    
+endmodule
+`timescale 1ns / 1ps
+
+module Mux4_Bus4_1E_MUSER_LEDsDriver(D0, 
+                                     D1, 
+                                     D2, 
+                                     D3, 
+                                     E, 
+                                     S0, 
+                                     S1, 
+                                     O);
+
+    input [3:0] D0;
+    input [3:0] D1;
+    input [3:0] D2;
+    input [3:0] D3;
+    input E;
+    input S0;
+    input S1;
+   output [3:0] O;
+   
+   
+   (* HU_SET = "XLXI_13_61" *) 
+   M4_1E_HXILINX_LEDsDriver  XLXI_13 (.D0(D0[0]), 
+                                     .D1(D1[0]), 
+                                     .D2(D2[0]), 
+                                     .D3(D3[0]), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .S1(S1), 
+                                     .O(O[0]));
+   (* HU_SET = "XLXI_14_62" *) 
+   M4_1E_HXILINX_LEDsDriver  XLXI_14 (.D0(D0[1]), 
+                                     .D1(D1[1]), 
+                                     .D2(D2[1]), 
+                                     .D3(D3[1]), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .S1(S1), 
+                                     .O(O[1]));
+   (* HU_SET = "XLXI_15_63" *) 
+   M4_1E_HXILINX_LEDsDriver  XLXI_15 (.D0(D0[2]), 
+                                     .D1(D1[2]), 
+                                     .D2(D2[2]), 
+                                     .D3(D3[2]), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .S1(S1), 
+                                     .O(O[2]));
+   (* HU_SET = "XLXI_16_64" *) 
+   M4_1E_HXILINX_LEDsDriver  XLXI_16 (.D0(D0[3]), 
+                                     .D1(D1[3]), 
+                                     .D2(D2[3]), 
+                                     .D3(D3[3]), 
+                                     .E(E), 
+                                     .S0(S0), 
+                                     .S1(S1), 
+                                     .O(O[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module LEDsDriver(A, 
+                  B, 
+                  ENABLE, 
+                  LED);
+
+    input [3:0] A;
+    input [3:0] B;
+    input ENABLE;
+   output [3:0] LED;
+   
+   wire [3:0] ONES;
+   wire XLXN_37;
+   wire XLXN_58;
+   wire XLXN_61;
+   wire [3:0] ZEROS;
+   
+   (* HU_SET = "XLXI_1_65" *) 
+   COMP4_HXILINX_LEDsDriver  XLXI_1 (.A0(A[0]), 
+                                    .A1(A[1]), 
+                                    .A2(A[2]), 
+                                    .A3(A[3]), 
+                                    .B0(B[0]), 
+                                    .B1(B[1]), 
+                                    .B2(B[2]), 
+                                    .B3(B[3]), 
+                                    .EQ(XLXN_61));
+   (* HU_SET = "XLXI_2_66" *) 
+   COMP4_HXILINX_LEDsDriver  XLXI_2 (.A0(A[0]), 
+                                    .A1(A[1]), 
+                                    .A2(A[2]), 
+                                    .A3(A[3]), 
+                                    .B0(XLXN_37), 
+                                    .B1(XLXN_37), 
+                                    .B2(XLXN_37), 
+                                    .B3(XLXN_37), 
+                                    .EQ(XLXN_58));
+   GND  XLXI_7 (.G(XLXN_37));
+   GND  XLXI_15 (.G(ZEROS[3]));
+   GND  XLXI_16 (.G(ZEROS[2]));
+   GND  XLXI_17 (.G(ZEROS[1]));
+   GND  XLXI_18 (.G(ZEROS[0]));
+   VCC  XLXI_20 (.P(ONES[3]));
+   VCC  XLXI_21 (.P(ONES[2]));
+   VCC  XLXI_22 (.P(ONES[1]));
+   VCC  XLXI_23 (.P(ONES[0]));
+   Mux4_Bus4_1E_MUSER_LEDsDriver  XLXI_25 (.D0(ZEROS[3:0]), 
+                                          .D1(A[3:0]), 
+                                          .D2(ZEROS[3:0]), 
+                                          .D3(ONES[3:0]), 
+                                          .E(ENABLE), 
+                                          .S0(XLXN_61), 
+                                          .S1(XLXN_58), 
+                                          .O(LED[3:0]));
+endmodule

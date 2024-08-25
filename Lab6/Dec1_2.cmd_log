@@ -1,0 +1,4 @@
+sch2hdl -intstyle ise -family spartan6 -verilog Dec1_2_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Dec1_2.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog Dec1_2_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Dec1_2.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym Dec1_2 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Dec1_2.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Dec1_2.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Dec1_2 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Dec1_2.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Dec1_2.sym 

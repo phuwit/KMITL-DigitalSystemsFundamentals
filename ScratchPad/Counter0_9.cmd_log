@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -refsym Counter0_9 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter0_9 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter0_9 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter0_9 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/Counter0_9.sym 

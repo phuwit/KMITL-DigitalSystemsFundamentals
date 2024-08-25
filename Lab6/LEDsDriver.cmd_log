@@ -1,0 +1,14 @@
+sch2sym -intstyle ise -family spartan6 -refsym LEDsDriver /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDsDriver_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 LEDsDriver.ngc LEDsDriver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LEDsDriver_map.ncd LEDsDriver.ngd LEDsDriver.pcf 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDsDriver_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDsDriver /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDsDriver_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDsDriver /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDsDriver_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDsDriver_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDsDriver /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sym 
+sch2hdl -intstyle ise -family spartan6 -verilog LEDsDriver_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch 
+sch2sym -intstyle ise -family spartan6 -w -refsym LEDsDriver /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/LEDsDriver.sym 

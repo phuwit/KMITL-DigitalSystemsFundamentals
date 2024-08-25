@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Counter0_9_isim_beh.exe" -prj "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Counter0_9_beh.prj" "work.Counter0_9" "work.glbl" 

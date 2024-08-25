@@ -1,0 +1,44 @@
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+par -w -intstyle ise -ol high -mt off DecadeCounter_map.ncd DecadeCounter.ncd DecadeCounter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DecadeCounter.twx DecadeCounter.ncd -o DecadeCounter.twr DecadeCounter.pcf -ucf Constraints.ucf 
+bitgen -intstyle ise -f DecadeCounter.ut DecadeCounter.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+par -w -intstyle ise -ol high -mt off DecadeCounter_map.ncd DecadeCounter.ncd DecadeCounter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DecadeCounter.twx DecadeCounter.ncd -o DecadeCounter.twr DecadeCounter.pcf -ucf Constraints.ucf 
+bitgen -intstyle ise -f DecadeCounter.ut DecadeCounter.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+par -w -intstyle ise -ol high -mt off DecadeCounter_map.ncd DecadeCounter.ncd DecadeCounter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DecadeCounter.twx DecadeCounter.ncd -o DecadeCounter.twr DecadeCounter.pcf -ucf Constraints.ucf 
+bitgen -intstyle ise -f DecadeCounter.ut DecadeCounter.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+par -w -intstyle ise -ol high -mt off DecadeCounter_map.ncd DecadeCounter.ncd DecadeCounter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DecadeCounter.twx DecadeCounter.ncd -o DecadeCounter.twr DecadeCounter.pcf -ucf Constraints.ucf 
+bitgen -intstyle ise -f DecadeCounter.ut DecadeCounter.ncd 
+xst -intstyle ise -ifn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.xst" -ofn "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/ScratchPad/DecadeCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+par -w -intstyle ise -ol high -mt off DecadeCounter_map.ncd DecadeCounter.ncd DecadeCounter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DecadeCounter.twx DecadeCounter.ncd -o DecadeCounter.twr DecadeCounter.pcf -ucf Constraints.ucf 
+bitgen -intstyle ise -f DecadeCounter.ut DecadeCounter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Constraints.ucf -p xc6slx9-tqg144-3 DecadeCounter.ngc DecadeCounter.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o DecadeCounter_map.ncd DecadeCounter.ngd DecadeCounter.pcf 
+par -w -intstyle ise -ol high -mt off DecadeCounter_map.ncd DecadeCounter.ncd DecadeCounter.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DecadeCounter.twx DecadeCounter.ncd -o DecadeCounter.twr DecadeCounter.pcf -ucf Constraints.ucf 
+bitgen -intstyle ise -f DecadeCounter.ut DecadeCounter.ncd 

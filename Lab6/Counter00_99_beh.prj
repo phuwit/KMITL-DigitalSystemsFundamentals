@@ -1,0 +1,3 @@
+verilog work "Counter0_9.vf"
+verilog work "Counter00_99.vf"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

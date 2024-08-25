@@ -1,0 +1,27 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Lab6_drc.vf
+// /___/   /\     Timestamp : 08/23/2024 15:28:05
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan6 -verilog Lab6_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.sch
+//Design Name: Lab6
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Lab6();
+
+   
+   
+endmodule
