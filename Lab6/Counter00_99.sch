@@ -17,12 +17,11 @@
         <port polarity="Input" name="Clock" />
         <port polarity="Input" name="Enable" />
         <blockdef name="Counter0_9">
-            <timestamp>2024-8-25T16:44:27</timestamp>
+            <timestamp>2024-9-2T14:0:48</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-160" y2="-160" x1="320" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
@@ -37,16 +36,14 @@
         <block symbolname="Counter0_9" name="XLXI_2">
             <blockpin signalname="Clock" name="Clock" />
             <blockpin signalname="XLXN_17" name="CE" />
-            <blockpin name="TC" />
             <blockpin signalname="Ones(3:0)" name="Count(3:0)" />
-            <blockpin signalname="XLXN_15" name="CEO" />
+            <blockpin signalname="XLXN_15" name="TC" />
         </block>
         <block symbolname="Counter0_9" name="XLXI_3">
             <blockpin signalname="Clock" name="Clock" />
             <blockpin signalname="XLXN_15" name="CE" />
-            <blockpin name="TC" />
             <blockpin signalname="Tens(3:0)" name="Count(3:0)" />
-            <blockpin name="CEO" />
+            <blockpin name="TC" />
         </block>
         <block symbolname="buf" name="XLXI_4">
             <blockpin signalname="Enable" name="I" />
@@ -76,14 +73,14 @@
             <wire x2="400" y1="496" y2="496" x1="224" />
             <wire x2="416" y1="496" y2="496" x1="400" />
             <wire x2="400" y1="320" y2="496" x1="400" />
-            <wire x2="960" y1="320" y2="320" x1="400" />
-            <wire x2="960" y1="320" y2="496" x1="960" />
-            <wire x2="1056" y1="496" y2="496" x1="960" />
+            <wire x2="992" y1="320" y2="320" x1="400" />
+            <wire x2="992" y1="320" y2="496" x1="992" />
+            <wire x2="1056" y1="496" y2="496" x1="992" />
         </branch>
         <branch name="XLXN_15">
-            <wire x2="960" y1="560" y2="560" x1="800" />
-            <wire x2="960" y1="560" y2="624" x1="960" />
-            <wire x2="1056" y1="624" y2="624" x1="960" />
+            <wire x2="928" y1="496" y2="496" x1="800" />
+            <wire x2="928" y1="496" y2="624" x1="928" />
+            <wire x2="1056" y1="624" y2="624" x1="928" />
         </branch>
         <instance x="288" y="864" name="XLXI_4" orien="R270" />
         <branch name="XLXN_17">

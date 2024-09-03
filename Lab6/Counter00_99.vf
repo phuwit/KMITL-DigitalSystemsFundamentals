@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Counter00_99.vf
-// /___/   /\     Timestamp : 08/25/2024 23:45:10
+// /___/   /\     Timestamp : 09/02/2024 21:05:06
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -56,13 +56,11 @@ endmodule
 
 module Counter0_9_MUSER_Counter00_99(CE, 
                                      Clock, 
-                                     CEO, 
                                      Count, 
                                      TC);
 
     input CE;
     input Clock;
-   output CEO;
    output [3:0] Count;
    output TC;
    
@@ -70,7 +68,7 @@ module Counter0_9_MUSER_Counter00_99(CE,
    wire [3:0] Count_DUMMY;
    
    assign Count[3:0] = Count_DUMMY[3:0];
-   (* HU_SET = "XLXI_27_35" *) 
+   (* HU_SET = "XLXI_27_52" *) 
    CB4RE_HXILINX_Counter00_99  XLXI_27 (.C(Clock), 
                                        .CE(CE), 
                                        .R(XLXN_26), 
@@ -79,14 +77,14 @@ module Counter0_9_MUSER_Counter00_99(CE,
                                        .Q1(Count_DUMMY[1]), 
                                        .Q2(Count_DUMMY[2]), 
                                        .Q3(Count_DUMMY[3]), 
-                                       .TC(TC));
+                                       .TC());
    AND4B2  XLXI_28 (.I0(Count_DUMMY[0]), 
                    .I1(Count_DUMMY[2]), 
                    .I2(Count_DUMMY[1]), 
                    .I3(Count_DUMMY[3]), 
                    .O(XLXN_26));
    BUF  XLXI_29 (.I(XLXN_26), 
-                .O(CEO));
+                .O(TC));
 endmodule
 `timescale 1ns / 1ps
 
@@ -105,12 +103,10 @@ module Counter00_99(Clock,
    
    Counter0_9_MUSER_Counter00_99  XLXI_2 (.CE(XLXN_17), 
                                          .Clock(Clock), 
-                                         .CEO(XLXN_15), 
                                          .Count(Ones[3:0]), 
-                                         .TC());
+                                         .TC(XLXN_15));
    Counter0_9_MUSER_Counter00_99  XLXI_3 (.CE(XLXN_15), 
                                          .Clock(Clock), 
-                                         .CEO(), 
                                          .Count(Tens[3:0]), 
                                          .TC());
    BUF  XLXI_4 (.I(Enable), 

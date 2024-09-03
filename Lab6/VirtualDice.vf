@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : VirtualDice.vf
-// /___/   /\     Timestamp : 08/25/2024 23:50:50
+// /___/   /\     Timestamp : 09/02/2024 21:16:50
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -173,13 +173,11 @@ endmodule
 
 module Counter0_9_MUSER_VirtualDice(CE, 
                                     Clock, 
-                                    CEO, 
                                     Count, 
                                     TC);
 
     input CE;
     input Clock;
-   output CEO;
    output [3:0] Count;
    output TC;
    
@@ -187,7 +185,7 @@ module Counter0_9_MUSER_VirtualDice(CE,
    wire [3:0] Count_DUMMY;
    
    assign Count[3:0] = Count_DUMMY[3:0];
-   (* HU_SET = "XLXI_27_47" *) 
+   (* HU_SET = "XLXI_27_13" *) 
    CB4RE_HXILINX_VirtualDice  XLXI_27 (.C(Clock), 
                                       .CE(CE), 
                                       .R(XLXN_26), 
@@ -196,14 +194,14 @@ module Counter0_9_MUSER_VirtualDice(CE,
                                       .Q1(Count_DUMMY[1]), 
                                       .Q2(Count_DUMMY[2]), 
                                       .Q3(Count_DUMMY[3]), 
-                                      .TC(TC));
+                                      .TC());
    AND4B2  XLXI_28 (.I0(Count_DUMMY[0]), 
                    .I1(Count_DUMMY[2]), 
                    .I2(Count_DUMMY[1]), 
                    .I3(Count_DUMMY[3]), 
                    .O(XLXN_26));
    BUF  XLXI_29 (.I(XLXN_26), 
-                .O(CEO));
+                .O(TC));
 endmodule
 `timescale 1ns / 1ps
 
@@ -222,12 +220,10 @@ module Counter00_99_MUSER_VirtualDice(Clock,
    
    Counter0_9_MUSER_VirtualDice  XLXI_2 (.CE(XLXN_17), 
                                         .Clock(Clock), 
-                                        .CEO(XLXN_15), 
                                         .Count(Ones[3:0]), 
-                                        .TC());
+                                        .TC(XLXN_15));
    Counter0_9_MUSER_VirtualDice  XLXI_3 (.CE(XLXN_15), 
                                         .Clock(Clock), 
-                                        .CEO(), 
                                         .Count(Tens[3:0]), 
                                         .TC());
    BUF  XLXI_4 (.I(Enable), 
@@ -248,25 +244,25 @@ module Mux2_Bus4_1E_MUSER_VirtualDice(D0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_18_48" *) 
+   (* HU_SET = "XLXI_18_14" *) 
    M2_1E_HXILINX_VirtualDice  XLXI_18 (.D0(D0[0]), 
                                       .D1(D1[0]), 
                                       .E(E), 
                                       .S0(S0), 
                                       .O(O[0]));
-   (* HU_SET = "XLXI_19_49" *) 
+   (* HU_SET = "XLXI_19_15" *) 
    M2_1E_HXILINX_VirtualDice  XLXI_19 (.D0(D0[1]), 
                                       .D1(D1[1]), 
                                       .E(E), 
                                       .S0(S0), 
                                       .O(O[1]));
-   (* HU_SET = "XLXI_20_50" *) 
+   (* HU_SET = "XLXI_20_16" *) 
    M2_1E_HXILINX_VirtualDice  XLXI_20 (.D0(D0[2]), 
                                       .D1(D1[2]), 
                                       .E(E), 
                                       .S0(S0), 
                                       .O(O[2]));
-   (* HU_SET = "XLXI_21_51" *) 
+   (* HU_SET = "XLXI_21_17" *) 
    M2_1E_HXILINX_VirtualDice  XLXI_21 (.D0(D0[3]), 
                                       .D1(D1[3]), 
                                       .E(E), 
@@ -308,7 +304,7 @@ module Mux4_Bus4_1E_MUSER_VirtualDice(D0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_13_52" *) 
+   (* HU_SET = "XLXI_13_18" *) 
    M4_1E_HXILINX_VirtualDice  XLXI_13 (.D0(D0[0]), 
                                       .D1(D1[0]), 
                                       .D2(D2[0]), 
@@ -317,7 +313,7 @@ module Mux4_Bus4_1E_MUSER_VirtualDice(D0,
                                       .S0(S0), 
                                       .S1(S1), 
                                       .O(O[0]));
-   (* HU_SET = "XLXI_14_53" *) 
+   (* HU_SET = "XLXI_14_19" *) 
    M4_1E_HXILINX_VirtualDice  XLXI_14 (.D0(D0[1]), 
                                       .D1(D1[1]), 
                                       .D2(D2[1]), 
@@ -326,7 +322,7 @@ module Mux4_Bus4_1E_MUSER_VirtualDice(D0,
                                       .S0(S0), 
                                       .S1(S1), 
                                       .O(O[1]));
-   (* HU_SET = "XLXI_15_54" *) 
+   (* HU_SET = "XLXI_15_20" *) 
    M4_1E_HXILINX_VirtualDice  XLXI_15 (.D0(D0[2]), 
                                       .D1(D1[2]), 
                                       .D2(D2[2]), 
@@ -335,7 +331,7 @@ module Mux4_Bus4_1E_MUSER_VirtualDice(D0,
                                       .S0(S0), 
                                       .S1(S1), 
                                       .O(O[2]));
-   (* HU_SET = "XLXI_16_55" *) 
+   (* HU_SET = "XLXI_16_21" *) 
    M4_1E_HXILINX_VirtualDice  XLXI_16 (.D0(D0[3]), 
                                       .D1(D1[3]), 
                                       .D2(D2[3]), 
@@ -363,7 +359,7 @@ module LEDsDriver_MUSER_VirtualDice(A,
    wire XLXN_61;
    wire [3:0] ZEROS;
    
-   (* HU_SET = "XLXI_1_56" *) 
+   (* HU_SET = "XLXI_1_22" *) 
    COMP4_HXILINX_VirtualDice  XLXI_1 (.A0(A[0]), 
                                      .A1(A[1]), 
                                      .A2(A[2]), 
@@ -373,7 +369,7 @@ module LEDsDriver_MUSER_VirtualDice(A,
                                      .B2(B[2]), 
                                      .B3(B[3]), 
                                      .EQ(XLXN_61));
-   (* HU_SET = "XLXI_2_57" *) 
+   (* HU_SET = "XLXI_2_23" *) 
    COMP4_HXILINX_VirtualDice  XLXI_2 (.A0(A[0]), 
                                      .A1(A[1]), 
                                      .A2(A[2]), 
@@ -415,7 +411,7 @@ module Displayer_MUSER_VirtualDice(Clock,
     input Enable;
     input [3:0] Ones;
     input [3:0] Tens;
-   output [1:0] Common;
+   output [3:0] Common;
    output [3:0] LED;
    output [6:0] Segment;
    
@@ -424,6 +420,7 @@ module Displayer_MUSER_VirtualDice(Clock,
    wire XLXN_64;
    wire XLXN_65;
    wire XLXN_68;
+   wire [1:0] XLXN_80;
    
    SSEG_DEC  XLXI_1 (.BCD(XLXN_60[3:0]), 
                     .SSEG(Segment[6:0]));
@@ -432,14 +429,14 @@ module Displayer_MUSER_VirtualDice(Clock,
                                         .ENABLE(Enable), 
                                         .LED(LED[3:0]));
    Dec1_2_MUSER_VirtualDice  XLXI_5 (.A0(XLXN_68), 
-                                    .D(Common[1:0]));
+                                    .D(XLXN_80[1:0]));
    VCC  XLXI_10 (.P(XLXN_8));
    Mux2_Bus4_1E_MUSER_VirtualDice  XLXI_17 (.D0(Ones[3:0]), 
                                            .D1(Tens[3:0]), 
                                            .E(XLXN_8), 
                                            .S0(XLXN_68), 
                                            .O(XLXN_60[3:0]));
-   (* HU_SET = "XLXI_18_58" *) 
+   (* HU_SET = "XLXI_18_24" *) 
    FJKC_HXILINX_VirtualDice  XLXI_18 (.C(Clock), 
                                      .CLR(XLXN_65), 
                                      .J(XLXN_64), 
@@ -447,6 +444,12 @@ module Displayer_MUSER_VirtualDice(Clock,
                                      .Q(XLXN_68));
    GND  XLXI_19 (.G(XLXN_65));
    VCC  XLXI_20 (.P(XLXN_64));
+   BUF  XLXI_23 (.I(XLXN_80[0]), 
+                .O(Common[0]));
+   BUF  XLXI_24 (.I(XLXN_80[1]), 
+                .O(Common[1]));
+   VCC  XLXI_25 (.P(Common[3]));
+   VCC  XLXI_26 (.P(Common[2]));
 endmodule
 `timescale 1ns / 1ps
 
@@ -458,45 +461,53 @@ module VirtualDice(Clock,
 
     input Clock;
     input Enable;
-   output [1:0] Common;
+   output [3:0] Common;
    output [3:0] LED;
    output [6:0] Segment;
    
    wire [3:0] XLXN_1;
    wire [3:0] XLXN_2;
-   wire XLXN_12;
    wire XLXN_21;
    wire XLXN_27;
    wire XLXN_28;
    wire XLXN_31;
+   wire XLXN_34;
+   wire XLXN_37;
+   wire XLXN_38;
+   wire XLXN_49;
    
-   Displayer_MUSER_VirtualDice  XLXI_2 (.Clock(XLXN_12), 
+   Displayer_MUSER_VirtualDice  XLXI_2 (.Clock(XLXN_49), 
                                        .Enable(XLXN_21), 
                                        .Ones(XLXN_1[3:0]), 
                                        .Tens(XLXN_2[3:0]), 
-                                       .Common(Common[1:0]), 
+                                       .Common(Common[3:0]), 
                                        .LED(LED[3:0]), 
                                        .Segment(Segment[6:0]));
-   Counter00_99_MUSER_VirtualDice  XLXI_3 (.Clock(XLXN_12), 
+   Counter00_99_MUSER_VirtualDice  XLXI_3 (.Clock(XLXN_38), 
                                           .Enable(Enable), 
                                           .Ones(XLXN_1[3:0]), 
                                           .Tens(XLXN_2[3:0]));
    Counter0_9_MUSER_VirtualDice  XLXI_4 (.CE(XLXN_31), 
                                         .Clock(Clock), 
-                                        .CEO(XLXN_27), 
                                         .Count(), 
-                                        .TC());
+                                        .TC(XLXN_27));
    Counter0_9_MUSER_VirtualDice  XLXI_7 (.CE(XLXN_27), 
                                         .Clock(Clock), 
-                                        .CEO(XLXN_28), 
                                         .Count(), 
-                                        .TC());
+                                        .TC(XLXN_28));
    Counter0_9_MUSER_VirtualDice  XLXI_8 (.CE(XLXN_28), 
                                         .Clock(Clock), 
-                                        .CEO(XLXN_12), 
                                         .Count(), 
-                                        .TC());
+                                        .TC(XLXN_49));
    INV  XLXI_14 (.I(Enable), 
                 .O(XLXN_21));
    VCC  XLXI_15 (.P(XLXN_31));
+   (* HU_SET = "XLXI_16_25" *) 
+   FJKC_HXILINX_VirtualDice  XLXI_16 (.C(XLXN_49), 
+                                     .CLR(XLXN_37), 
+                                     .J(XLXN_34), 
+                                     .K(XLXN_34), 
+                                     .Q(XLXN_38));
+   VCC  XLXI_17 (.P(XLXN_34));
+   GND  XLXI_18 (.G(XLXN_37));
 endmodule

@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Displayer_drc.vf
-// /___/   /\     Timestamp : 08/25/2024 23:01:21
+// /___/   /\     Timestamp : 09/02/2024 20:59:27
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -97,6 +97,43 @@ module M4_1E_HXILINX_Displayer (O, D0, D1, D2, D3, E, S0, S1);
       end
    end
     
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Displayer(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
 endmodule
 `timescale 1ns / 1ps
 
@@ -280,12 +317,16 @@ module Displayer(Clock,
     input Enable;
     input [3:0] Ones;
     input [3:0] Tens;
-   output [1:0] Common;
+   output [3:0] Common;
    output [3:0] LED;
    output [6:0] Segment;
    
    wire XLXN_8;
    wire [3:0] XLXN_60;
+   wire XLXN_64;
+   wire XLXN_65;
+   wire XLXN_68;
+   wire [1:0] XLXN_80;
    
    SSEG_DEC  XLXI_1 (.BCD(XLXN_60[3:0]), 
                     .SSEG(Segment[6:0]));
@@ -293,12 +334,26 @@ module Displayer(Clock,
                                       .B(Tens[3:0]), 
                                       .ENABLE(Enable), 
                                       .LED(LED[3:0]));
-   Dec1_2_MUSER_Displayer  XLXI_5 (.A0(Clock), 
-                                  .D(Common[1:0]));
+   Dec1_2_MUSER_Displayer  XLXI_5 (.A0(XLXN_68), 
+                                  .D(XLXN_80[1:0]));
    VCC  XLXI_10 (.P(XLXN_8));
    Mux2_Bus4_1E_MUSER_Displayer  XLXI_17 (.D0(Ones[3:0]), 
                                          .D1(Tens[3:0]), 
                                          .E(XLXN_8), 
-                                         .S0(Clock), 
+                                         .S0(XLXN_68), 
                                          .O(XLXN_60[3:0]));
+   (* HU_SET = "XLXI_18_10" *) 
+   FJKC_HXILINX_Displayer  XLXI_18 (.C(Clock), 
+                                   .CLR(XLXN_65), 
+                                   .J(XLXN_64), 
+                                   .K(XLXN_64), 
+                                   .Q(XLXN_68));
+   GND  XLXI_19 (.G(XLXN_65));
+   VCC  XLXI_20 (.P(XLXN_64));
+   GND  XLXI_21 (.G(Common[3]));
+   GND  XLXI_22 (.G(Common[2]));
+   BUF  XLXI_23 (.I(XLXN_80[0]), 
+                .O(Common[0]));
+   BUF  XLXI_24 (.I(XLXN_80[1]), 
+                .O(Common[1]));
 endmodule

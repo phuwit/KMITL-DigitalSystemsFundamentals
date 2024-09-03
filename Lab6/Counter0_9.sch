@@ -9,21 +9,16 @@
         <signal name="Clock" />
         <signal name="CE" />
         <signal name="XLXN_26" />
-        <signal name="TC" />
         <signal name="Count(0)" />
         <signal name="Count(1)" />
         <signal name="Count(2)" />
         <signal name="Count(3:0)" />
         <signal name="Count(3)" />
-        <signal name="CEO" />
-        <signal name="XLXN_28" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_30" />
+        <signal name="TC" />
         <port polarity="Input" name="Clock" />
         <port polarity="Input" name="CE" />
-        <port polarity="Output" name="TC" />
         <port polarity="Output" name="Count(3:0)" />
-        <port polarity="Output" name="CEO" />
+        <port polarity="Output" name="TC" />
         <blockdef name="cb4re">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="320" y1="-192" y2="-192" x1="384" />
@@ -72,7 +67,7 @@
             <blockpin signalname="Count(1)" name="Q1" />
             <blockpin signalname="Count(2)" name="Q2" />
             <blockpin signalname="Count(3)" name="Q3" />
-            <blockpin signalname="TC" name="TC" />
+            <blockpin name="TC" />
         </block>
         <block symbolname="and4b2" name="XLXI_28">
             <blockpin signalname="Count(0)" name="I0" />
@@ -83,7 +78,7 @@
         </block>
         <block symbolname="buf" name="XLXI_29">
             <blockpin signalname="XLXN_26" name="I" />
-            <blockpin signalname="CEO" name="O" />
+            <blockpin signalname="TC" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="1900" height="1344">
@@ -104,10 +99,6 @@
             <wire x2="1168" y1="944" y2="944" x1="1152" />
             <wire x2="1168" y1="944" y2="1232" x1="1168" />
         </branch>
-        <branch name="TC">
-            <wire x2="768" y1="848" y2="848" x1="688" />
-        </branch>
-        <iomarker fontsize="28" x="688" y="848" name="TC" orien="R180" />
         <branch name="Count(3:0)">
             <wire x2="384" y1="528" y2="592" x1="384" />
             <wire x2="384" y1="592" y2="656" x1="384" />
@@ -128,10 +119,10 @@
             <wire x2="640" y1="720" y2="720" x1="480" />
         </branch>
         <instance x="1168" y="1264" name="XLXI_29" orien="R0" />
-        <branch name="CEO">
+        <branch name="TC">
             <wire x2="1424" y1="1232" y2="1232" x1="1392" />
         </branch>
-        <iomarker fontsize="28" x="1424" y="1232" name="CEO" orien="R0" />
+        <iomarker fontsize="28" x="1424" y="1232" name="TC" orien="R0" />
         <branch name="Count(1)">
             <wire x2="624" y1="336" y2="336" x1="160" />
             <wire x2="624" y1="336" y2="592" x1="624" />
