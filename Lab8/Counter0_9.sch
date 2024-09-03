@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drawing version="7">
+    <attr value="spartan6" name="DeviceFamilyName">
+        <trait delete="all:0" />
+        <trait editname="all:0" />
+        <trait edittrait="all:0" />
+    </attr>
+    <netlist>
+        <signal name="Clock" />
+        <signal name="CE" />
+        <signal name="XLXN_26" />
+        <signal name="Count(0)" />
+        <signal name="Count(1)" />
+        <signal name="Count(2)" />
+        <signal name="Count(3:0)" />
+        <signal name="Count(3)" />
+        <signal name="TC" />
+        <port polarity="Input" name="Clock" />
+        <port polarity="Input" name="CE" />
+        <port polarity="Output" name="Count(3:0)" />
+        <port polarity="Output" name="TC" />
+        <blockdef name="cb4re">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="320" y1="-192" y2="-192" x1="384" />
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="320" y1="-256" y2="-256" x1="384" />
+            <line x2="320" y1="-320" y2="-320" x1="384" />
+            <line x2="320" y1="-384" y2="-384" x1="384" />
+            <line x2="320" y1="-448" y2="-448" x1="384" />
+            <line x2="64" y1="-128" y2="-144" x1="80" />
+            <line x2="80" y1="-112" y2="-128" x1="64" />
+            <line x2="320" y1="-128" y2="-128" x1="384" />
+            <line x2="64" y1="-32" y2="-32" x1="192" />
+            <line x2="192" y1="-64" y2="-32" x1="192" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <rect width="256" x="64" y="-512" height="448" />
+        </blockdef>
+        <blockdef name="and4b2">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="40" y1="-64" y2="-64" x1="0" />
+            <circle r="12" cx="52" cy="-64" />
+            <line x2="40" y1="-128" y2="-128" x1="0" />
+            <circle r="12" cx="52" cy="-128" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="64" y1="-256" y2="-256" x1="0" />
+            <line x2="192" y1="-160" y2="-160" x1="256" />
+            <line x2="144" y1="-208" y2="-208" x1="64" />
+            <arc ex="144" ey="-208" sx="144" sy="-112" r="48" cx="144" cy="-160" />
+            <line x2="64" y1="-64" y2="-256" x1="64" />
+            <line x2="64" y1="-112" y2="-112" x1="144" />
+        </blockdef>
+        <blockdef name="buf">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="64" y1="-32" y2="-32" x1="0" />
+            <line x2="128" y1="-32" y2="-32" x1="224" />
+            <line x2="128" y1="0" y2="-32" x1="64" />
+            <line x2="64" y1="-32" y2="-64" x1="128" />
+            <line x2="64" y1="-64" y2="0" x1="64" />
+        </blockdef>
+        <block symbolname="cb4re" name="XLXI_27">
+            <blockpin signalname="Clock" name="C" />
+            <blockpin signalname="CE" name="CE" />
+            <blockpin signalname="XLXN_26" name="R" />
+            <blockpin name="CEO" />
+            <blockpin signalname="Count(0)" name="Q0" />
+            <blockpin signalname="Count(1)" name="Q1" />
+            <blockpin signalname="Count(2)" name="Q2" />
+            <blockpin signalname="Count(3)" name="Q3" />
+            <blockpin name="TC" />
+        </block>
+        <block symbolname="and4b2" name="XLXI_28">
+            <blockpin signalname="Count(0)" name="I0" />
+            <blockpin signalname="Count(2)" name="I1" />
+            <blockpin signalname="Count(1)" name="I2" />
+            <blockpin signalname="Count(3)" name="I3" />
+            <blockpin signalname="XLXN_26" name="O" />
+        </block>
+        <block symbolname="buf" name="XLXI_29">
+            <blockpin signalname="XLXN_26" name="I" />
+            <blockpin signalname="TC" name="O" />
+        </block>
+    </netlist>
+    <sheet sheetnum="1" width="1900" height="1344">
+        <attr value="CM" name="LengthUnitName" />
+        <attr value="4" name="GridsPerUnit" />
+        <branch name="Clock">
+            <wire x2="1216" y1="848" y2="848" x1="1152" />
+        </branch>
+        <iomarker fontsize="28" x="1216" y="848" name="Clock" orien="R0" />
+        <branch name="CE">
+            <wire x2="1216" y1="784" y2="784" x1="1152" />
+        </branch>
+        <iomarker fontsize="28" x="1216" y="784" name="CE" orien="R0" />
+        <instance x="352" y="928" name="XLXI_28" orien="M90" />
+        <branch name="XLXN_26">
+            <wire x2="192" y1="1184" y2="1232" x1="192" />
+            <wire x2="1168" y1="1232" y2="1232" x1="192" />
+            <wire x2="1168" y1="944" y2="944" x1="1152" />
+            <wire x2="1168" y1="944" y2="1232" x1="1168" />
+        </branch>
+        <branch name="Count(3:0)">
+            <wire x2="384" y1="528" y2="592" x1="384" />
+            <wire x2="384" y1="592" y2="656" x1="384" />
+            <wire x2="384" y1="656" y2="720" x1="384" />
+            <wire x2="384" y1="720" y2="1024" x1="384" />
+        </branch>
+        <iomarker fontsize="28" x="384" y="1024" name="Count(3:0)" orien="R90" />
+        <bustap x2="480" y1="720" y2="720" x1="384" />
+        <bustap x2="480" y1="656" y2="656" x1="384" />
+        <bustap x2="480" y1="592" y2="592" x1="384" />
+        <bustap x2="480" y1="528" y2="528" x1="384" />
+        <instance x="1152" y="976" name="XLXI_27" orien="M0" />
+        <branch name="Count(3)">
+            <wire x2="640" y1="320" y2="320" x1="96" />
+            <wire x2="640" y1="320" y2="720" x1="640" />
+            <wire x2="768" y1="720" y2="720" x1="640" />
+            <wire x2="96" y1="320" y2="928" x1="96" />
+            <wire x2="640" y1="720" y2="720" x1="480" />
+        </branch>
+        <instance x="1168" y="1264" name="XLXI_29" orien="R0" />
+        <branch name="TC">
+            <wire x2="1424" y1="1232" y2="1232" x1="1392" />
+        </branch>
+        <iomarker fontsize="28" x="1424" y="1232" name="TC" orien="R0" />
+        <branch name="Count(1)">
+            <wire x2="624" y1="336" y2="336" x1="160" />
+            <wire x2="624" y1="336" y2="592" x1="624" />
+            <wire x2="768" y1="592" y2="592" x1="624" />
+            <wire x2="160" y1="336" y2="928" x1="160" />
+            <wire x2="624" y1="592" y2="592" x1="480" />
+        </branch>
+        <branch name="Count(2)">
+            <wire x2="560" y1="400" y2="400" x1="224" />
+            <wire x2="560" y1="400" y2="656" x1="560" />
+            <wire x2="768" y1="656" y2="656" x1="560" />
+            <wire x2="224" y1="400" y2="928" x1="224" />
+            <wire x2="560" y1="656" y2="656" x1="480" />
+        </branch>
+        <branch name="Count(0)">
+            <wire x2="544" y1="416" y2="416" x1="288" />
+            <wire x2="544" y1="416" y2="528" x1="544" />
+            <wire x2="768" y1="528" y2="528" x1="544" />
+            <wire x2="288" y1="416" y2="928" x1="288" />
+            <wire x2="544" y1="528" y2="528" x1="480" />
+        </branch>
+    </sheet>
+</drawing>
