@@ -3,3 +3,5 @@ sch2sym -intstyle ise -family spartan6 -refsym processor /home/phuwit/Programmin
 sch2sym -intstyle ise -family spartan6 -w -refsym processor /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym processor /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sym 
 sch2sym -intstyle ise -family spartan6 -w -refsym processor /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym processor /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym processor /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.sym 

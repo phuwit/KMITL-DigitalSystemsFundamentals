@@ -36,17 +36,17 @@ Clock BTN1 to Pad
             |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
 Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
-LED<0>      |        10.358(R)|      SLOW  |         5.594(R)|      FAST  |BTN1_BUFGP        |   0.000|
-LED<1>      |        10.450(R)|      SLOW  |         5.675(R)|      FAST  |BTN1_BUFGP        |   0.000|
-LED<2>      |        10.758(R)|      SLOW  |         5.742(R)|      FAST  |BTN1_BUFGP        |   0.000|
-LED<3>      |        10.802(R)|      SLOW  |         5.775(R)|      FAST  |BTN1_BUFGP        |   0.000|
-SSD_SEG<0>  |        13.469(R)|      SLOW  |         6.651(R)|      FAST  |BTN1_BUFGP        |   0.000|
-SSD_SEG<1>  |        13.628(R)|      SLOW  |         6.583(R)|      FAST  |BTN1_BUFGP        |   0.000|
-SSD_SEG<2>  |        14.551(R)|      SLOW  |         7.139(R)|      FAST  |BTN1_BUFGP        |   0.000|
-SSD_SEG<3>  |        14.774(R)|      SLOW  |         7.271(R)|      FAST  |BTN1_BUFGP        |   0.000|
-SSD_SEG<4>  |        14.641(R)|      SLOW  |         7.185(R)|      FAST  |BTN1_BUFGP        |   0.000|
-SSD_SEG<5>  |        14.347(R)|      SLOW  |         7.411(R)|      FAST  |BTN1_BUFGP        |   0.000|
-SSD_SEG<6>  |        14.585(R)|      SLOW  |         7.249(R)|      FAST  |BTN1_BUFGP        |   0.000|
+LED<0>      |        11.473(R)|      SLOW  |         6.347(R)|      FAST  |BTN1_BUFGP        |   0.000|
+LED<1>      |        11.377(R)|      SLOW  |         6.328(R)|      FAST  |BTN1_BUFGP        |   0.000|
+LED<2>      |        11.520(R)|      SLOW  |         6.387(R)|      FAST  |BTN1_BUFGP        |   0.000|
+LED<3>      |        11.696(R)|      SLOW  |         6.512(R)|      FAST  |BTN1_BUFGP        |   0.000|
+SSD_SEG<0>  |        14.220(R)|      SLOW  |         7.276(R)|      FAST  |BTN1_BUFGP        |   0.000|
+SSD_SEG<1>  |        14.558(R)|      SLOW  |         7.486(R)|      FAST  |BTN1_BUFGP        |   0.000|
+SSD_SEG<2>  |        14.730(R)|      SLOW  |         7.615(R)|      FAST  |BTN1_BUFGP        |   0.000|
+SSD_SEG<3>  |        15.256(R)|      SLOW  |         7.828(R)|      FAST  |BTN1_BUFGP        |   0.000|
+SSD_SEG<4>  |        14.952(R)|      SLOW  |         7.756(R)|      FAST  |BTN1_BUFGP        |   0.000|
+SSD_SEG<5>  |        15.167(R)|      SLOW  |         8.029(R)|      FAST  |BTN1_BUFGP        |   0.000|
+SSD_SEG<6>  |        14.821(R)|      SLOW  |         7.797(R)|      FAST  |BTN1_BUFGP        |   0.000|
 ------------+-----------------+------------+-----------------+------------+------------------+--------+
 
 Clock to Setup on destination clock BTN1
@@ -62,129 +62,129 @@ Clock to Setup on destination clock OSC
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    2.131|         |    1.107|         |
+OSC            |    1.760|         |    1.220|         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-DIP<0>         |SSD_SEG<0>     |   16.115|
-DIP<0>         |SSD_SEG<1>     |   16.274|
-DIP<0>         |SSD_SEG<2>     |   17.197|
-DIP<0>         |SSD_SEG<3>     |   17.420|
-DIP<0>         |SSD_SEG<4>     |   17.287|
-DIP<0>         |SSD_SEG<5>     |   16.993|
-DIP<0>         |SSD_SEG<6>     |   17.231|
-DIP<1>         |SSD_SEG<0>     |   15.746|
-DIP<1>         |SSD_SEG<1>     |   15.905|
-DIP<1>         |SSD_SEG<2>     |   16.828|
-DIP<1>         |SSD_SEG<3>     |   17.051|
-DIP<1>         |SSD_SEG<4>     |   16.918|
-DIP<1>         |SSD_SEG<5>     |   16.624|
-DIP<1>         |SSD_SEG<6>     |   16.862|
-DIP<2>         |SSD_SEG<0>     |   15.718|
-DIP<2>         |SSD_SEG<1>     |   15.877|
-DIP<2>         |SSD_SEG<2>     |   16.800|
-DIP<2>         |SSD_SEG<3>     |   17.023|
-DIP<2>         |SSD_SEG<4>     |   16.890|
-DIP<2>         |SSD_SEG<5>     |   16.596|
-DIP<2>         |SSD_SEG<6>     |   16.834|
-DIP<3>         |SSD_SEG<0>     |   15.896|
-DIP<3>         |SSD_SEG<1>     |   16.055|
-DIP<3>         |SSD_SEG<2>     |   16.978|
-DIP<3>         |SSD_SEG<3>     |   17.201|
-DIP<3>         |SSD_SEG<4>     |   17.068|
-DIP<3>         |SSD_SEG<5>     |   16.774|
-DIP<3>         |SSD_SEG<6>     |   17.012|
-DIP<4>         |SSD_SEG<0>     |   15.206|
-DIP<4>         |SSD_SEG<1>     |   15.365|
-DIP<4>         |SSD_SEG<2>     |   16.288|
-DIP<4>         |SSD_SEG<3>     |   16.511|
-DIP<4>         |SSD_SEG<4>     |   16.378|
-DIP<4>         |SSD_SEG<5>     |   16.084|
-DIP<4>         |SSD_SEG<6>     |   16.322|
-DIP<5>         |SSD_SEG<0>     |   14.822|
-DIP<5>         |SSD_SEG<1>     |   14.981|
-DIP<5>         |SSD_SEG<2>     |   15.904|
-DIP<5>         |SSD_SEG<3>     |   16.127|
-DIP<5>         |SSD_SEG<4>     |   15.994|
-DIP<5>         |SSD_SEG<5>     |   15.700|
-DIP<5>         |SSD_SEG<6>     |   15.938|
-DIP<6>         |SSD_SEG<0>     |   13.928|
-DIP<6>         |SSD_SEG<1>     |   13.954|
-DIP<6>         |SSD_SEG<2>     |   14.877|
-DIP<6>         |SSD_SEG<3>     |   15.100|
-DIP<6>         |SSD_SEG<4>     |   14.967|
-DIP<6>         |SSD_SEG<5>     |   15.111|
-DIP<6>         |SSD_SEG<6>     |   14.973|
-DIP<7>         |SSD_SEG<0>     |   12.815|
-DIP<7>         |SSD_SEG<1>     |   12.765|
-DIP<7>         |SSD_SEG<2>     |   13.637|
-DIP<7>         |SSD_SEG<3>     |   13.960|
-DIP<7>         |SSD_SEG<4>     |   13.775|
-DIP<7>         |SSD_SEG<5>     |   13.998|
-DIP<7>         |SSD_SEG<6>     |   13.860|
-SW<0>          |SSD_SEG<0>     |   15.549|
-SW<0>          |SSD_SEG<1>     |   15.708|
-SW<0>          |SSD_SEG<2>     |   16.631|
-SW<0>          |SSD_SEG<3>     |   16.854|
-SW<0>          |SSD_SEG<4>     |   16.721|
-SW<0>          |SSD_SEG<5>     |   16.427|
-SW<0>          |SSD_SEG<6>     |   16.665|
-SW<1>          |SSD_SEG<0>     |   15.328|
-SW<1>          |SSD_SEG<1>     |   15.487|
-SW<1>          |SSD_SEG<2>     |   16.410|
-SW<1>          |SSD_SEG<3>     |   16.633|
-SW<1>          |SSD_SEG<4>     |   16.500|
-SW<1>          |SSD_SEG<5>     |   16.206|
-SW<1>          |SSD_SEG<6>     |   16.444|
-SW<2>          |SSD_SEG<0>     |   15.397|
-SW<2>          |SSD_SEG<1>     |   15.556|
-SW<2>          |SSD_SEG<2>     |   16.479|
-SW<2>          |SSD_SEG<3>     |   16.702|
-SW<2>          |SSD_SEG<4>     |   16.569|
-SW<2>          |SSD_SEG<5>     |   16.275|
-SW<2>          |SSD_SEG<6>     |   16.513|
-SW<3>          |SSD_SEG<0>     |   15.469|
-SW<3>          |SSD_SEG<1>     |   15.628|
-SW<3>          |SSD_SEG<2>     |   16.551|
-SW<3>          |SSD_SEG<3>     |   16.774|
-SW<3>          |SSD_SEG<4>     |   16.641|
-SW<3>          |SSD_SEG<5>     |   16.347|
-SW<3>          |SSD_SEG<6>     |   16.585|
-SW<4>          |SSD_SEG<0>     |   14.910|
-SW<4>          |SSD_SEG<1>     |   15.069|
-SW<4>          |SSD_SEG<2>     |   15.992|
-SW<4>          |SSD_SEG<3>     |   16.215|
-SW<4>          |SSD_SEG<4>     |   16.082|
-SW<4>          |SSD_SEG<5>     |   15.788|
-SW<4>          |SSD_SEG<6>     |   16.026|
-SW<5>          |SSD_SEG<0>     |   14.004|
-SW<5>          |SSD_SEG<1>     |   14.163|
-SW<5>          |SSD_SEG<2>     |   15.086|
-SW<5>          |SSD_SEG<3>     |   15.309|
-SW<5>          |SSD_SEG<4>     |   15.176|
-SW<5>          |SSD_SEG<5>     |   15.041|
-SW<5>          |SSD_SEG<6>     |   15.120|
-SW<6>          |SSD_SEG<0>     |   13.305|
-SW<6>          |SSD_SEG<1>     |   13.331|
-SW<6>          |SSD_SEG<2>     |   14.254|
-SW<6>          |SSD_SEG<3>     |   14.477|
-SW<6>          |SSD_SEG<4>     |   14.344|
-SW<6>          |SSD_SEG<5>     |   14.488|
-SW<6>          |SSD_SEG<6>     |   14.350|
-SW<7>          |SSD_SEG<0>     |   12.505|
-SW<7>          |SSD_SEG<1>     |   12.455|
-SW<7>          |SSD_SEG<2>     |   13.327|
-SW<7>          |SSD_SEG<3>     |   13.650|
-SW<7>          |SSD_SEG<4>     |   13.465|
-SW<7>          |SSD_SEG<5>     |   13.688|
-SW<7>          |SSD_SEG<6>     |   13.550|
+DIP<0>         |SSD_SEG<0>     |   12.680|
+DIP<0>         |SSD_SEG<1>     |   13.018|
+DIP<0>         |SSD_SEG<2>     |   13.279|
+DIP<0>         |SSD_SEG<3>     |   13.805|
+DIP<0>         |SSD_SEG<4>     |   13.490|
+DIP<0>         |SSD_SEG<5>     |   13.747|
+DIP<0>         |SSD_SEG<6>     |   13.392|
+DIP<1>         |SSD_SEG<0>     |   12.990|
+DIP<1>         |SSD_SEG<1>     |   13.328|
+DIP<1>         |SSD_SEG<2>     |   13.595|
+DIP<1>         |SSD_SEG<3>     |   14.121|
+DIP<1>         |SSD_SEG<4>     |   13.806|
+DIP<1>         |SSD_SEG<5>     |   13.937|
+DIP<1>         |SSD_SEG<6>     |   13.591|
+DIP<2>         |SSD_SEG<0>     |   12.647|
+DIP<2>         |SSD_SEG<1>     |   12.985|
+DIP<2>         |SSD_SEG<2>     |   13.248|
+DIP<2>         |SSD_SEG<3>     |   13.774|
+DIP<2>         |SSD_SEG<4>     |   13.459|
+DIP<2>         |SSD_SEG<5>     |   13.594|
+DIP<2>         |SSD_SEG<6>     |   13.248|
+DIP<3>         |SSD_SEG<0>     |   11.968|
+DIP<3>         |SSD_SEG<1>     |   12.698|
+DIP<3>         |SSD_SEG<2>     |   13.295|
+DIP<3>         |SSD_SEG<3>     |   13.821|
+DIP<3>         |SSD_SEG<4>     |   13.506|
+DIP<3>         |SSD_SEG<5>     |   13.447|
+DIP<3>         |SSD_SEG<6>     |   13.242|
+DIP<4>         |SSD_SEG<0>     |   12.110|
+DIP<4>         |SSD_SEG<1>     |   12.840|
+DIP<4>         |SSD_SEG<2>     |   13.437|
+DIP<4>         |SSD_SEG<3>     |   13.963|
+DIP<4>         |SSD_SEG<4>     |   13.648|
+DIP<4>         |SSD_SEG<5>     |   13.589|
+DIP<4>         |SSD_SEG<6>     |   13.384|
+DIP<5>         |SSD_SEG<0>     |   12.477|
+DIP<5>         |SSD_SEG<1>     |   13.207|
+DIP<5>         |SSD_SEG<2>     |   13.804|
+DIP<5>         |SSD_SEG<3>     |   14.330|
+DIP<5>         |SSD_SEG<4>     |   14.015|
+DIP<5>         |SSD_SEG<5>     |   13.956|
+DIP<5>         |SSD_SEG<6>     |   13.751|
+DIP<6>         |SSD_SEG<0>     |   12.410|
+DIP<6>         |SSD_SEG<1>     |   13.140|
+DIP<6>         |SSD_SEG<2>     |   13.737|
+DIP<6>         |SSD_SEG<3>     |   14.263|
+DIP<6>         |SSD_SEG<4>     |   13.948|
+DIP<6>         |SSD_SEG<5>     |   13.889|
+DIP<6>         |SSD_SEG<6>     |   13.684|
+DIP<7>         |SSD_SEG<0>     |   12.295|
+DIP<7>         |SSD_SEG<1>     |   13.025|
+DIP<7>         |SSD_SEG<2>     |   13.622|
+DIP<7>         |SSD_SEG<3>     |   14.148|
+DIP<7>         |SSD_SEG<4>     |   13.833|
+DIP<7>         |SSD_SEG<5>     |   13.774|
+DIP<7>         |SSD_SEG<6>     |   13.569|
+SW<0>          |SSD_SEG<0>     |   13.130|
+SW<0>          |SSD_SEG<1>     |   13.468|
+SW<0>          |SSD_SEG<2>     |   13.829|
+SW<0>          |SSD_SEG<3>     |   14.355|
+SW<0>          |SSD_SEG<4>     |   14.040|
+SW<0>          |SSD_SEG<5>     |   14.099|
+SW<0>          |SSD_SEG<6>     |   13.776|
+SW<1>          |SSD_SEG<0>     |   13.833|
+SW<1>          |SSD_SEG<1>     |   14.171|
+SW<1>          |SSD_SEG<2>     |   14.576|
+SW<1>          |SSD_SEG<3>     |   15.102|
+SW<1>          |SSD_SEG<4>     |   14.787|
+SW<1>          |SSD_SEG<5>     |   14.780|
+SW<1>          |SSD_SEG<6>     |   14.523|
+SW<2>          |SSD_SEG<0>     |   13.422|
+SW<2>          |SSD_SEG<1>     |   13.760|
+SW<2>          |SSD_SEG<2>     |   14.253|
+SW<2>          |SSD_SEG<3>     |   14.779|
+SW<2>          |SSD_SEG<4>     |   14.464|
+SW<2>          |SSD_SEG<5>     |   14.405|
+SW<2>          |SSD_SEG<6>     |   14.200|
+SW<3>          |SSD_SEG<0>     |   12.280|
+SW<3>          |SSD_SEG<1>     |   13.010|
+SW<3>          |SSD_SEG<2>     |   13.607|
+SW<3>          |SSD_SEG<3>     |   14.133|
+SW<3>          |SSD_SEG<4>     |   13.818|
+SW<3>          |SSD_SEG<5>     |   13.759|
+SW<3>          |SSD_SEG<6>     |   13.554|
+SW<4>          |SSD_SEG<0>     |   12.124|
+SW<4>          |SSD_SEG<1>     |   12.854|
+SW<4>          |SSD_SEG<2>     |   13.451|
+SW<4>          |SSD_SEG<3>     |   13.977|
+SW<4>          |SSD_SEG<4>     |   13.662|
+SW<4>          |SSD_SEG<5>     |   13.603|
+SW<4>          |SSD_SEG<6>     |   13.398|
+SW<5>          |SSD_SEG<0>     |   12.334|
+SW<5>          |SSD_SEG<1>     |   13.064|
+SW<5>          |SSD_SEG<2>     |   13.661|
+SW<5>          |SSD_SEG<3>     |   14.187|
+SW<5>          |SSD_SEG<4>     |   13.872|
+SW<5>          |SSD_SEG<5>     |   13.813|
+SW<5>          |SSD_SEG<6>     |   13.608|
+SW<6>          |SSD_SEG<0>     |   12.390|
+SW<6>          |SSD_SEG<1>     |   13.120|
+SW<6>          |SSD_SEG<2>     |   13.717|
+SW<6>          |SSD_SEG<3>     |   14.243|
+SW<6>          |SSD_SEG<4>     |   13.928|
+SW<6>          |SSD_SEG<5>     |   13.869|
+SW<6>          |SSD_SEG<6>     |   13.664|
+SW<7>          |SSD_SEG<0>     |   12.033|
+SW<7>          |SSD_SEG<1>     |   12.763|
+SW<7>          |SSD_SEG<2>     |   13.360|
+SW<7>          |SSD_SEG<3>     |   13.886|
+SW<7>          |SSD_SEG<4>     |   13.571|
+SW<7>          |SSD_SEG<5>     |   13.512|
+SW<7>          |SSD_SEG<6>     |   13.307|
 ---------------+---------------+---------+
 
 
-Analysis completed Tue Sep 17 15:26:04 2024 
+Analysis completed Tue Sep 17 15:54:24 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:

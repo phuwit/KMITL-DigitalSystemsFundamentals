@@ -15,38 +15,6 @@ Checking Constraint Associations...
 Done...
 
 Checking expanded design ...
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<15>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_136<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<15>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_137<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<15>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_139<8>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<15>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<14>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<13>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<12>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<11>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<10>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<9>' has no driver
-WARNING:NgdBuild:452 - logical net 'XLXI_2/XLXI_26/XLXN_138<8>' has no driver
 
 Partition Implementation Status
 -------------------------------
@@ -57,9 +25,9 @@ Partition Implementation Status
 
 NGDBUILD Design Results Summary:
   Number of errors:     0
-  Number of warnings:  32
+  Number of warnings:   0
 
-Total memory usage is 389332 kilobytes
+Total memory usage is 388948 kilobytes
 
 Writing NGD file "main.ngd" ...
 Total REAL time to NGDBUILD completion:  1 sec

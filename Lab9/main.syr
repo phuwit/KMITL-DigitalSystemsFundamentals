@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.02 secs
+Total CPU time to Xst completion: 0.03 secs
  
 --> 
 Reading design: main.prj
@@ -123,8 +123,6 @@ Parsing module <SSEG_B>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/SSEG_A.vf" into library work
 Parsing module <OR6_HXILINX_SSEG_A>.
 Parsing module <SSEG_A>.
-Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/wtb16.vf" into library work
-Parsing module <wtb16>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/wtb8.vf" into library work
 Parsing module <wtb8>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/btw8.vf" into library work
@@ -144,24 +142,13 @@ Parsing module <M4_1E_HXILINX_Mux4_Bus4_1E>.
 Parsing module <Mux4_Bus4_1E>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/xor8_sep.vf" into library work
 Parsing module <xor8_sep>.
-Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/sub8.vf" into library work
-Parsing module <INV16_HXILINX_sub8>.
-Parsing module <ADD16_HXILINX_sub8>.
-Parsing module <ADD8_HXILINX_sub8>.
-Parsing module <INV8_HXILINX_sub8>.
-Parsing module <wtb16_MUSER_sub8>.
-Parsing module <sub8>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/shl8.vf" into library work
 Parsing module <shl8>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/processor.vf" into library work
-Parsing module <INV16_HXILINX_processor>.
-Parsing module <ADD16_HXILINX_processor>.
 Parsing module <ADD8_HXILINX_processor>.
-Parsing module <INV8_HXILINX_processor>.
+Parsing module <ADSU8_HXILINX_processor>.
 Parsing module <CB2CE_HXILINX_processor>.
 Parsing module <xor8_sep_MUSER_processor>.
-Parsing module <wtb16_MUSER_processor>.
-Parsing module <sub8_MUSER_processor>.
 Parsing module <shl8_MUSER_processor>.
 Parsing module <processor>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/displayer.vf" into library work
@@ -171,17 +158,13 @@ Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamental
 Parsing module <FJKC_HXILINX_ClockDiv1K>.
 Parsing module <ClockDiv1K>.
 Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" into library work
-Parsing module <INV16_HXILINX_main>.
-Parsing module <ADD16_HXILINX_main>.
 Parsing module <ADD8_HXILINX_main>.
-Parsing module <INV8_HXILINX_main>.
+Parsing module <ADSU8_HXILINX_main>.
 Parsing module <FJKC_HXILINX_main>.
 Parsing module <D2_4E_HXILINX_main>.
 Parsing module <CB2CE_HXILINX_main>.
 Parsing module <ClockDiv1K_MUSER_main>.
 Parsing module <xor8_sep_MUSER_main>.
-Parsing module <wtb16_MUSER_main>.
-Parsing module <sub8_MUSER_main>.
 Parsing module <shl8_MUSER_main>.
 Parsing module <processor_MUSER_main>.
 Parsing module <displayer_MUSER_main>.
@@ -248,7 +231,7 @@ Elaborating module <BUF>.
 Elaborating module <processor_MUSER_main>.
 
 Elaborating module <CB2CE_HXILINX_main>.
-WARNING:HDLCompiler:413 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 173: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 162: Result of 3-bit expression is truncated to fit in 2-bit target.
 
 Elaborating module <ADD8_HXILINX_main>.
 
@@ -258,21 +241,12 @@ Elaborating module <btw8>.
 
 Elaborating module <wtb8>.
 
-Elaborating module <sub8_MUSER_main>.
-
-Elaborating module <ADD16_HXILINX_main>.
-
-Elaborating module <INV8_HXILINX_main>.
-
-Elaborating module <wtb16_MUSER_main>.
-
-Elaborating module <INV16_HXILINX_main>.
-WARNING:HDLCompiler:552 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 555: Input port CI is not connected on this instance
-
 Elaborating module <xor8_sep_MUSER_main>.
 
 Elaborating module <XOR2>.
-WARNING:HDLCompiler:552 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 787: Input port CI is not connected on this instance
+
+Elaborating module <ADSU8_HXILINX_main>.
+WARNING:HDLCompiler:552 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 500: Input port CI is not connected on this instance
 
 Elaborating module <ClockDiv1K_MUSER_main>.
 
@@ -288,14 +262,14 @@ Elaborating module <D2_4E_HXILINX_main>.
 
 Synthesizing Unit <main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Set property "HU_SET = XLXI_4_55" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_30" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <main> synthesized.
 
 Synthesizing Unit <displayer_MUSER_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Set property "HU_SET = XLXI_4_54" for instance <XLXI_4>.
+    Set property "HU_SET = XLXI_4_29" for instance <XLXI_4>.
     Summary:
 	no macro.
 Unit <displayer_MUSER_main> synthesized.
@@ -383,13 +357,16 @@ Unit <FJKC_HXILINX_main> synthesized.
 
 Synthesizing Unit <processor_MUSER_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Set property "HU_SET = XLXI_1_52" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_23_53" for instance <XLXI_23>.
+    Set property "HU_SET = XLXI_1_26" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_23_27" for instance <XLXI_23>.
+    Set property "HU_SET = XLXI_30_28" for instance <XLXI_30>.
 WARNING:Xst:2898 - Port 'CI', unconnected in block instance 'XLXI_23', is tied to GND.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 768: Output port <CEO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 768: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 787: Output port <CO> of the instance <XLXI_23> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 787: Output port <OFL> of the instance <XLXI_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 481: Output port <CEO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 481: Output port <TC> of the instance <XLXI_1> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 500: Output port <CO> of the instance <XLXI_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 500: Output port <OFL> of the instance <XLXI_23> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 521: Output port <CO> of the instance <XLXI_30> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 521: Output port <OFL> of the instance <XLXI_30> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <processor_MUSER_main> synthesized.
@@ -398,7 +375,7 @@ Synthesizing Unit <CB2CE_HXILINX_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
     Found 1-bit register for signal <Q1>.
     Found 1-bit register for signal <Q0>.
-    Found 2-bit adder for signal <Q1_GND_29_o_add_0_OUT> created at line 173.
+    Found 2-bit adder for signal <Q1_GND_29_o_add_0_OUT> created at line 162.
     Summary:
 	inferred   1 Adder/Subtractor(s).
 	inferred   2 D-type flip-flop(s).
@@ -406,15 +383,14 @@ Unit <CB2CE_HXILINX_main> synthesized.
 
 Synthesizing Unit <ADD8_HXILINX_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Found 9-bit adder for signal <n0019> created at line 63.
-    Found 9-bit adder for signal <n0010> created at line 63.
+    Found 9-bit adder for signal <n0010> created at line 34.
     Summary:
-	inferred   2 Adder/Subtractor(s).
+	inferred   1 Adder/Subtractor(s).
 Unit <ADD8_HXILINX_main> synthesized.
 
 Synthesizing Unit <shl8_MUSER_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 720: Output port <O7> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 431: Output port <O7> of the instance <XLXI_2> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <shl8_MUSER_main> synthesized.
@@ -431,71 +407,34 @@ Synthesizing Unit <wtb8>.
 	no macro.
 Unit <wtb8> synthesized.
 
-Synthesizing Unit <sub8_MUSER_main>.
-    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Set property "HU_SET = XLXI_1_50" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_22_49" for instance <XLXI_22>.
-    Set property "HU_SET = XLXI_57_45" for instance <XLXI_57>.
-    Set property "HU_SET = XLXI_58_46" for instance <XLXI_58>.
-    Set property "HU_SET = XLXI_73_47" for instance <XLXI_73>.
-    Set property "HU_SET = XLXI_74_48" for instance <XLXI_74>.
-    Set property "HU_SET = XLXI_81_51" for instance <XLXI_81>.
-WARNING:Xst:2898 - Port 'CI', unconnected in block instance 'XLXI_1', is tied to GND.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 555: Output port <CO> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 555: Output port <OFL> of the instance <XLXI_1> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 633: Output port <CO> of the instance <XLXI_57> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 633: Output port <OFL> of the instance <XLXI_57> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 640: Output port <CO> of the instance <XLXI_58> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 640: Output port <OFL> of the instance <XLXI_58> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 687: Output port <CO> of the instance <XLXI_81> is unconnected or connected to loadless signal.
-INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" line 687: Output port <OFL> of the instance <XLXI_81> is unconnected or connected to loadless signal.
-    Summary:
-	no macro.
-Unit <sub8_MUSER_main> synthesized.
-
-Synthesizing Unit <ADD16_HXILINX_main>.
-    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Found 17-bit adder for signal <n0019> created at line 46.
-    Found 17-bit adder for signal <n0010> created at line 46.
-    Summary:
-	inferred   2 Adder/Subtractor(s).
-Unit <ADD16_HXILINX_main> synthesized.
-
-Synthesizing Unit <INV8_HXILINX_main>.
-    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Summary:
-	no macro.
-Unit <INV8_HXILINX_main> synthesized.
-
-Synthesizing Unit <wtb16_MUSER_main>.
-    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Summary:
-	no macro.
-Unit <wtb16_MUSER_main> synthesized.
-
-Synthesizing Unit <INV16_HXILINX_main>.
-    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Summary:
-	no macro.
-Unit <INV16_HXILINX_main> synthesized.
-
 Synthesizing Unit <xor8_sep_MUSER_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
     Summary:
 	no macro.
 Unit <xor8_sep_MUSER_main> synthesized.
 
+Synthesizing Unit <ADSU8_HXILINX_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
+    Found 9-bit subtractor for signal <GND_36_o_GND_36_o_sub_3_OUT> created at line 59.
+    Found 9-bit subtractor for signal <GND_36_o_GND_36_o_sub_4_OUT> created at line 59.
+    Found 9-bit adder for signal <n0039> created at line 57.
+    Found 9-bit adder for signal <BUS_0001_GND_36_o_add_1_OUT> created at line 57.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred   4 Multiplexer(s).
+Unit <ADSU8_HXILINX_main> synthesized.
+
 Synthesizing Unit <ClockDiv1K_MUSER_main>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf".
-    Set property "HU_SET = XLXI_1_36" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_37" for instance <XLXI_2>.
-    Set property "HU_SET = XLXI_3_38" for instance <XLXI_3>.
-    Set property "HU_SET = XLXI_28_39" for instance <XLXI_28>.
-    Set property "HU_SET = XLXI_29_40" for instance <XLXI_29>.
-    Set property "HU_SET = XLXI_30_41" for instance <XLXI_30>.
-    Set property "HU_SET = XLXI_40_42" for instance <XLXI_40>.
-    Set property "HU_SET = XLXI_41_43" for instance <XLXI_41>.
-    Set property "HU_SET = XLXI_42_44" for instance <XLXI_42>.
+    Set property "HU_SET = XLXI_1_17" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_18" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_19" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_28_20" for instance <XLXI_28>.
+    Set property "HU_SET = XLXI_29_21" for instance <XLXI_29>.
+    Set property "HU_SET = XLXI_30_22" for instance <XLXI_30>.
+    Set property "HU_SET = XLXI_40_23" for instance <XLXI_40>.
+    Set property "HU_SET = XLXI_41_24" for instance <XLXI_41>.
+    Set property "HU_SET = XLXI_42_25" for instance <XLXI_42>.
     Summary:
 	no macro.
 Unit <ClockDiv1K_MUSER_main> synthesized.
@@ -510,17 +449,19 @@ Unit <D2_4E_HXILINX_main> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 11
- 17-bit adder                                          : 6
+# Adders/Subtractors                                   : 4
  2-bit adder                                           : 1
- 9-bit adder                                           : 4
+ 9-bit adder                                           : 1
+ 9-bit addsub                                          : 2
 # Registers                                            : 12
  1-bit register                                        : 12
-# Multiplexers                                         : 48
- 1-bit 2-to-1 multiplexer                              : 36
+# Multiplexers                                         : 52
+ 1-bit 2-to-1 multiplexer                              : 38
  1-bit 4-to-1 multiplexer                              : 12
+ 9-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
@@ -531,15 +472,16 @@ Macro Statistics
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 6
- 17-bit adder carry in                                 : 3
+# Adders/Subtractors                                   : 4
  2-bit adder                                           : 1
- 9-bit adder carry in                                  : 2
+ 9-bit adder                                           : 1
+ 9-bit addsub                                          : 2
 # Registers                                            : 18
  Flip-Flops                                            : 18
-# Multiplexers                                         : 48
- 1-bit 2-to-1 multiplexer                              : 36
+# Multiplexers                                         : 52
+ 1-bit 2-to-1 multiplexer                              : 38
  1-bit 4-to-1 multiplexer                              : 12
+ 9-bit 2-to-1 multiplexer                              : 2
 
 =========================================================================
 
@@ -551,9 +493,11 @@ Optimizing unit <main> ...
 
 Optimizing unit <processor_MUSER_main> ...
 
+Optimizing unit <btw8> ...
+
 Optimizing unit <wtb8> ...
 
-Optimizing unit <wtb16_MUSER_main> ...
+Optimizing unit <xor8_sep_MUSER_main> ...
 
 Optimizing unit <ClockDiv1K_MUSER_main> ...
 
@@ -561,11 +505,7 @@ Optimizing unit <displayer_MUSER_main> ...
 
 Optimizing unit <ADD8_HXILINX_main> ...
 
-Optimizing unit <INV16_HXILINX_main> ...
-
-Optimizing unit <ADD16_HXILINX_main> ...
-
-Optimizing unit <INV8_HXILINX_main> ...
+Optimizing unit <ADSU8_HXILINX_main> ...
 
 Optimizing unit <CB2CE_HXILINX_main> ...
 
@@ -611,7 +551,7 @@ Top Level Output File Name         : main.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 326
+# BELS                             : 210
 #      AND2                        : 5
 #      AND2B1                      : 16
 #      AND2B2                      : 6
@@ -619,19 +559,19 @@ Primitive and Black Box Usage:
 #      AND3B1                      : 6
 #      AND3B2                      : 2
 #      AND3B3                      : 2
-#      BUF                         : 89
-#      GND                         : 1
-#      INV                         : 35
-#      LUT2                        : 54
-#      LUT3                        : 7
+#      BUF                         : 41
+#      GND                         : 2
+#      INV                         : 19
+#      LUT2                        : 22
+#      LUT3                        : 15
 #      LUT6                        : 9
-#      MUXCY                       : 35
+#      MUXCY                       : 21
 #      OR2                         : 3
 #      OR4                         : 1
 #      OR5                         : 5
-#      VCC                         : 1
+#      VCC                         : 2
 #      XOR2                        : 8
-#      XORCY                       : 40
+#      XORCY                       : 24
 # FlipFlops/Latches                : 18
 #      FD_1                        : 6
 #      FDC                         : 7
@@ -650,14 +590,14 @@ Selected Device : 6slx9tqg144-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              18  out of  11440     0%  
- Number of Slice LUTs:                  105  out of   5720     1%  
-    Number used as Logic:               105  out of   5720     1%  
+ Number of Slice LUTs:                   65  out of   5720     1%  
+    Number used as Logic:                65  out of   5720     1%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    123
-   Number with an unused Flip Flop:     105  out of    123    85%  
-   Number with an unused LUT:            18  out of    123    14%  
-   Number of fully used LUT-FF pairs:     0  out of    123     0%  
+ Number of LUT Flip Flop pairs used:     83
+   Number with an unused Flip Flop:      65  out of     83    78%  
+   Number with an unused LUT:            18  out of     83    21%  
+   Number of fully used LUT-FF pairs:     0  out of     83     0%  
    Number of unique control sets:        17
 
 IO Utilization: 
@@ -713,7 +653,7 @@ Speed Grade: -3
    Minimum period: 2.584ns (Maximum Frequency: 386.937MHz)
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: 9.887ns
-   Maximum combinational path delay: 17.833ns
+   Maximum combinational path delay: 13.466ns
 
 Timing Details:
 ---------------
@@ -961,42 +901,22 @@ Offset:              8.681ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 50035 / 7
+  Total number of paths / destination ports: 10371 / 7
 -------------------------------------------------------------------------
-Delay:               17.833ns (Levels of Logic = 27)
-  Source:            SW<0> (PAD)
+Delay:               13.466ns (Levels of Logic = 12)
+  Source:            SW<3> (PAD)
   Destination:       SSD_SEG<0> (PAD)
 
-  Data Path: SW<0> to SSD_SEG<0>
+  Data Path: SW<3> to SSD_SEG<0>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.222   0.683  SW_0_IBUF (SW_0_IBUF)
-     BUF:I->O              1   0.568   0.579  XLXI_2/XLXI_26/XLXI_34/XLXI_1 (XLXI_2/XLXI_26/XLXN_84)
-     BUF:I->O              1   0.568   0.579  XLXI_2/XLXI_26/XLXI_38/XLXI_1 (XLXI_2/XLXI_26/XLXN_134<0>)
-     begin scope: 'XLXI_2/XLXI_26/XLXI_73:I<0>'
-     INV:I->O              1   0.206   0.684  O<0>1_INV_0 (O<0>)
-     end scope: 'XLXI_2/XLXI_26/XLXI_73:O<0>'
-     begin scope: 'XLXI_2/XLXI_26/XLXI_58:A<0>'
-     LUT2:I0->O            1   0.203   0.000  Madd_n0010_Madd_lut<0> (Madd_n0010_Madd_lut<0>)
-     MUXCY:S->O            1   0.172   0.000  Madd_n0010_Madd_cy<0> (Madd_n0010_Madd_cy<0>)
-     XORCY:CI->O           1   0.180   0.684  Madd_n0010_Madd_xor<1> (S<1>)
-     end scope: 'XLXI_2/XLXI_26/XLXI_58:S<1>'
-     begin scope: 'XLXI_2/XLXI_26/XLXI_1:A<1>'
-     LUT2:I0->O            1   0.203   0.000  Madd_n0010_Madd_lut<1> (Madd_n0010_Madd_lut<1>)
-     MUXCY:S->O            1   0.172   0.000  Madd_n0010_Madd_cy<1> (Madd_n0010_Madd_cy<1>)
-     XORCY:CI->O           1   0.180   0.579  Madd_n0010_Madd_xor<2> (S<2>)
-     end scope: 'XLXI_2/XLXI_26/XLXI_1:S<2>'
-     begin scope: 'XLXI_2/XLXI_26/XLXI_22:I<2>'
-     INV:I->O              1   0.206   0.684  O<2>1_INV_0 (O<2>)
-     end scope: 'XLXI_2/XLXI_26/XLXI_22:O<2>'
-     begin scope: 'XLXI_2/XLXI_26/XLXI_81:A<2>'
-     LUT2:I0->O            1   0.203   0.000  Madd_n0010_Madd_lut<2> (Madd_n0010_Madd_lut<2>)
-     MUXCY:S->O            1   0.172   0.000  Madd_n0010_Madd_cy<2> (Madd_n0010_Madd_cy<2>)
-     XORCY:CI->O           1   0.180   0.808  Madd_n0010_Madd_xor<3> (S<3>)
-     end scope: 'XLXI_2/XLXI_26/XLXI_81:S<3>'
-     begin scope: 'XLXI_2/XLXI_9/XLXI_16:D1'
-     LUT6:I3->O            1   0.205   0.684  Mmux_O11 (O)
+     IBUF:I->O             4   1.222   0.683  SW_3_IBUF (SW_3_IBUF)
+     BUF:I->O              1   0.568   0.924  XLXI_2/XLXI_27/XLXI_1/XLXI_4 (XLXI_2/XLXI_27/XLXN_18)
+     XOR2:I1->O            1   0.223   0.579  XLXI_2/XLXI_27/XLXI_24 (XLXI_2/XLXI_27/XLXN_6)
+     BUF:I->O              1   0.568   0.580  XLXI_2/XLXI_27/XLXI_3/XLXI_4 (XLXI_2/XLXN_51<3>)
+     begin scope: 'XLXI_2/XLXI_9/XLXI_16:D2'
+     LUT6:I5->O            1   0.205   0.684  Mmux_O11 (O)
      end scope: 'XLXI_2/XLXI_9/XLXI_16:O'
      begin scope: 'XLXI_1/XLXI_2/XLXI_16:D0'
      LUT3:I1->O           22   0.203   1.133  Mmux_O11 (O)
@@ -1006,8 +926,8 @@ Delay:               17.833ns (Levels of Logic = 27)
      OR5:I2->O             1   0.203   0.579  XLXI_1/XLXI_1/XLXI_15/XLXI_8 (SSD_SEG_0_OBUF)
      OBUF:I->O                 2.571          SSD_SEG_0_OBUF (SSD_SEG<0>)
     ----------------------------------------
-    Total                     17.833ns (8.388ns logic, 9.445ns route)
-                                       (47.0% logic, 53.0% route)
+    Total                     13.466ns (6.534ns logic, 6.932ns route)
+                                       (48.5% logic, 51.5% route)
 
 =========================================================================
 
@@ -1081,15 +1001,15 @@ XLXN_3         |    2.106|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.91 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.15 secs
  
 --> 
 
 
-Total memory usage is 371992 kilobytes
+Total memory usage is 371316 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    5 (   0 filtered)
-Number of infos    :   14 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
 

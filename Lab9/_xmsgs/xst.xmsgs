@@ -5,58 +5,37 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 173: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
+<msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 162: Result of <arg fmt="%d" index="1">3</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">2</arg>-bit target.
 </msg>
 
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 555: Input port <arg fmt="%s" index="1">CI</arg> is not connected on this instance
-</msg>
-
-<msg type="warning" file="HDLCompiler" num="552" delta="old" >"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 787: Input port <arg fmt="%s" index="1">CI</arg> is not connected on this instance
+<msg type="warning" file="HDLCompiler" num="552" delta="old" >"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf" Line 500: Input port <arg fmt="%s" index="1">CI</arg> is not connected on this instance
 </msg>
 
 <msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CI</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_23</arg>&apos;, is tied to GND.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">768</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">CEO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">768</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">481</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">787</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_23</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">500</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_23</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">787</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_23</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">500</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_23</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">720</arg>: Output port &lt;<arg fmt="%s" index="3">O7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">521</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_30</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="warning" file="Xst" num="2898" delta="old" >Port &apos;<arg fmt="%s" index="1">CI</arg>&apos;, unconnected in block instance &apos;<arg fmt="%s" index="2">XLXI_1</arg>&apos;, is tied to GND.
+<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">521</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_30</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">555</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">431</arg>: Output port &lt;<arg fmt="%s" index="3">O7</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_2</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">555</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_1</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_57</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">633</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_57</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">640</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_58</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">640</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_58</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">687</arg>: Output port &lt;<arg fmt="%s" index="3">CO</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_81</arg>&gt; is unconnected or connected to loadless signal.
-</msg>
-
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/main.vf</arg>&quot; line <arg fmt="%s" index="2">687</arg>: Output port &lt;<arg fmt="%s" index="3">OFL</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_81</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="1767" delta="old" >HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
 </msg>
 
 <msg type="info" file="Xst" num="2169" delta="old" >HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
