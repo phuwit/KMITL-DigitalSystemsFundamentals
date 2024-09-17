@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Mon Sep 02 21:17:03 2024
+// Written by: Map P.20131013 on Mon Sep 09 16:38:52 2024
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -9,7 +9,6 @@ COMP "SSD_Segment<3>" LOCATE = SITE "P34" LEVEL 1;
 COMP "SSD_Segment<4>" LOCATE = SITE "P35" LEVEL 1;
 COMP "SSD_Segment<5>" LOCATE = SITE "P40" LEVEL 1;
 COMP "SSD_Segment<6>" LOCATE = SITE "P41" LEVEL 1;
-COMP "MN7" LOCATE = SITE "P84" LEVEL 1;
 COMP "SSD_COM<0>" LOCATE = SITE "P43" LEVEL 1;
 COMP "SSD_COM<1>" LOCATE = SITE "P44" LEVEL 1;
 COMP "SSD_COM<2>" LOCATE = SITE "P33" LEVEL 1;

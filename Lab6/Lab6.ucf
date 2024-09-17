@@ -1,7 +1,7 @@
 NET "OSC" LOC = P123;
 
 NET "BTN4" LOC = P48;
-NET "MN7" LOC = P84;
+// NET "MN7" LOC = P84;
 
 NET "SSD_Segment[6]" LOC = P41;
 NET "SSD_Segment[5]" LOC = P40;

@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.03 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: Lab6.prj
@@ -284,7 +284,7 @@ Unit <Lab6> synthesized.
 
 Synthesizing Unit <VirtualDice_MUSER_Lab6>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf".
-    Set property "HU_SET = XLXI_16_38" for instance <XLXI_16>.
+    Set property "HU_SET = XLXI_16_12" for instance <XLXI_16>.
 INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf" line 490: Output port <Count> of the instance <XLXI_4> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf" line 494: Output port <Count> of the instance <XLXI_7> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf" line 498: Output port <Count> of the instance <XLXI_8> is unconnected or connected to loadless signal.
@@ -294,7 +294,7 @@ Unit <VirtualDice_MUSER_Lab6> synthesized.
 
 Synthesizing Unit <Displayer_MUSER_Lab6>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf".
-    Set property "HU_SET = XLXI_18_37" for instance <XLXI_18>.
+    Set property "HU_SET = XLXI_18_11" for instance <XLXI_18>.
     Summary:
 	no macro.
 Unit <Displayer_MUSER_Lab6> synthesized.
@@ -356,8 +356,8 @@ Unit <SSEG_G_MUSER_SSEG_DEC> synthesized.
 
 Synthesizing Unit <LEDsDriver_MUSER_Lab6>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf".
-    Set property "HU_SET = XLXI_1_35" for instance <XLXI_1>.
-    Set property "HU_SET = XLXI_2_36" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_1_9" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_10" for instance <XLXI_2>.
     Summary:
 	no macro.
 Unit <LEDsDriver_MUSER_Lab6> synthesized.
@@ -374,10 +374,10 @@ Unit <COMP4_HXILINX_Lab6> synthesized.
 
 Synthesizing Unit <Mux4_Bus4_1E_MUSER_Lab6>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf".
-    Set property "HU_SET = XLXI_13_31" for instance <XLXI_13>.
-    Set property "HU_SET = XLXI_14_32" for instance <XLXI_14>.
-    Set property "HU_SET = XLXI_15_33" for instance <XLXI_15>.
-    Set property "HU_SET = XLXI_16_34" for instance <XLXI_16>.
+    Set property "HU_SET = XLXI_13_5" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_14_6" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_15_7" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_16_8" for instance <XLXI_16>.
     Summary:
 	no macro.
 Unit <Mux4_Bus4_1E_MUSER_Lab6> synthesized.
@@ -397,10 +397,10 @@ Unit <Dec1_2_MUSER_Lab6> synthesized.
 
 Synthesizing Unit <Mux2_Bus4_1E_MUSER_Lab6>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf".
-    Set property "HU_SET = XLXI_18_27" for instance <XLXI_18>.
-    Set property "HU_SET = XLXI_19_28" for instance <XLXI_19>.
-    Set property "HU_SET = XLXI_20_29" for instance <XLXI_20>.
-    Set property "HU_SET = XLXI_21_30" for instance <XLXI_21>.
+    Set property "HU_SET = XLXI_18_1" for instance <XLXI_18>.
+    Set property "HU_SET = XLXI_19_2" for instance <XLXI_19>.
+    Set property "HU_SET = XLXI_20_3" for instance <XLXI_20>.
+    Set property "HU_SET = XLXI_21_4" for instance <XLXI_21>.
     Summary:
 	no macro.
 Unit <Mux2_Bus4_1E_MUSER_Lab6> synthesized.
@@ -429,7 +429,7 @@ Unit <Counter00_99_MUSER_Lab6> synthesized.
 
 Synthesizing Unit <Counter0_9_MUSER_Lab6>.
     Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf".
-    Set property "HU_SET = XLXI_27_26" for instance <XLXI_27>.
+    Set property "HU_SET = XLXI_27_0" for instance <XLXI_27>.
 INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf" line 189: Output port <CEO> of the instance <XLXI_27> is unconnected or connected to loadless signal.
 INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf" line 189: Output port <TC> of the instance <XLXI_27> is unconnected or connected to loadless signal.
     Summary:
@@ -546,7 +546,7 @@ Top Level Output File Name         : Lab6.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 96
+# BELS                             : 95
 #      AND2                        : 5
 #      AND2B1                      : 13
 #      AND2B2                      : 6
@@ -555,7 +555,7 @@ Primitive and Black Box Usage:
 #      AND3B2                      : 2
 #      AND3B3                      : 2
 #      AND4B2                      : 5
-#      BUF                         : 10
+#      BUF                         : 9
 #      GND                         : 1
 #      INV                         : 11
 #      LUT2                        : 5
@@ -571,9 +571,9 @@ Primitive and Black Box Usage:
 #      FDRE                        : 20
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 17
+# IO Buffers                       : 16
 #      IBUF                        : 1
-#      OBUF                        : 16
+#      OBUF                        : 15
 
 Device utilization summary:
 ---------------------------
@@ -594,8 +594,8 @@ Slice Logic Distribution:
    Number of unique control sets:         7
 
 IO Utilization: 
- Number of IOs:                          18
- Number of bonded IOBs:                  18  out of    102    17%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    102    16%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
@@ -639,9 +639,9 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 4.130ns (Maximum Frequency: 242.113MHz)
-   Minimum input arrival time before clock: 3.445ns
+   Minimum input arrival time before clock: 3.411ns
    Maximum output required time after clock: 8.681ns
-   Maximum combinational path delay: 6.724ns
+   Maximum combinational path delay: 6.690ns
 
 Timing Details:
 ---------------
@@ -723,7 +723,7 @@ Delay:               2.163ns (Levels of Logic = 1)
 Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXI_4/XLXI_16/Q'
   Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Offset:              3.445ns (Levels of Logic = 3)
+Offset:              3.411ns (Levels of Logic = 3)
   Source:            BTN4 (PAD)
   Destination:       XLXI_4/XLXI_3/XLXI_2/XLXI_27/Q0_Q1_Q2_Q3_3 (FF)
   Destination Clock: XLXI_4/XLXI_16/Q rising
@@ -732,13 +732,13 @@ Offset:              3.445ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.650  BTN4_IBUF (BTN4_IBUF)
+     IBUF:I->O             2   1.222   0.616  BTN4_IBUF (BTN4_IBUF)
      BUF:I->O              4   0.568   0.683  XLXI_4/XLXI_3/XLXI_4 (XLXI_4/XLXI_3/XLXN_17)
      begin scope: 'XLXI_4/XLXI_3/XLXI_2/XLXI_27:CE'
      FDRE:CE                   0.322          Q0_Q1_Q2_Q3_3
     ----------------------------------------
-    Total                      3.445ns (2.112ns logic, 1.333ns route)
-                                       (61.3% logic, 38.7% route)
+    Total                      3.411ns (2.112ns logic, 1.299ns route)
+                                       (61.9% logic, 38.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_4/XLXI_16/Q'
@@ -794,9 +794,9 @@ Offset:              8.681ns (Levels of Logic = 7)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 5 / 5
+  Total number of paths / destination ports: 4 / 4
 -------------------------------------------------------------------------
-Delay:               6.724ns (Levels of Logic = 5)
+Delay:               6.690ns (Levels of Logic = 5)
   Source:            BTN4 (PAD)
   Destination:       LED<3> (PAD)
 
@@ -804,15 +804,15 @@ Delay:               6.724ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             3   1.222   0.650  BTN4_IBUF (BTN4_IBUF)
+     IBUF:I->O             2   1.222   0.616  BTN4_IBUF (BTN4_IBUF)
      INV:I->O              4   0.568   0.931  XLXI_4/XLXI_14 (XLXI_4/XLXN_21)
      begin scope: 'XLXI_4/XLXI_2/XLXI_2/XLXI_25/XLXI_16:E'
      LUT4:I0->O            1   0.203   0.579  Mmux_O11 (O)
      end scope: 'XLXI_4/XLXI_2/XLXI_2/XLXI_25/XLXI_16:O'
      OBUF:I->O                 2.571          LED_3_OBUF (LED<3>)
     ----------------------------------------
-    Total                      6.724ns (4.564ns logic, 2.160ns route)
-                                       (67.9% logic, 32.1% route)
+    Total                      6.690ns (4.564ns logic, 2.126ns route)
+                                       (68.2% logic, 31.8% route)
 
 =========================================================================
 
@@ -846,13 +846,13 @@ XLXI_4/XLXI_8/XLXN_26|    2.163|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 2.00 secs
-Total CPU time to Xst completion: 1.84 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.27 secs
  
 --> 
 
 
-Total memory usage is 371036 kilobytes
+Total memory usage is 371060 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

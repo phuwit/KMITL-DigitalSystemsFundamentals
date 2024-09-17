@@ -36,22 +36,21 @@ Clock to Setup on destination clock OSC
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-OSC            |    2.427|         |         |         |
+OSC            |    2.480|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Pad to Pad
 ---------------+---------------+---------+
 Source Pad     |Destination Pad|  Delay  |
 ---------------+---------------+---------+
-BTN4           |LED<0>         |    9.004|
-BTN4           |LED<1>         |    8.926|
-BTN4           |LED<2>         |    8.957|
-BTN4           |LED<3>         |    8.378|
-BTN4           |MN7            |    8.681|
+BTN4           |LED<0>         |    8.937|
+BTN4           |LED<1>         |    8.646|
+BTN4           |LED<2>         |    8.900|
+BTN4           |LED<3>         |    8.526|
 ---------------+---------------+---------+
 
 
-Analysis completed Mon Sep  2 21:17:11 2024 
+Analysis completed Mon Sep  9 16:39:02 2024 
 --------------------------------------------------------------------------------
 
 Trace Settings:

@@ -8,13 +8,13 @@
 <msg type="warning" file="HDLCompiler" num="413" delta="old" >"/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf" Line 165: Result of <arg fmt="%d" index="1">5</arg>-bit expression is truncated to fit in <arg fmt="%d" index="2">4</arg>-bit target.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf</arg>&quot; line <arg fmt="%s" index="2">490</arg>: Output port &lt;<arg fmt="%s" index="3">Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf</arg>&quot; line <arg fmt="%s" index="2">490</arg>: Output port &lt;<arg fmt="%s" index="3">Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_4</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf</arg>&quot; line <arg fmt="%s" index="2">494</arg>: Output port &lt;<arg fmt="%s" index="3">Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_7</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf</arg>&quot; line <arg fmt="%s" index="2">494</arg>: Output port &lt;<arg fmt="%s" index="3">Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_7</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
-<msg type="info" file="Xst" num="3210" delta="new" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf</arg>&quot; line <arg fmt="%s" index="2">498</arg>: Output port &lt;<arg fmt="%s" index="3">Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
+<msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf</arg>&quot; line <arg fmt="%s" index="2">498</arg>: Output port &lt;<arg fmt="%s" index="3">Count</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_8</arg>&gt; is unconnected or connected to loadless signal.
 </msg>
 
 <msg type="info" file="Xst" num="3210" delta="old" >&quot;<arg fmt="%s" index="1">/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab6/Lab6.vf</arg>&quot; line <arg fmt="%s" index="2">225</arg>: Output port &lt;<arg fmt="%s" index="3">TC</arg>&gt; of the instance &lt;<arg fmt="%s" index="4">XLXI_3</arg>&gt; is unconnected or connected to loadless signal.

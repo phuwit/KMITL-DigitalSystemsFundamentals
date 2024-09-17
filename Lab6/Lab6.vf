@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Lab6.vf
-// /___/   /\     Timestamp : 09/02/2024 21:16:50
+// /___/   /\     Timestamp : 09/09/2024 16:38:36
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -185,7 +185,7 @@ module Counter0_9_MUSER_Lab6(CE,
    wire [3:0] Count_DUMMY;
    
    assign Count[3:0] = Count_DUMMY[3:0];
-   (* HU_SET = "XLXI_27_26" *) 
+   (* HU_SET = "XLXI_27_0" *) 
    CB4RE_HXILINX_Lab6  XLXI_27 (.C(Clock), 
                                .CE(CE), 
                                .R(XLXN_26), 
@@ -244,25 +244,25 @@ module Mux2_Bus4_1E_MUSER_Lab6(D0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_18_27" *) 
+   (* HU_SET = "XLXI_18_1" *) 
    M2_1E_HXILINX_Lab6  XLXI_18 (.D0(D0[0]), 
                                .D1(D1[0]), 
                                .E(E), 
                                .S0(S0), 
                                .O(O[0]));
-   (* HU_SET = "XLXI_19_28" *) 
+   (* HU_SET = "XLXI_19_2" *) 
    M2_1E_HXILINX_Lab6  XLXI_19 (.D0(D0[1]), 
                                .D1(D1[1]), 
                                .E(E), 
                                .S0(S0), 
                                .O(O[1]));
-   (* HU_SET = "XLXI_20_29" *) 
+   (* HU_SET = "XLXI_20_3" *) 
    M2_1E_HXILINX_Lab6  XLXI_20 (.D0(D0[2]), 
                                .D1(D1[2]), 
                                .E(E), 
                                .S0(S0), 
                                .O(O[2]));
-   (* HU_SET = "XLXI_21_30" *) 
+   (* HU_SET = "XLXI_21_4" *) 
    M2_1E_HXILINX_Lab6  XLXI_21 (.D0(D0[3]), 
                                .D1(D1[3]), 
                                .E(E), 
@@ -304,7 +304,7 @@ module Mux4_Bus4_1E_MUSER_Lab6(D0,
    output [3:0] O;
    
    
-   (* HU_SET = "XLXI_13_31" *) 
+   (* HU_SET = "XLXI_13_5" *) 
    M4_1E_HXILINX_Lab6  XLXI_13 (.D0(D0[0]), 
                                .D1(D1[0]), 
                                .D2(D2[0]), 
@@ -313,7 +313,7 @@ module Mux4_Bus4_1E_MUSER_Lab6(D0,
                                .S0(S0), 
                                .S1(S1), 
                                .O(O[0]));
-   (* HU_SET = "XLXI_14_32" *) 
+   (* HU_SET = "XLXI_14_6" *) 
    M4_1E_HXILINX_Lab6  XLXI_14 (.D0(D0[1]), 
                                .D1(D1[1]), 
                                .D2(D2[1]), 
@@ -322,7 +322,7 @@ module Mux4_Bus4_1E_MUSER_Lab6(D0,
                                .S0(S0), 
                                .S1(S1), 
                                .O(O[1]));
-   (* HU_SET = "XLXI_15_33" *) 
+   (* HU_SET = "XLXI_15_7" *) 
    M4_1E_HXILINX_Lab6  XLXI_15 (.D0(D0[2]), 
                                .D1(D1[2]), 
                                .D2(D2[2]), 
@@ -331,7 +331,7 @@ module Mux4_Bus4_1E_MUSER_Lab6(D0,
                                .S0(S0), 
                                .S1(S1), 
                                .O(O[2]));
-   (* HU_SET = "XLXI_16_34" *) 
+   (* HU_SET = "XLXI_16_8" *) 
    M4_1E_HXILINX_Lab6  XLXI_16 (.D0(D0[3]), 
                                .D1(D1[3]), 
                                .D2(D2[3]), 
@@ -359,7 +359,7 @@ module LEDsDriver_MUSER_Lab6(A,
    wire XLXN_61;
    wire [3:0] ZEROS;
    
-   (* HU_SET = "XLXI_1_35" *) 
+   (* HU_SET = "XLXI_1_9" *) 
    COMP4_HXILINX_Lab6  XLXI_1 (.A0(A[0]), 
                               .A1(A[1]), 
                               .A2(A[2]), 
@@ -369,7 +369,7 @@ module LEDsDriver_MUSER_Lab6(A,
                               .B2(B[2]), 
                               .B3(B[3]), 
                               .EQ(XLXN_61));
-   (* HU_SET = "XLXI_2_36" *) 
+   (* HU_SET = "XLXI_2_10" *) 
    COMP4_HXILINX_Lab6  XLXI_2 (.A0(A[0]), 
                               .A1(A[1]), 
                               .A2(A[2]), 
@@ -436,7 +436,7 @@ module Displayer_MUSER_Lab6(Clock,
                                     .E(XLXN_8), 
                                     .S0(XLXN_68), 
                                     .O(XLXN_60[3:0]));
-   (* HU_SET = "XLXI_18_37" *) 
+   (* HU_SET = "XLXI_18_11" *) 
    FJKC_HXILINX_Lab6  XLXI_18 (.C(Clock), 
                               .CLR(XLXN_65), 
                               .J(XLXN_64), 
@@ -502,7 +502,7 @@ module VirtualDice_MUSER_Lab6(Clock,
    INV  XLXI_14 (.I(Enable), 
                 .O(XLXN_21));
    VCC  XLXI_15 (.P(XLXN_31));
-   (* HU_SET = "XLXI_16_38" *) 
+   (* HU_SET = "XLXI_16_12" *) 
    FJKC_HXILINX_Lab6  XLXI_16 (.C(XLXN_49), 
                               .CLR(XLXN_37), 
                               .J(XLXN_34), 
@@ -516,14 +516,12 @@ endmodule
 module Lab6(BTN4, 
             OSC, 
             LED, 
-            MN7, 
             SSD_COM, 
             SSD_Segment);
 
     input BTN4;
     input OSC;
    output [3:0] LED;
-   output MN7;
    output [3:0] SSD_COM;
    output [6:0] SSD_Segment;
    
@@ -533,6 +531,4 @@ module Lab6(BTN4,
                                   .Common(SSD_COM[3:0]), 
                                   .LED(LED[3:0]), 
                                   .Segment(SSD_Segment[6:0]));
-   BUF  XLXI_5 (.I(BTN4), 
-               .O(MN7));
 endmodule
