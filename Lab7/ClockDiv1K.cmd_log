@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym ClockDiv1K /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/ClockDiv1K.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/ClockDiv1K.sym 

@@ -1,0 +1,185 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Displayer_drc.vf
+// /___/   /\     Timestamp : 09/09/2024 22:25:17
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/sch2hdl -intstyle ise -family spartan6 -verilog Displayer_drc.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Displayer.sch
+//Design Name: Displayer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB2RE_HXILINX_Displayer(CEO, Q0, Q1, TC, C, CE, R);
+   
+   localparam TERMINAL_COUNT = 2'b11;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             TC;
+   
+   input 	      C;	
+   input 	      CE;	
+   input 	      R;	
+   
+   reg                Q0;
+   reg                Q1;
+   
+   always @(posedge C)
+     begin
+	if (R)
+	  {Q1, Q0} <= 2'b00;
+	else if (CE)
+	  {Q1,Q0} <= {Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q1,Q0} == TERMINAL_COUNT); 
+   
+endmodule
+`timescale  100 ps / 10 ps
+
+module INV4_HXILINX_Displayer (O0, O1, O2, O3, I0, I1, I2, I3);
+    
+
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+
+   input  I0;
+   input  I1;
+   input  I2;
+   input  I3;
+
+assign O0 = !I0;
+assign O1 = !I1;
+assign O2 = !I2;
+assign O3 = !I3;
+
+endmodule
+`timescale  100 ps / 10 ps
+
+module D2_4E_HXILINX_Displayer (D0, D1, D2, D3, A0, A1, E);
+    
+
+   output D0;
+   output D1;
+   output D2;
+   output D3;
+
+   input  A0;
+   input  A1;
+   input  E;
+  
+   reg D0;
+   reg D1;
+   reg D2;
+   reg D3;
+
+      always @ (A0 or A1 or E)
+      begin
+         if(!E)
+           {D3, D2, D1, D0} <= 4'b0000;
+        else
+        begin
+           case({A1,A0})
+             2'b00 : {D3,D2,D1,D0} <= 4'b0001;
+             2'b01 : {D3,D2,D1,D0} <= 4'b0010;
+             2'b10 : {D3,D2,D1,D0} <= 4'b0100;
+             2'b11 : {D3,D2,D1,D0} <= 4'b1000;
+          endcase
+        end
+     end 
+
+endmodule
+`timescale 1ns / 1ps
+
+module Displayer(Blinker_Clock, 
+                 Hour_Ones, 
+                 Hour_Tens, 
+                 Min_Ones, 
+                 Min_Tens, 
+                 Scan_Clock, 
+                 Common, 
+                 DP, 
+                 Segment);
+
+    input Blinker_Clock;
+    input [3:0] Hour_Ones;
+    input [3:0] Hour_Tens;
+    input [3:0] Min_Ones;
+    input [3:0] Min_Tens;
+    input Scan_Clock;
+   output [3:0] Common;
+   output DP;
+   output [6:0] Segment;
+   
+   wire XLXN_9;
+   wire XLXN_17;
+   wire [3:0] XLXN_23;
+   wire XLXN_67;
+   wire XLXN_70;
+   wire XLXN_71;
+   wire XLXN_72;
+   wire XLXN_76;
+   wire XLXN_77;
+   wire XLXN_78;
+   wire XLXN_79;
+   
+   SSEG_DEC  XLXI_1 (.BCD(XLXN_23[3:0]), 
+                    .SSEG(Segment[6:0]));
+   (* HU_SET = "XLXI_2_0" *) 
+   CB2RE_HXILINX_Displayer  XLXI_2 (.C(Scan_Clock), 
+                                   .CE(XLXN_17), 
+                                   .R(XLXN_9), 
+                                   .CEO(), 
+                                   .Q0(XLXN_70), 
+                                   .Q1(XLXN_71), 
+                                   .TC());
+   GND  XLXI_5 (.G(XLXN_9));
+   VCC  XLXI_15 (.P(XLXN_17));
+   Mux4_Bus4_1E  XLXI_16 (.D0(Min_Ones[3:0]), 
+                         .D1(Min_Tens[3:0]), 
+                         .D2(Hour_Ones[3:0]), 
+                         .D3(Hour_Tens[3:0]), 
+                         .E(XLXN_72), 
+                         .S0(XLXN_70), 
+                         .S1(XLXN_71), 
+                         .O(XLXN_23[3:0]));
+   Mod2  XLXI_42 (.CLK_IN(Blinker_Clock), 
+                 .CLK_OUT(XLXN_67));
+   AND3B1  XLXI_43 (.I0(XLXN_70), 
+                   .I1(XLXN_71), 
+                   .I2(XLXN_67), 
+                   .O(DP));
+   (* HU_SET = "XLXI_45_1" *) 
+   D2_4E_HXILINX_Displayer  XLXI_45 (.A0(XLXN_70), 
+                                    .A1(XLXN_71), 
+                                    .E(XLXN_72), 
+                                    .D0(XLXN_79), 
+                                    .D1(XLXN_78), 
+                                    .D2(XLXN_77), 
+                                    .D3(XLXN_76));
+   VCC  XLXI_46 (.P(XLXN_72));
+   (* HU_SET = "XLXI_47_2" *) 
+   INV4_HXILINX_Displayer  XLXI_47 (.I0(XLXN_76), 
+                                   .I1(XLXN_77), 
+                                   .I2(XLXN_78), 
+                                   .I3(XLXN_79), 
+                                   .O0(Common[3]), 
+                                   .O1(Common[2]), 
+                                   .O2(Common[1]), 
+                                   .O3(Common[0]));
+endmodule

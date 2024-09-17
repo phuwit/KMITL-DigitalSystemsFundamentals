@@ -1,0 +1,1642 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Reading design: main.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "main.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "main"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : main
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_G.vf" into library work
+Parsing module <SSEG_G>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_F.vf" into library work
+Parsing module <SSEG_F>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_E.vf" into library work
+Parsing module <SSEG_E>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_D.vf" into library work
+Parsing module <SSEG_D>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_C.vf" into library work
+Parsing module <SSEG_C>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_B.vf" into library work
+Parsing module <SSEG_B>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_A.vf" into library work
+Parsing module <OR6_HXILINX_SSEG_A>.
+Parsing module <SSEG_A>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf" into library work
+Parsing module <OR6_HXILINX_SSEG_DEC>.
+Parsing module <SSEG_G_MUSER_SSEG_DEC>.
+Parsing module <SSEG_F_MUSER_SSEG_DEC>.
+Parsing module <SSEG_E_MUSER_SSEG_DEC>.
+Parsing module <SSEG_D_MUSER_SSEG_DEC>.
+Parsing module <SSEG_C_MUSER_SSEG_DEC>.
+Parsing module <SSEG_B_MUSER_SSEG_DEC>.
+Parsing module <SSEG_A_MUSER_SSEG_DEC>.
+Parsing module <SSEG_DEC>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mux4_Bus4_1E.vf" into library work
+Parsing module <M4_1E_HXILINX_Mux4_Bus4_1E>.
+Parsing module <Mux4_Bus4_1E>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter0_9.vf" into library work
+Parsing module <FJKCE_HXILINX_Counter0_9>.
+Parsing module <Counter0_9>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter0_5.vf" into library work
+Parsing module <FJKCE_HXILINX_Counter0_5>.
+Parsing module <Counter0_5>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/wtb4.vf" into library work
+Parsing module <wtb4>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.vf" into library work
+Parsing module <FJKCE_HXILINX_Counter00_99>.
+Parsing module <Counter0_9_MUSER_Counter00_99>.
+Parsing module <Counter00_99>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_59.vf" into library work
+Parsing module <FJKCE_HXILINX_Counter00_59>.
+Parsing module <Counter0_9_MUSER_Counter00_59>.
+Parsing module <Counter0_5_MUSER_Counter00_59>.
+Parsing module <Counter00_59>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/ClockDiv1K.vf" into library work
+Parsing module <FJKC_HXILINX_ClockDiv1K>.
+Parsing module <ClockDiv1K>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Displayer.vf" into library work
+Parsing module <CB2RE_HXILINX_Displayer>.
+Parsing module <INV4_HXILINX_Displayer>.
+Parsing module <D2_4E_HXILINX_Displayer>.
+Parsing module <Displayer>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/ClockDiv10.vf" into library work
+Parsing module <FJKC_HXILINX_ClockDiv10>.
+Parsing module <ClockDiv10>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/clkdiv2.vf" into library work
+Parsing module <clkdiv2>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf" into library work
+Parsing module <CB2RE_HXILINX_main>.
+Parsing module <INV4_HXILINX_main>.
+Parsing module <FJKC_HXILINX_main>.
+Parsing module <D2_4E_HXILINX_main>.
+Parsing module <clkdiv2_MUSER_main>.
+Parsing module <ClockDiv10_MUSER_main>.
+Parsing module <Displayer_MUSER_main>.
+Parsing module <main>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mod10.vf" into library work
+Parsing module <CB4RE_HXILINX_Mod10>.
+Parsing module <Counter0_9_MUSER_Mod10>.
+Parsing module <Mod10>.
+Analyzing Verilog file "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mod2.vf" into library work
+Parsing module <FJKC_HXILINX_Mod2>.
+Parsing module <Mod2>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <main>.
+
+Elaborating module <Counter00_99>.
+
+Elaborating module <Counter0_9_MUSER_Counter00_99>.
+
+Elaborating module <FJKCE_HXILINX_Counter00_99>.
+
+Elaborating module <VCC>.
+
+Elaborating module <AND2>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND4>.
+
+Elaborating module <wtb4>.
+
+Elaborating module <BUF>.
+
+Elaborating module <FJKC_HXILINX_main>.
+
+Elaborating module <GND>.
+
+Elaborating module <Displayer_MUSER_main>.
+
+Elaborating module <SSEG_DEC>.
+
+Elaborating module <SSEG_A_MUSER_SSEG_DEC>.
+
+Elaborating module <AND2B2>.
+
+Elaborating module <OR6_HXILINX_SSEG_DEC>.
+
+Elaborating module <AND3B2>.
+
+Elaborating module <AND2B1>.
+
+Elaborating module <AND3B1>.
+
+Elaborating module <SSEG_B_MUSER_SSEG_DEC>.
+
+Elaborating module <OR5>.
+
+Elaborating module <AND3B3>.
+
+Elaborating module <SSEG_C_MUSER_SSEG_DEC>.
+
+Elaborating module <SSEG_D_MUSER_SSEG_DEC>.
+
+Elaborating module <SSEG_E_MUSER_SSEG_DEC>.
+
+Elaborating module <OR4>.
+
+Elaborating module <SSEG_F_MUSER_SSEG_DEC>.
+
+Elaborating module <SSEG_G_MUSER_SSEG_DEC>.
+
+Elaborating module <CB2RE_HXILINX_main>.
+WARNING:HDLCompiler:413 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf" Line 44: Result of 3-bit expression is truncated to fit in 2-bit target.
+
+Elaborating module <Mux4_Bus4_1E>.
+
+Elaborating module <M4_1E_HXILINX_Mux4_Bus4_1E>.
+
+Elaborating module <D2_4E_HXILINX_main>.
+
+Elaborating module <INV4_HXILINX_main>.
+
+Elaborating module <clkdiv2_MUSER_main>.
+
+Elaborating module <FD_1(INIT=1'b0)>.
+
+Elaborating module <ClockDiv10_MUSER_main>.
+
+Elaborating module <OR2>.
+
+Elaborating module <ClockDiv1K>.
+
+Elaborating module <FJKC_HXILINX_ClockDiv1K>.
+
+Elaborating module <Counter00_59>.
+
+Elaborating module <Counter0_5_MUSER_Counter00_59>.
+
+Elaborating module <FJKCE_HXILINX_Counter00_59>.
+
+Elaborating module <Counter0_9_MUSER_Counter00_59>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+    Set property "HU_SET = XLXI_26_6" for instance <XLXI_26>.
+    Set property "HU_SET = XLXI_56_7" for instance <XLXI_56>.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf" line 333: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf" line 333: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf" line 368: Output port <TC> of the instance <XLXI_50> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <main> synthesized.
+
+Synthesizing Unit <Counter00_99>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.vf".
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.vf" line 186: Output port <TC> of the instance <XLXI_10> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Counter00_99> synthesized.
+
+Synthesizing Unit <Counter0_9_MUSER_Counter00_99>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.vf".
+    Set property "HU_SET = FLIPFLOP_A_19" for instance <FlipFlop_A>.
+    Set property "HU_SET = FLIPFLOP_B_20" for instance <FlipFlop_B>.
+    Set property "HU_SET = FLIPFLOP_C_21" for instance <FlipFlop_C>.
+    Set property "HU_SET = FLIPFLOP_D_22" for instance <FlipFlop_D>.
+    Summary:
+	no macro.
+Unit <Counter0_9_MUSER_Counter00_99> synthesized.
+
+Synthesizing Unit <FJKCE_HXILINX_Counter00_99>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKCE_HXILINX_Counter00_99> synthesized.
+
+Synthesizing Unit <wtb4>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/wtb4.vf".
+    Summary:
+	no macro.
+Unit <wtb4> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_main> synthesized.
+
+Synthesizing Unit <Displayer_MUSER_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+    Set property "HU_SET = XLXI_2_5" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_45_3" for instance <XLXI_45>.
+    Set property "HU_SET = XLXI_47_4" for instance <XLXI_47>.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf" line 258: Output port <CEO> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf" line 258: Output port <TC> of the instance <XLXI_2> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Displayer_MUSER_main> synthesized.
+
+Synthesizing Unit <SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <SSEG_DEC> synthesized.
+
+Synthesizing Unit <SSEG_A_MUSER_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Set property "HU_SET = XLXI_3_42" for instance <XLXI_3>.
+    Summary:
+	no macro.
+Unit <SSEG_A_MUSER_SSEG_DEC> synthesized.
+
+Synthesizing Unit <OR6_HXILINX_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <OR6_HXILINX_SSEG_DEC> synthesized.
+
+Synthesizing Unit <SSEG_B_MUSER_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <SSEG_B_MUSER_SSEG_DEC> synthesized.
+
+Synthesizing Unit <SSEG_C_MUSER_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <SSEG_C_MUSER_SSEG_DEC> synthesized.
+
+Synthesizing Unit <SSEG_D_MUSER_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <SSEG_D_MUSER_SSEG_DEC> synthesized.
+
+Synthesizing Unit <SSEG_E_MUSER_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <SSEG_E_MUSER_SSEG_DEC> synthesized.
+
+Synthesizing Unit <SSEG_F_MUSER_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <SSEG_F_MUSER_SSEG_DEC> synthesized.
+
+Synthesizing Unit <SSEG_G_MUSER_SSEG_DEC>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_DEC.vf".
+    Summary:
+	no macro.
+Unit <SSEG_G_MUSER_SSEG_DEC> synthesized.
+
+Synthesizing Unit <CB2RE_HXILINX_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <Q0>.
+    Found 2-bit adder for signal <Q1_GND_31_o_add_1_OUT> created at line 44.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <CB2RE_HXILINX_main> synthesized.
+
+Synthesizing Unit <Mux4_Bus4_1E>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mux4_Bus4_1E.vf".
+    Set property "HU_SET = XLXI_13_23" for instance <XLXI_13>.
+    Set property "HU_SET = XLXI_14_24" for instance <XLXI_14>.
+    Set property "HU_SET = XLXI_15_25" for instance <XLXI_15>.
+    Set property "HU_SET = XLXI_16_26" for instance <XLXI_16>.
+    Summary:
+	no macro.
+Unit <Mux4_Bus4_1E> synthesized.
+
+Synthesizing Unit <M4_1E_HXILINX_Mux4_Bus4_1E>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mux4_Bus4_1E.vf".
+    Found 1-bit 4-to-1 multiplexer for signal <S1_D3_Mux_0_o> created at line 44.
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <M4_1E_HXILINX_Mux4_Bus4_1E> synthesized.
+
+Synthesizing Unit <D2_4E_HXILINX_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <D2_4E_HXILINX_main> synthesized.
+
+Synthesizing Unit <INV4_HXILINX_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+    Summary:
+	no macro.
+Unit <INV4_HXILINX_main> synthesized.
+
+Synthesizing Unit <clkdiv2_MUSER_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+    Summary:
+	no macro.
+Unit <clkdiv2_MUSER_main> synthesized.
+
+Synthesizing Unit <ClockDiv10_MUSER_main>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/main.vf".
+    Set property "HU_SET = XLXI_1_0" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_1" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_2" for instance <XLXI_3>.
+    Summary:
+	no macro.
+Unit <ClockDiv10_MUSER_main> synthesized.
+
+Synthesizing Unit <ClockDiv1K>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/ClockDiv1K.vf".
+    Set property "HU_SET = XLXI_1_30" for instance <XLXI_1>.
+    Set property "HU_SET = XLXI_2_31" for instance <XLXI_2>.
+    Set property "HU_SET = XLXI_3_32" for instance <XLXI_3>.
+    Set property "HU_SET = XLXI_28_33" for instance <XLXI_28>.
+    Set property "HU_SET = XLXI_29_34" for instance <XLXI_29>.
+    Set property "HU_SET = XLXI_30_35" for instance <XLXI_30>.
+    Set property "HU_SET = XLXI_40_36" for instance <XLXI_40>.
+    Set property "HU_SET = XLXI_41_37" for instance <XLXI_41>.
+    Set property "HU_SET = XLXI_42_38" for instance <XLXI_42>.
+    Summary:
+	no macro.
+Unit <ClockDiv1K> synthesized.
+
+Synthesizing Unit <FJKC_HXILINX_ClockDiv1K>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/ClockDiv1K.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKC_HXILINX_ClockDiv1K> synthesized.
+
+Synthesizing Unit <Counter00_59>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_59.vf".
+INFO:Xst:3210 - "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_59.vf" line 270: Output port <TC> of the instance <XLXI_10> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Counter00_59> synthesized.
+
+Synthesizing Unit <Counter0_5_MUSER_Counter00_59>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_59.vf".
+    Set property "HU_SET = FLIPFLOP_A_47" for instance <FlipFlop_A>.
+    Set property "HU_SET = FLIPFLOP_B_48" for instance <FlipFlop_B>.
+    Set property "HU_SET = FLIPFLOP_C_49" for instance <FlipFlop_C>.
+    Summary:
+	no macro.
+Unit <Counter0_5_MUSER_Counter00_59> synthesized.
+
+Synthesizing Unit <FJKCE_HXILINX_Counter00_59>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_59.vf".
+        INIT = 1'b0
+    Found 1-bit register for signal <Q>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+Unit <FJKCE_HXILINX_Counter00_59> synthesized.
+
+Synthesizing Unit <Counter0_9_MUSER_Counter00_59>.
+    Related source file is "/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_59.vf".
+    Set property "HU_SET = FLIPFLOP_A_43" for instance <FlipFlop_A>.
+    Set property "HU_SET = FLIPFLOP_B_44" for instance <FlipFlop_B>.
+    Set property "HU_SET = FLIPFLOP_C_45" for instance <FlipFlop_C>.
+    Set property "HU_SET = FLIPFLOP_D_46" for instance <FlipFlop_D>.
+    Summary:
+	no macro.
+Unit <Counter0_9_MUSER_Counter00_59> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 2-bit adder                                           : 1
+# Registers                                            : 48
+ 1-bit register                                        : 47
+ 2-bit register                                        : 1
+# Multiplexers                                         : 106
+ 1-bit 2-to-1 multiplexer                              : 102
+ 1-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <CB2RE_HXILINX_main>.
+The following registers are absorbed into counter <Q0_Q1>: 1 register on signal <Q0_Q1>.
+Unit <CB2RE_HXILINX_main> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 2-bit up counter                                      : 1
+# Registers                                            : 68
+ Flip-Flops                                            : 68
+# Multiplexers                                         : 106
+ 1-bit 2-to-1 multiplexer                              : 102
+ 1-bit 4-to-1 multiplexer                              : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <main> ...
+
+Optimizing unit <ClockDiv1K> ...
+
+Optimizing unit <Displayer_MUSER_main> ...
+
+Optimizing unit <Counter0_5_MUSER_Counter00_59> ...
+
+Optimizing unit <Counter0_9_MUSER_Counter00_59> ...
+
+Optimizing unit <Counter0_9_MUSER_Counter00_99> ...
+
+Optimizing unit <ClockDiv10_MUSER_main> ...
+
+Optimizing unit <FJKC_HXILINX_ClockDiv1K> ...
+
+Optimizing unit <FJKC_HXILINX_main> ...
+
+Optimizing unit <M4_1E_HXILINX_Mux4_Bus4_1E> ...
+
+Optimizing unit <CB2RE_HXILINX_main> ...
+
+Optimizing unit <OR6_HXILINX_SSEG_DEC> ...
+
+Optimizing unit <D2_4E_HXILINX_main> ...
+
+Optimizing unit <INV4_HXILINX_main> ...
+
+Optimizing unit <FJKCE_HXILINX_Counter00_59> ...
+
+Optimizing unit <FJKCE_HXILINX_Counter00_99> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block main, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : main.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 218
+#      AND2                        : 21
+#      AND2B1                      : 24
+#      AND2B2                      : 6
+#      AND3                        : 5
+#      AND3B1                      : 7
+#      AND3B2                      : 2
+#      AND3B3                      : 2
+#      AND4                        : 3
+#      BUF                         : 16
+#      GND                         : 1
+#      INV                         : 46
+#      LUT2                        : 36
+#      LUT3                        : 27
+#      LUT6                        : 5
+#      OR2                         : 10
+#      OR4                         : 1
+#      OR5                         : 5
+#      VCC                         : 1
+# FlipFlops/Latches                : 70
+#      FD_1                        : 21
+#      FDC                         : 21
+#      FDCE                        : 26
+#      FDRE                        : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              70  out of  11440     0%  
+ Number of Slice LUTs:                  114  out of   5720     1%  
+    Number used as Logic:               114  out of   5720     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    184
+   Number with an unused Flip Flop:     114  out of    184    61%  
+   Number with an unused LUT:            70  out of    184    38%  
+   Number of fully used LUT-FF pairs:     0  out of    184     0%  
+   Number of unique control sets:        69
+
+IO Utilization: 
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    102    14%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     16    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+----------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)            | Load  |
+-----------------------------------+----------------------------------+-------+
+XLXN_10793                         | NONE(XLXI_45/XLXI_17)            | 2     |
+XLXI_47/XLXN_154(XLXI_47/XLXI_49:O)| NONE(*)(XLXI_47/XLXI_50)         | 1     |
+XLXI_47/XLXN_140                   | NONE(XLXI_47/XLXI_48)            | 4     |
+XLXI_47/XLXN_137(XLXI_47/XLXI_37:O)| NONE(*)(XLXI_47/XLXI_38)         | 1     |
+XLXI_47/CLKOWO                     | NONE(XLXI_47/XLXI_36)            | 4     |
+XLXI_47/XLXN_123(XLXI_47/XLXI_25:O)| NONE(*)(XLXI_47/XLXI_26)         | 1     |
+XLXN_117                           | NONE(XLXI_47/XLXI_24)            | 4     |
+XLXI_48/XLXN_154(XLXI_48/XLXI_49:O)| NONE(*)(XLXI_48/XLXI_50)         | 1     |
+XLXI_48/XLXN_140                   | NONE(XLXI_48/XLXI_48)            | 4     |
+XLXI_48/XLXN_137(XLXI_48/XLXI_37:O)| NONE(*)(XLXI_48/XLXI_38)         | 1     |
+XLXI_48/CLKOWO                     | NONE(XLXI_48/XLXI_36)            | 4     |
+XLXI_48/XLXN_123(XLXI_48/XLXI_25:O)| NONE(*)(XLXI_48/XLXI_26)         | 1     |
+XLXN_10879(XLXI_65:O)              | NONE(*)(XLXI_48/XLXI_24)         | 4     |
+XLXI_66/XLXN_154(XLXI_66/XLXI_49:O)| NONE(*)(XLXI_66/XLXI_50)         | 1     |
+XLXI_66/XLXN_140                   | NONE(XLXI_66/XLXI_48)            | 4     |
+XLXI_66/XLXN_137(XLXI_66/XLXI_37:O)| NONE(*)(XLXI_66/XLXI_38)         | 1     |
+XLXI_66/CLKOWO                     | NONE(XLXI_66/XLXI_36)            | 4     |
+XLXI_66/XLXN_123(XLXI_66/XLXI_25:O)| NONE(*)(XLXI_66/XLXI_26)         | 1     |
+OSC                                | IBUF+BUFG                        | 4     |
+PB3_START                          | BUFGP                            | 1     |
+XLXN_10881                         | NONE(XLXI_43/XLXI_2/Q0_Q1_1)     | 2     |
+XLXN_10797                         | NONE(XLXI_50/XLXI_6/FlipFlop_C/Q)| 15    |
+XLXN_42                            | NONE(XLXI_46/XLXI_1/Q)           | 4     |
+XLXI_46/XLXN_123(XLXI_46/XLXI_25:O)| NONE(*)(XLXI_46/XLXI_26)         | 1     |
+-----------------------------------+----------------------------------+-------+
+(*) These 11 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 7.621ns (Maximum Frequency: 131.216MHz)
+   Minimum input arrival time before clock: 3.803ns
+   Maximum output required time after clock: 9.872ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_10793'
+  Clock period: 2.700ns (frequency: 370.411MHz)
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Delay:               2.700ns (Levels of Logic = 1)
+  Source:            XLXI_45/XLXI_17 (FF)
+  Destination:       XLXI_45/XLXI_17 (FF)
+  Source Clock:      XLXN_10793 falling
+  Destination Clock: XLXN_10793 falling
+
+  Data Path: XLXI_45/XLXI_17 to XLXI_45/XLXI_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q            16   0.447   1.004  XLXI_45/XLXI_17 (XLXN_10797)
+     INV:I->O              1   0.568   0.579  XLXI_45/XLXI_18 (XLXI_45/XLXN_27)
+     FD_1:D                    0.102          XLXI_45/XLXI_17
+    ----------------------------------------
+    Total                      2.700ns (1.117ns logic, 1.583ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_47/XLXN_154'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_47/XLXI_50 (FF)
+  Destination:       XLXI_47/XLXI_50 (FF)
+  Source Clock:      XLXI_47/XLXN_154 falling
+  Destination Clock: XLXI_47/XLXN_154 falling
+
+  Data Path: XLXI_47/XLXI_50 to XLXI_47/XLXI_50
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_47/XLXI_50 (XLXN_42)
+     INV:I->O              1   0.568   0.579  XLXI_47/XLXI_51 (XLXI_47/XLXN_156)
+     FD_1:D                    0.102          XLXI_47/XLXI_50
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_47/XLXN_140'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_47/XLXI_40/Q (FF)
+  Destination:       XLXI_47/XLXI_42/Q (FF)
+  Source Clock:      XLXI_47/XLXN_140 rising
+  Destination Clock: XLXI_47/XLXN_140 rising
+
+  Data Path: XLXI_47/XLXI_40/Q to XLXI_47/XLXI_42/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_47/XLXI_40:Q'
+     INV:I->O              1   0.568   0.684  XLXI_47/XLXI_45 (XLXI_47/XLXN_147)
+     begin scope: 'XLXI_47/XLXI_42:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_47/XLXN_137'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_47/XLXI_38 (FF)
+  Destination:       XLXI_47/XLXI_38 (FF)
+  Source Clock:      XLXI_47/XLXN_137 falling
+  Destination Clock: XLXI_47/XLXN_137 falling
+
+  Data Path: XLXI_47/XLXI_38 to XLXI_47/XLXI_38
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_47/XLXI_38 (XLXI_47/XLXN_140)
+     INV:I->O              1   0.568   0.579  XLXI_47/XLXI_39 (XLXI_47/XLXN_139)
+     FD_1:D                    0.102          XLXI_47/XLXI_38
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_47/CLKOWO'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_47/XLXI_28/Q (FF)
+  Destination:       XLXI_47/XLXI_30/Q (FF)
+  Source Clock:      XLXI_47/CLKOWO rising
+  Destination Clock: XLXI_47/CLKOWO rising
+
+  Data Path: XLXI_47/XLXI_28/Q to XLXI_47/XLXI_30/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_47/XLXI_28:Q'
+     INV:I->O              1   0.568   0.684  XLXI_47/XLXI_33 (XLXI_47/XLXN_130)
+     begin scope: 'XLXI_47/XLXI_30:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_47/XLXN_123'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_47/XLXI_26 (FF)
+  Destination:       XLXI_47/XLXI_26 (FF)
+  Source Clock:      XLXI_47/XLXN_123 falling
+  Destination Clock: XLXI_47/XLXN_123 falling
+
+  Data Path: XLXI_47/XLXI_26 to XLXI_47/XLXI_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_47/XLXI_26 (XLXI_47/CLKOWO)
+     INV:I->O              1   0.568   0.579  XLXI_47/XLXI_27 (XLXI_47/XLXN_39)
+     FD_1:D                    0.102          XLXI_47/XLXI_26
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_117'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_47/XLXI_1/Q (FF)
+  Destination:       XLXI_47/XLXI_3/Q (FF)
+  Source Clock:      XLXN_117 rising
+  Destination Clock: XLXN_117 rising
+
+  Data Path: XLXI_47/XLXI_1/Q to XLXI_47/XLXI_3/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_47/XLXI_1:Q'
+     INV:I->O              1   0.568   0.684  XLXI_47/XLXI_21 (XLXI_47/XLXN_29)
+     begin scope: 'XLXI_47/XLXI_3:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_48/XLXN_154'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_48/XLXI_50 (FF)
+  Destination:       XLXI_48/XLXI_50 (FF)
+  Source Clock:      XLXI_48/XLXN_154 falling
+  Destination Clock: XLXI_48/XLXN_154 falling
+
+  Data Path: XLXI_48/XLXI_50 to XLXI_48/XLXI_50
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_48/XLXI_50 (XLXN_117)
+     INV:I->O              1   0.568   0.579  XLXI_48/XLXI_51 (XLXI_48/XLXN_156)
+     FD_1:D                    0.102          XLXI_48/XLXI_50
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_48/XLXN_140'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_48/XLXI_40/Q (FF)
+  Destination:       XLXI_48/XLXI_42/Q (FF)
+  Source Clock:      XLXI_48/XLXN_140 rising
+  Destination Clock: XLXI_48/XLXN_140 rising
+
+  Data Path: XLXI_48/XLXI_40/Q to XLXI_48/XLXI_42/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_48/XLXI_40:Q'
+     INV:I->O              1   0.568   0.684  XLXI_48/XLXI_45 (XLXI_48/XLXN_147)
+     begin scope: 'XLXI_48/XLXI_42:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_48/XLXN_137'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_48/XLXI_38 (FF)
+  Destination:       XLXI_48/XLXI_38 (FF)
+  Source Clock:      XLXI_48/XLXN_137 falling
+  Destination Clock: XLXI_48/XLXN_137 falling
+
+  Data Path: XLXI_48/XLXI_38 to XLXI_48/XLXI_38
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_48/XLXI_38 (XLXI_48/XLXN_140)
+     INV:I->O              1   0.568   0.579  XLXI_48/XLXI_39 (XLXI_48/XLXN_139)
+     FD_1:D                    0.102          XLXI_48/XLXI_38
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_48/CLKOWO'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_48/XLXI_28/Q (FF)
+  Destination:       XLXI_48/XLXI_30/Q (FF)
+  Source Clock:      XLXI_48/CLKOWO rising
+  Destination Clock: XLXI_48/CLKOWO rising
+
+  Data Path: XLXI_48/XLXI_28/Q to XLXI_48/XLXI_30/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_48/XLXI_28:Q'
+     INV:I->O              1   0.568   0.684  XLXI_48/XLXI_33 (XLXI_48/XLXN_130)
+     begin scope: 'XLXI_48/XLXI_30:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_48/XLXN_123'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_48/XLXI_26 (FF)
+  Destination:       XLXI_48/XLXI_26 (FF)
+  Source Clock:      XLXI_48/XLXN_123 falling
+  Destination Clock: XLXI_48/XLXN_123 falling
+
+  Data Path: XLXI_48/XLXI_26 to XLXI_48/XLXI_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_48/XLXI_26 (XLXI_48/CLKOWO)
+     INV:I->O              1   0.568   0.579  XLXI_48/XLXI_27 (XLXI_48/XLXN_39)
+     FD_1:D                    0.102          XLXI_48/XLXI_26
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_10879'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_48/XLXI_1/Q (FF)
+  Destination:       XLXI_48/XLXI_3/Q (FF)
+  Source Clock:      XLXN_10879 rising
+  Destination Clock: XLXN_10879 rising
+
+  Data Path: XLXI_48/XLXI_1/Q to XLXI_48/XLXI_3/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_48/XLXI_1:Q'
+     INV:I->O              1   0.568   0.684  XLXI_48/XLXI_21 (XLXI_48/XLXN_29)
+     begin scope: 'XLXI_48/XLXI_3:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_66/XLXN_154'
+  Clock period: 2.346ns (frequency: 426.239MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.346ns (Levels of Logic = 1)
+  Source:            XLXI_66/XLXI_50 (FF)
+  Destination:       XLXI_66/XLXI_50 (FF)
+  Source Clock:      XLXI_66/XLXN_154 falling
+  Destination Clock: XLXI_66/XLXN_154 falling
+
+  Data Path: XLXI_66/XLXI_50 to XLXI_66/XLXI_50
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             3   0.447   0.650  XLXI_66/XLXI_50 (XLXN_10881)
+     INV:I->O              1   0.568   0.579  XLXI_66/XLXI_51 (XLXI_66/XLXN_156)
+     FD_1:D                    0.102          XLXI_66/XLXI_50
+    ----------------------------------------
+    Total                      2.346ns (1.117ns logic, 1.229ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_66/XLXN_140'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_66/XLXI_40/Q (FF)
+  Destination:       XLXI_66/XLXI_42/Q (FF)
+  Source Clock:      XLXI_66/XLXN_140 rising
+  Destination Clock: XLXI_66/XLXN_140 rising
+
+  Data Path: XLXI_66/XLXI_40/Q to XLXI_66/XLXI_42/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_66/XLXI_40:Q'
+     INV:I->O              1   0.568   0.684  XLXI_66/XLXI_45 (XLXI_66/XLXN_147)
+     begin scope: 'XLXI_66/XLXI_42:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_66/XLXN_137'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_66/XLXI_38 (FF)
+  Destination:       XLXI_66/XLXI_38 (FF)
+  Source Clock:      XLXI_66/XLXN_137 falling
+  Destination Clock: XLXI_66/XLXN_137 falling
+
+  Data Path: XLXI_66/XLXI_38 to XLXI_66/XLXI_38
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_66/XLXI_38 (XLXI_66/XLXN_140)
+     INV:I->O              1   0.568   0.579  XLXI_66/XLXI_39 (XLXI_66/XLXN_139)
+     FD_1:D                    0.102          XLXI_66/XLXI_38
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_66/CLKOWO'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_66/XLXI_28/Q (FF)
+  Destination:       XLXI_66/XLXI_30/Q (FF)
+  Source Clock:      XLXI_66/CLKOWO rising
+  Destination Clock: XLXI_66/CLKOWO rising
+
+  Data Path: XLXI_66/XLXI_28/Q to XLXI_66/XLXI_30/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_66/XLXI_28:Q'
+     INV:I->O              1   0.568   0.684  XLXI_66/XLXI_33 (XLXI_66/XLXN_130)
+     begin scope: 'XLXI_66/XLXI_30:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_66/XLXN_123'
+  Clock period: 2.410ns (frequency: 414.964MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.410ns (Levels of Logic = 1)
+  Source:            XLXI_66/XLXI_26 (FF)
+  Destination:       XLXI_66/XLXI_26 (FF)
+  Source Clock:      XLXI_66/XLXN_123 falling
+  Destination Clock: XLXI_66/XLXN_123 falling
+
+  Data Path: XLXI_66/XLXI_26 to XLXI_66/XLXI_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             5   0.447   0.714  XLXI_66/XLXI_26 (XLXI_66/CLKOWO)
+     INV:I->O              1   0.568   0.579  XLXI_66/XLXI_27 (XLXI_66/XLXN_39)
+     FD_1:D                    0.102          XLXI_66/XLXI_26
+    ----------------------------------------
+    Total                      2.410ns (1.117ns logic, 1.293ns route)
+                                       (46.4% logic, 53.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'OSC'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_66/XLXI_1/Q (FF)
+  Destination:       XLXI_66/XLXI_3/Q (FF)
+  Source Clock:      OSC rising
+  Destination Clock: OSC rising
+
+  Data Path: XLXI_66/XLXI_1/Q to XLXI_66/XLXI_3/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  Q (Q)
+     end scope: 'XLXI_66/XLXI_1:Q'
+     INV:I->O              1   0.568   0.684  XLXI_66/XLXI_21 (XLXI_66/XLXN_29)
+     begin scope: 'XLXI_66/XLXI_3:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_22_o11 (Q_Q_MUX_22_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (1.320ns logic, 1.366ns route)
+                                       (49.1% logic, 50.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PB3_START'
+  Clock period: 2.242ns (frequency: 446.100MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.242ns (Levels of Logic = 1)
+  Source:            XLXI_26/Q (FF)
+  Destination:       XLXI_26/Q (FF)
+  Source Clock:      PB3_START rising
+  Destination Clock: PB3_START rising
+
+  Data Path: XLXI_26/Q to XLXI_26/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             12   0.447   0.908  Q (Q)
+     INV:I->O              1   0.206   0.579  Mmux_Q_Q_MUX_7_o11_INV_0 (Q_Q_MUX_7_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.242ns (0.755ns logic, 1.487ns route)
+                                       (33.7% logic, 66.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_10881'
+  Clock period: 2.216ns (frequency: 451.233MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.216ns (Levels of Logic = 1)
+  Source:            XLXI_43/XLXI_2/Q0_Q1_1 (FF)
+  Destination:       XLXI_43/XLXI_2/Q0_Q1_1 (FF)
+  Source Clock:      XLXN_10881 rising
+  Destination Clock: XLXN_10881 rising
+
+  Data Path: XLXI_43/XLXI_2/Q0_Q1_1 to XLXI_43/XLXI_2/Q0_Q1_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            11   0.447   0.882  Q0_Q1_1 (Q0_Q1_1)
+     INV:I->O              1   0.206   0.579  Mcount_Q0_Q1_xor<0>11_INV_0 (Result<0>)
+     FDRE:D                    0.102          Q0_Q1_1
+    ----------------------------------------
+    Total                      2.216ns (0.755ns logic, 1.461ns route)
+                                       (34.1% logic, 65.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_10797'
+  Clock period: 7.621ns (frequency: 131.216MHz)
+  Total number of paths / destination ports: 155 / 29
+-------------------------------------------------------------------------
+Delay:               7.621ns (Levels of Logic = 6)
+  Source:            XLXI_50/XLXI_10/FlipFlop_B/Q (FF)
+  Destination:       XLXI_2/XLXI_34/FlipFlop_D/Q (FF)
+  Source Clock:      XLXN_10797 rising
+  Destination Clock: XLXN_10797 rising
+
+  Data Path: XLXI_50/XLXI_10/FlipFlop_B/Q to XLXI_2/XLXI_34/FlipFlop_D/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.447   0.744  Q (Q)
+     end scope: 'XLXI_50/XLXI_10/FlipFlop_B:Q'
+     INV:I->O              1   0.568   0.924  XLXI_50/XLXI_10/XLXI_9 (XLXI_50/XLXI_10/XLXN_8)
+     AND4:I1->O            1   0.223   0.944  XLXI_50/XLXI_10/XLXI_8 (XLXI_50/XLXI_10/TC_DUMMY)
+     AND2:I0->O            4   0.203   1.048  XLXI_50/XLXI_10/XLXI_11 (XLXI_50/XLXN_28)
+     AND2:I0->O            5   0.203   1.059  XLXI_50/XLXI_6/XLXI_8 (XLXN_95)
+     AND2:I1->O            5   0.223   0.714  XLXI_2/XLXI_10/XLXI_11 (XLXI_2/XLXN_26)
+     begin scope: 'XLXI_2/XLXI_34/FlipFlop_D:CE'
+     FDCE:CE                   0.322          Q
+    ----------------------------------------
+    Total                      7.621ns (2.189ns logic, 5.432ns route)
+                                       (28.7% logic, 71.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXN_42'
+  Clock period: 2.686ns (frequency: 372.245MHz)
+  Total number of paths / destination ports: 11 / 5
+-------------------------------------------------------------------------
+Delay:               2.686ns (Levels of Logic = 3)
+  Source:            XLXI_46/XLXI_2/Q (FF)
+  Destination:       XLXI_46/XLXI_1/Q (FF)
+  Source Clock:      XLXN_42 rising
+  Destination Clock: XLXN_42 rising
+
+  Data Path: XLXI_46/XLXI_2/Q to XLXI_46/XLXI_1/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.447   1.048  Q (Q)
+     end scope: 'XLXI_46/XLXI_2:Q'
+     AND2B1:I0->O          1   0.203   0.684  XLXI_46/XLXI_22 (XLXI_46/XLXN_35)
+     begin scope: 'XLXI_46/XLXI_1:J'
+     LUT2:I0->O            1   0.203   0.000  Mmux_Q_Q_MUX_7_o11 (Q_Q_MUX_7_o)
+     FDC:D                     0.102          Q
+    ----------------------------------------
+    Total                      2.686ns (0.955ns logic, 1.731ns route)
+                                       (35.5% logic, 64.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'XLXI_46/XLXN_123'
+  Clock period: 2.346ns (frequency: 426.239MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.346ns (Levels of Logic = 1)
+  Source:            XLXI_46/XLXI_26 (FF)
+  Destination:       XLXI_46/XLXI_26 (FF)
+  Source Clock:      XLXI_46/XLXN_123 falling
+  Destination Clock: XLXI_46/XLXN_123 falling
+
+  Data Path: XLXI_46/XLXI_26 to XLXI_46/XLXI_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             3   0.447   0.650  XLXI_46/XLXI_26 (XLXN_10793)
+     INV:I->O              1   0.568   0.579  XLXI_46/XLXI_27 (XLXI_46/XLXN_39)
+     FD_1:D                    0.102          XLXI_46/XLXI_26
+    ----------------------------------------
+    Total                      2.346ns (1.117ns logic, 1.229ns route)
+                                       (47.6% logic, 52.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXN_10793'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              3.803ns (Levels of Logic = 3)
+  Source:            PB4_RESET (PAD)
+  Destination:       XLXI_56/Q (FF)
+  Destination Clock: XLXN_10793 falling
+
+  Data Path: PB4_RESET to XLXI_56/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  PB4_RESET_IBUF (PB4_RESET_IBUF)
+     AND2B1:I1->O         16   0.223   1.004  XLXI_44 (XLXN_10789)
+     begin scope: 'XLXI_56:CLR'
+     FDCE:CLR                  0.430          Q
+    ----------------------------------------
+    Total                      3.803ns (1.875ns logic, 1.928ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'XLXN_10797'
+  Total number of paths / destination ports: 15 / 15
+-------------------------------------------------------------------------
+Offset:              3.803ns (Levels of Logic = 3)
+  Source:            PB4_RESET (PAD)
+  Destination:       XLXI_50/XLXI_6/FlipFlop_C/Q (FF)
+  Destination Clock: XLXN_10797 rising
+
+  Data Path: PB4_RESET to XLXI_50/XLXI_6/FlipFlop_C/Q
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.924  PB4_RESET_IBUF (PB4_RESET_IBUF)
+     AND2B1:I1->O         16   0.223   1.004  XLXI_44 (XLXN_10789)
+     begin scope: 'XLXI_50/XLXI_6/FlipFlop_C:CLR'
+     FDCE:CLR                  0.430          Q
+    ----------------------------------------
+    Total                      3.803ns (1.875ns logic, 1.928ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_10881'
+  Total number of paths / destination ports: 172 / 12
+-------------------------------------------------------------------------
+Offset:              8.925ns (Levels of Logic = 7)
+  Source:            XLXI_43/XLXI_2/Q0_Q1_1 (FF)
+  Destination:       SSD_Segment<0> (PAD)
+  Source Clock:      XLXN_10881 rising
+
+  Data Path: XLXI_43/XLXI_2/Q0_Q1_1 to SSD_Segment<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            11   0.447   1.247  Q0_Q1_1 (Q0_Q1_1)
+     end scope: 'XLXI_43/XLXI_2:Q0'
+     begin scope: 'XLXI_43/XLXI_16/XLXI_16:S0'
+     LUT6:I0->O           22   0.203   1.133  Mmux_O11 (O)
+     end scope: 'XLXI_43/XLXI_16/XLXI_16:O'
+     INV:I->O              1   0.568   0.944  XLXI_43/XLXI_1/XLXI_15/XLXI_9 (XLXI_43/XLXI_1/XLXI_15/XLXN_45)
+     AND3:I0->O            1   0.203   0.827  XLXI_43/XLXI_1/XLXI_15/XLXI_7 (XLXI_43/XLXI_1/XLXI_15/XLXN_44)
+     OR5:I2->O             1   0.203   0.579  XLXI_43/XLXI_1/XLXI_15/XLXI_8 (SSD_Segment_0_OBUF)
+     OBUF:I->O                 2.571          SSD_Segment_0_OBUF (SSD_Segment<0>)
+    ----------------------------------------
+    Total                      8.925ns (4.195ns logic, 4.730ns route)
+                                       (47.0% logic, 53.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_10797'
+  Total number of paths / destination ports: 302 / 7
+-------------------------------------------------------------------------
+Offset:              9.872ns (Levels of Logic = 8)
+  Source:            XLXI_2/XLXI_34/FlipFlop_B/Q (FF)
+  Destination:       SSD_Segment<0> (PAD)
+  Source Clock:      XLXN_10797 rising
+
+  Data Path: XLXI_2/XLXI_34/FlipFlop_B/Q to SSD_Segment<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             6   0.447   0.744  Q (Q)
+     end scope: 'XLXI_2/XLXI_34/FlipFlop_B:Q'
+     BUF:I->O              1   0.568   0.924  XLXI_2/XLXI_18/XLXI_2 (XLXN_101<1>)
+     begin scope: 'XLXI_43/XLXI_16/XLXI_14:D3'
+     LUT6:I1->O           20   0.203   1.092  Mmux_O11 (O)
+     end scope: 'XLXI_43/XLXI_16/XLXI_14:O'
+     INV:I->O              1   0.568   0.827  XLXI_43/XLXI_1/XLXI_15/XLXI_10 (XLXI_43/XLXI_1/XLXI_15/XLXN_46)
+     AND3:I2->O            1   0.320   0.827  XLXI_43/XLXI_1/XLXI_15/XLXI_7 (XLXI_43/XLXI_1/XLXI_15/XLXN_44)
+     OR5:I2->O             1   0.203   0.579  XLXI_43/XLXI_1/XLXI_15/XLXI_8 (SSD_Segment_0_OBUF)
+     OBUF:I->O                 2.571          SSD_Segment_0_OBUF (SSD_Segment<0>)
+    ----------------------------------------
+    Total                      9.872ns (4.880ns logic, 4.992ns route)
+                                       (49.4% logic, 50.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXN_10793'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              5.928ns (Levels of Logic = 4)
+  Source:            XLXI_56/Q (FF)
+  Destination:       SSD_DP (PAD)
+  Source Clock:      XLXN_10793 falling
+
+  Data Path: XLXI_56/Q to SSD_DP
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.447   0.616  Q (Q)
+     end scope: 'XLXI_56:Q'
+     INV:I->O              1   0.568   0.827  XLXI_59 (XLXN_10791)
+     AND3B1:I2->O          1   0.320   0.579  XLXI_43/XLXI_43 (SSD_DP_OBUF)
+     OBUF:I->O                 2.571          SSD_DP_OBUF (SSD_DP)
+    ----------------------------------------
+    Total                      5.928ns (3.906ns logic, 2.022ns route)
+                                       (65.9% logic, 34.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock OSC
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+OSC            |    2.686|         |    1.232|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PB3_START
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB3_START      |    2.242|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_46/XLXN_123
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_46/XLXN_123|         |         |    2.346|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_47/CLKOWO
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_47/CLKOWO |    2.686|         |    1.232|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_47/XLXN_123
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_47/XLXN_123|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_47/XLXN_137
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_47/XLXN_137|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_47/XLXN_140
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_47/XLXN_140|    2.686|         |    1.232|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_47/XLXN_154
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_47/XLXN_154|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_48/CLKOWO
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_48/CLKOWO |    2.686|         |    1.232|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_48/XLXN_123
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_48/XLXN_123|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_48/XLXN_137
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_48/XLXN_137|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_48/XLXN_140
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_48/XLXN_140|    2.686|         |    1.232|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_48/XLXN_154
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_48/XLXN_154|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_66/CLKOWO
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXI_66/CLKOWO |    2.686|         |    1.232|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_66/XLXN_123
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_66/XLXN_123|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_66/XLXN_137
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_66/XLXN_137|         |         |    2.410|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_66/XLXN_140
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_66/XLXN_140|    2.686|         |    1.232|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXI_66/XLXN_154
+----------------+---------+---------+---------+---------+
+                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock    |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------+---------+---------+---------+---------+
+XLXI_66/XLXN_154|         |         |    2.346|         |
+----------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_10793
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB3_START      |         |         |    3.357|         |
+XLXN_10793     |         |         |    2.700|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_10797
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+PB3_START      |    5.491|         |         |         |
+XLXN_10797     |    7.621|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_10879
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_10879     |    2.686|         |    1.232|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_10881
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_10881     |    2.216|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_117
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_117       |    2.686|         |    1.232|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock XLXN_42
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+XLXN_42        |    2.686|         |    1.232|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 2.23 secs
+ 
+--> 
+
+
+Total memory usage is 371204 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

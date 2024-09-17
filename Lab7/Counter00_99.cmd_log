@@ -1,0 +1,4 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter00_99 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Counter00_99.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter00_99 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Counter00_99.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter00_99 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Counter00_99.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Counter00_99 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Counter00_99.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Counter00_99.sym 

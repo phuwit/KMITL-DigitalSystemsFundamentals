@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Mux4_Bus4_1E /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Mux4_Bus4_1E.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mux4_Bus4_1E.sym 
