@@ -1,0 +1,60 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : btw8.vf
+// /___/   /\     Timestamp : 09/17/2024 15:00:24
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/btw8.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Components-NutMan/btw/btw8.sch
+//Design Name: btw8
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module btw8(I, 
+            O0, 
+            O1, 
+            O2, 
+            O3, 
+            O4, 
+            O5, 
+            O6, 
+            O7);
+
+    input [7:0] I;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   output O4;
+   output O5;
+   output O6;
+   output O7;
+   
+   
+   BUF  XLXI_1 (.I(I[0]), 
+               .O(O0));
+   BUF  XLXI_2 (.I(I[1]), 
+               .O(O1));
+   BUF  XLXI_3 (.I(I[2]), 
+               .O(O2));
+   BUF  XLXI_4 (.I(I[3]), 
+               .O(O3));
+   BUF  XLXI_5 (.I(I[4]), 
+               .O(O4));
+   BUF  XLXI_6 (.I(I[5]), 
+               .O(O5));
+   BUF  XLXI_7 (.I(I[6]), 
+               .O(O6));
+   BUF  XLXI_8 (.I(I[7]), 
+               .O(O7));
+endmodule

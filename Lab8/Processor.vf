@@ -1,0 +1,60 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Processor.vf
+// /___/   /\     Timestamp : 09/04/2024 09:48:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab8/Processor.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab8/Processor.sch
+//Design Name: Processor
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module ADD8_HXILINX_Processor (CO, OFL, S, A, B, CI);
+
+
+   output 	      CO;
+   output 	      OFL;
+   output [7:0]       S;
+
+   input  [7:0]       A;
+   input  [7:0]       B;
+   input              CI;
+
+   assign   {CO, S} = A + B + CI;
+   assign   OFL     = ( A[7] & B[7] & (~S[7])) | ((~A[7]) & (~B[7]) & S[7]);
+
+endmodule
+`timescale 1ns / 1ps
+
+module Processor(A, 
+                 B, 
+                 CO, 
+                 S);
+
+    input [7:0] A;
+    input [7:0] B;
+   output CO;
+   output [7:0] S;
+   
+   wire XLXN_1;
+   
+   (* HU_SET = "XLXI_1_14" *) 
+   ADD8_HXILINX_Processor  XLXI_1 (.A(A[7:0]), 
+                                  .B(B[7:0]), 
+                                  .CI(XLXN_1), 
+                                  .CO(CO), 
+                                  .OFL(), 
+                                  .S(S[7:0]));
+   GND  XLXI_2 (.G(XLXN_1));
+endmodule

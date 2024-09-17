@@ -1,0 +1,115 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : displayer.vf
+// /___/   /\     Timestamp : 09/17/2024 15:00:23
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/displayer.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/displayer.sch
+//Design Name: displayer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_displayer(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module displayer(HD0, 
+                 HD1, 
+                 SCAN_CLK, 
+                 COM, 
+                 SEG);
+
+    input [3:0] HD0;
+    input [3:0] HD1;
+    input SCAN_CLK;
+   output [3:0] COM;
+   output [6:0] SEG;
+   
+   wire [3:0] XLXN_1;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire [3:0] XLXN_7;
+   wire [3:0] XLXN_8;
+   wire XLXN_9;
+   wire XLXN_11;
+   
+   SSEG_DEC  XLXI_1 (.BCD(XLXN_1[3:0]), 
+                    .SSEG(SEG[6:0]));
+   Mux4_Bus4_1E  XLXI_2 (.D0(HD0[3:0]), 
+                        .D1(HD1[3:0]), 
+                        .D2(XLXN_8[3:0]), 
+                        .D3(XLXN_7[3:0]), 
+                        .E(XLXN_6), 
+                        .S0(XLXN_5), 
+                        .S1(XLXN_4), 
+                        .O(XLXN_1[3:0]));
+   GND  XLXI_3 (.G(XLXN_4));
+   (* HU_SET = "XLXI_4_18" *) 
+   FJKC_HXILINX_displayer  XLXI_4 (.C(SCAN_CLK), 
+                                  .CLR(XLXN_11), 
+                                  .J(XLXN_9), 
+                                  .K(XLXN_9), 
+                                  .Q(XLXN_5));
+   VCC  XLXI_5 (.P(XLXN_6));
+   GND  XLXI_6_0 (.G(XLXN_7[0]));
+   GND  XLXI_6_1 (.G(XLXN_7[1]));
+   GND  XLXI_6_2 (.G(XLXN_7[2]));
+   GND  XLXI_6_3 (.G(XLXN_7[3]));
+   GND  XLXI_7_0 (.G(XLXN_8[0]));
+   GND  XLXI_7_1 (.G(XLXN_8[1]));
+   GND  XLXI_7_2 (.G(XLXN_8[2]));
+   GND  XLXI_7_3 (.G(XLXN_8[3]));
+   VCC  XLXI_8 (.P(XLXN_9));
+   GND  XLXI_9 (.G(XLXN_11));
+   VCC  XLXI_10_2 (.P(COM[2]));
+   VCC  XLXI_10_3 (.P(COM[3]));
+   BUF  XLXI_11 (.I(XLXN_5), 
+                .O(COM[0]));
+   INV  XLXI_12 (.I(XLXN_5), 
+                .O(COM[1]));
+endmodule

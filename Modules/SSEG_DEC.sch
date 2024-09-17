@@ -18,49 +18,49 @@
         <port polarity="Input" name="BCD(3:0)" />
         <port polarity="Output" name="SSEG(6:0)" />
         <blockdef name="SSEG_A">
-            <timestamp>2024-7-30T7:57:43</timestamp>
+            <timestamp>2024-9-17T7:50:24</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="SSEG_B">
-            <timestamp>2024-7-30T8:0:18</timestamp>
+            <timestamp>2024-9-17T7:50:28</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="SSEG_C">
-            <timestamp>2024-7-30T8:36:37</timestamp>
+            <timestamp>2024-9-17T7:50:32</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="SSEG_D">
-            <timestamp>2024-7-30T8:2:12</timestamp>
+            <timestamp>2024-9-17T7:50:35</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="SSEG_E">
-            <timestamp>2024-7-30T8:2:24</timestamp>
+            <timestamp>2024-9-17T7:50:39</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="SSEG_F">
-            <timestamp>2024-7-30T8:2:27</timestamp>
+            <timestamp>2024-9-17T7:50:43</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="SSEG_G">
-            <timestamp>2024-7-30T12:47:4</timestamp>
+            <timestamp>2024-9-17T7:50:46</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <rect width="64" x="0" y="-44" height="24" />
             <line x2="0" y1="-32" y2="-32" x1="64" />

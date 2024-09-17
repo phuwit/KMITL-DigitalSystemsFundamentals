@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym wtb16 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/wtb16.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/wtb16.sym 

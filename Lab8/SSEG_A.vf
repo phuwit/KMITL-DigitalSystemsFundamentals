@@ -1,0 +1,81 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : SSEG_A.vf
+// /___/   /\     Timestamp : 09/10/2024 00:07:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab8/SSEG_A.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/SSEG_A.sch
+//Design Name: SSEG_A
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module OR6_HXILINX_SSEG_A (O, I0, I1, I2, I3, I4, I5);
+    
+
+   output O;
+
+   input I0;
+   input I1;
+   input I2;
+   input I3;
+   input I4;
+   input I5;
+
+assign O = (I0 || I1 || I2 || I3 || I4 || I5);
+
+endmodule
+`timescale 1ns / 1ps
+
+module SSEG_A(BCD, 
+              SSEG_A);
+
+    input [3:0] BCD;
+   output SSEG_A;
+   
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   
+   AND2B2  XLXI_1 (.I0(BCD[0]), 
+                  .I1(BCD[2]), 
+                  .O(XLXN_6));
+   AND2  XLXI_2 (.I0(BCD[1]), 
+                .I1(BCD[2]), 
+                .O(XLXN_4));
+   (* HU_SET = "XLXI_3_16" *) 
+   OR6_HXILINX_SSEG_A  XLXI_3 (.I0(XLXN_8), 
+                              .I1(XLXN_7), 
+                              .I2(XLXN_4), 
+                              .I3(XLXN_3), 
+                              .I4(XLXN_2), 
+                              .I5(XLXN_6), 
+                              .O(SSEG_A));
+   AND3B2  XLXI_4 (.I0(BCD[1]), 
+                  .I1(BCD[2]), 
+                  .I2(BCD[3]), 
+                  .O(XLXN_7));
+   AND2B1  XLXI_5 (.I0(BCD[3]), 
+                  .I1(BCD[1]), 
+                  .O(XLXN_2));
+   AND3B1  XLXI_6 (.I0(BCD[3]), 
+                  .I1(BCD[2]), 
+                  .I2(BCD[0]), 
+                  .O(XLXN_3));
+   AND2B1  XLXI_8 (.I0(BCD[0]), 
+                  .I1(BCD[3]), 
+                  .O(XLXN_8));
+endmodule

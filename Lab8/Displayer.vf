@@ -1,0 +1,242 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Displayer.vf
+// /___/   /\     Timestamp : 09/10/2024 00:07:39
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab8/Displayer.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab8/Displayer.sch
+//Design Name: Displayer
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale  100 ps / 10 ps
+
+module M4_1E_HXILINX_Displayer (O, D0, D1, D2, D3, E, S0, S1);
+    
+
+   output O;
+
+   input  D0;
+   input  D1;
+   input  D2;
+   input  D3;
+   input  E;
+   input  S0;
+   input  S1;
+
+   reg O;
+
+   always @ ( D0 or D1 or D2 or D3 or E or S0 or S1)
+   begin
+      if(!E)
+      O <= 1'b0;
+      else 
+      begin
+        case({S1,S0})
+        2'b00 : O <= D0;
+        2'b01 : O <= D1;
+        2'b10 : O <= D2;
+        2'b11 : O <= D3;
+        endcase
+      end
+   end
+    
+endmodule
+`timescale 100 ps / 10 ps
+
+module FJKC_HXILINX_Displayer(Q, C, CLR, J, K);
+   
+   output             Q;
+
+   input 	      C;	
+   input 	      CLR;	
+   input              J;
+   input              K;
+   
+   parameter INIT = 1'b0;
+   reg                Q = INIT;
+
+
+   always @(posedge C or posedge CLR)
+     begin
+	if (CLR)
+	  Q <= 1'b0;
+	else
+        begin
+           if(!J)
+           begin
+              if(K)
+              Q <= 1'b0;
+           end
+           else
+           begin
+              if(!K)
+              Q <= 1'b1;
+              else 
+              Q <= !Q;
+           end
+        end
+     end
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Counter0_2_MUSER_Displayer(CLK, 
+                                  A, 
+                                  B);
+
+    input CLK;
+   output A;
+   output B;
+   
+   wire XLXN_2;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_12;
+   
+   (* HU_SET = "XLXI_2_26" *) 
+   FJKC_HXILINX_Displayer  XLXI_2 (.C(CLK), 
+                                  .CLR(XLXN_12), 
+                                  .J(XLXN_8), 
+                                  .K(XLXN_2), 
+                                  .Q(XLXN_7));
+   (* HU_SET = "XLXI_3_27" *) 
+   FJKC_HXILINX_Displayer  XLXI_3 (.C(CLK), 
+                                  .CLR(XLXN_12), 
+                                  .J(XLXN_5), 
+                                  .K(XLXN_4), 
+                                  .Q(XLXN_8));
+   VCC  XLXI_7 (.P(XLXN_4));
+   VCC  XLXI_8 (.P(XLXN_2));
+   INV  XLXI_9 (.I(XLXN_7), 
+               .O(XLXN_5));
+   BUF  XLXI_10 (.I(XLXN_7), 
+                .O(B));
+   BUF  XLXI_11 (.I(XLXN_8), 
+                .O(A));
+   GND  XLXI_12 (.G(XLXN_12));
+endmodule
+`timescale 1ns / 1ps
+
+module Mux4_Bus4_1E_MUSER_Displayer(D0, 
+                                    D1, 
+                                    D2, 
+                                    D3, 
+                                    E, 
+                                    S0, 
+                                    S1, 
+                                    O);
+
+    input [3:0] D0;
+    input [3:0] D1;
+    input [3:0] D2;
+    input [3:0] D3;
+    input E;
+    input S0;
+    input S1;
+   output [3:0] O;
+   
+   
+   (* HU_SET = "XLXI_13_28" *) 
+   M4_1E_HXILINX_Displayer  XLXI_13 (.D0(D0[0]), 
+                                    .D1(D1[0]), 
+                                    .D2(D2[0]), 
+                                    .D3(D3[0]), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .S1(S1), 
+                                    .O(O[0]));
+   (* HU_SET = "XLXI_14_29" *) 
+   M4_1E_HXILINX_Displayer  XLXI_14 (.D0(D0[1]), 
+                                    .D1(D1[1]), 
+                                    .D2(D2[1]), 
+                                    .D3(D3[1]), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .S1(S1), 
+                                    .O(O[1]));
+   (* HU_SET = "XLXI_15_30" *) 
+   M4_1E_HXILINX_Displayer  XLXI_15 (.D0(D0[2]), 
+                                    .D1(D1[2]), 
+                                    .D2(D2[2]), 
+                                    .D3(D3[2]), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .S1(S1), 
+                                    .O(O[2]));
+   (* HU_SET = "XLXI_16_31" *) 
+   M4_1E_HXILINX_Displayer  XLXI_16 (.D0(D0[3]), 
+                                    .D1(D1[3]), 
+                                    .D2(D2[3]), 
+                                    .D3(D3[3]), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .S1(S1), 
+                                    .O(O[3]));
+endmodule
+`timescale 1ns / 1ps
+
+module Displayer(Clock, 
+                 CO, 
+                 NUMBER, 
+                 COM, 
+                 SEG);
+
+    input Clock;
+    input CO;
+    input [7:0] NUMBER;
+   output [3:0] COM;
+   output [6:0] SEG;
+   
+   wire [3:0] D2;
+   wire [3:0] XLXN_1;
+   wire [3:0] XLXN_9;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   
+   SSEG_DEC  XLXI_1 (.BCD(XLXN_1[3:0]), 
+                    .SSEG(SEG[6:0]));
+   Mux4_Bus4_1E_MUSER_Displayer  XLXI_4 (.D0(NUMBER[3:0]), 
+                                        .D1(NUMBER[7:4]), 
+                                        .D2(D2[3:0]), 
+                                        .D3(XLXN_9[3:0]), 
+                                        .E(XLXN_15), 
+                                        .S0(XLXN_16), 
+                                        .S1(XLXN_17), 
+                                        .O(XLXN_1[3:0]));
+   BUF  XLXI_5 (.I(CO), 
+               .O(D2[0]));
+   GND  XLXI_6 (.G(D2[3]));
+   GND  XLXI_7 (.G(D2[2]));
+   GND  XLXI_8 (.G(D2[1]));
+   GND  XLXI_9 (.G(XLXN_9[3]));
+   GND  XLXI_10 (.G(XLXN_9[2]));
+   GND  XLXI_11 (.G(XLXN_9[1]));
+   GND  XLXI_12 (.G(XLXN_9[0]));
+   VCC  XLXI_13 (.P(XLXN_15));
+   Counter0_2_MUSER_Displayer  XLXI_14 (.CLK(Clock), 
+                                       .A(XLXN_16), 
+                                       .B(XLXN_17));
+   VCC  XLXI_21 (.P(COM[3]));
+   NAND2B1  XLXI_25 (.I0(XLXN_16), 
+                    .I1(XLXN_17), 
+                    .O(COM[2]));
+   NAND2B2  XLXI_28 (.I0(XLXN_16), 
+                    .I1(XLXN_17), 
+                    .O(COM[0]));
+   NAND2B1  XLXI_29 (.I0(XLXN_17), 
+                    .I1(XLXN_16), 
+                    .O(COM[1]));
+endmodule

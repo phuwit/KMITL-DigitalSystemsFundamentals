@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : shl8.vf
+// /___/   /\     Timestamp : 09/17/2024 15:02:56
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/shl8.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab9/shl8.sch
+//Design Name: shl8
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module shl8(D, 
+            O);
+
+    input [7:0] D;
+   output [7:0] O;
+   
+   wire XLXN_11;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   wire XLXN_17;
+   wire XLXN_18;
+   
+   btw8  XLXI_2 (.I(D[7:0]), 
+                .O0(XLXN_11), 
+                .O1(XLXN_12), 
+                .O2(XLXN_13), 
+                .O3(XLXN_14), 
+                .O4(XLXN_15), 
+                .O5(XLXN_16), 
+                .O6(XLXN_17), 
+                .O7());
+   wtb8  XLXI_3 (.I0(XLXN_18), 
+                .I1(XLXN_11), 
+                .I2(XLXN_12), 
+                .I3(XLXN_13), 
+                .I4(XLXN_14), 
+                .I5(XLXN_15), 
+                .I6(XLXN_16), 
+                .I7(XLXN_17), 
+                .O(O[7:0]));
+   GND  XLXI_4 (.G(XLXN_18));
+endmodule
