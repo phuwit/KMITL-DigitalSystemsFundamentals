@@ -1,0 +1,35 @@
+Welcome to Xilinx CORE Generator.
+Help system initialized.
+The IP Catalog has been reloaded.
+WARNING:GuiUtilities - $(HOME)/.config/Trolltech.conf file has invalid
+   font=Inter,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1 entryOpening project file
+/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Project/coregen.cgp.
+Customize the IP, and Generate the selected output productsINFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Cancelled executing Tcl generator.
+Customize and GenerateINFO:sim:172 - Generating IP...
+WARNING:sim:100 - The Simulation File Type <Behavioral> is not valid for this
+   core. Overriding with File Type <Structural>.
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - VHDL simulation file type 'Behavioral' is not valid for this core.
+   Overriding with simulation file type 'Structural'.
+Cancelled executing Tcl generator.
+Customize the IP, and Generate the selected output productsINFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Cancelled executing Tcl generator.
+Customize and GenerateINFO:sim:172 - Generating IP...
+WARNING:sim:100 - The Simulation File Type <Behavioral> is not valid for this
+   core. Overriding with File Type <Structural>.
+Applying current project options...
+Finished applying current project options.
+WARNING:sim - VHDL simulation file type 'Behavioral' is not valid for this core.
+   Overriding with simulation file type 'Structural'.
+Cancelled executing Tcl generator.
+Customize the IP, and Generate the selected output productsINFO:sim:172 - Generating IP...
+Applying current project options...
+Finished applying current project options.
+Cancelled executing Tcl generator.
+Closed project file.
