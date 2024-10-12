@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym clkdiv2 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/clkdiv2.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/clkdiv2.sym 

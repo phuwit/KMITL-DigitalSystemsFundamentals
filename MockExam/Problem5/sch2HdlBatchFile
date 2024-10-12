@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/wtb8.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/wtb8.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/clkdiv20k.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/clkdiv20k.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/main.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/main.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/ssd1d0ft.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/ssd1d0ft.sch
+sch2hdl,-intstyle,ise,-family,spartan6,-verilog,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/mux4x1x8.vf,-w,/home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem5/mux4x1x8.sch

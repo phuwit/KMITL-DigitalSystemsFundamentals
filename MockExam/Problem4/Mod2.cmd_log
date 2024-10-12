@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym Mod2 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Mod2.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mod2.sym 
+sch2sym -intstyle ise -family spartan6 -w -refsym Mod2 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Mod2.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mod2.sym 

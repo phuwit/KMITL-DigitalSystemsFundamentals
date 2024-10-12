@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym btw4 /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem4/btw4.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem4/btw4.sym 

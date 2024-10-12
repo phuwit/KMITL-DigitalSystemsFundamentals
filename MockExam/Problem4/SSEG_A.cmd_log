@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -w -refsym SSEG_A /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/SSEG_A.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/SSEG_A.sym 

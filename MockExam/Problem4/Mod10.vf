@@ -1,0 +1,112 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Mod10.vf
+// /___/   /\     Timestamp : 09/09/2024 22:46:56
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Lab7/Mod10.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/Modules/Mod10.sch
+//Design Name: Mod10
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 100 ps / 10 ps
+
+module CB4RE_HXILINX_Mod10(CEO, Q0, Q1, Q2, Q3, TC, C, CE, R);
+   
+   localparam TERMINAL_COUNT = 4'b1111;
+   
+   output             CEO;
+   output             Q0;
+   output             Q1;
+   output             Q2;
+   output             Q3;
+   output             TC;
+   
+   input 	      C;	
+   input 	      CE;	
+   input 	      R;	
+   
+   reg                Q0;
+   reg                Q1;
+   reg                Q2;
+   reg                Q3;
+   
+   always @(posedge C)
+     begin
+	if (R)
+	  {Q3, Q2, Q1, Q0} <= 4'b0000;
+	else if (CE)
+	  {Q3,Q2,Q1,Q0} <= {Q3,Q2,Q1,Q0} + 1;
+     end
+   
+   assign CEO = TC & CE;
+   assign TC = ({Q3,Q2,Q1,Q0} == TERMINAL_COUNT); 
+   
+endmodule
+`timescale 1ns / 1ps
+
+module Counter0_9_MUSER_Mod10(CE, 
+                              Clock, 
+                              R, 
+                              Count, 
+                              TC);
+
+    input CE;
+    input Clock;
+    input R;
+   output [3:0] Count;
+   output TC;
+   
+   wire XLXN_26;
+   wire [3:0] Count_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Count[3:0] = Count_DUMMY[3:0];
+   assign TC = TC_DUMMY;
+   (* HU_SET = "XLXI_27_5" *) 
+   CB4RE_HXILINX_Mod10  XLXI_27 (.C(Clock), 
+                                .CE(CE), 
+                                .R(XLXN_26), 
+                                .CEO(), 
+                                .Q0(Count_DUMMY[0]), 
+                                .Q1(Count_DUMMY[1]), 
+                                .Q2(Count_DUMMY[2]), 
+                                .Q3(Count_DUMMY[3]), 
+                                .TC());
+   AND4B2  XLXI_28 (.I0(Count_DUMMY[0]), 
+                   .I1(Count_DUMMY[2]), 
+                   .I2(Count_DUMMY[1]), 
+                   .I3(Count_DUMMY[3]), 
+                   .O(TC_DUMMY));
+   OR2  XLXI_30 (.I0(R), 
+                .I1(TC_DUMMY), 
+                .O(XLXN_26));
+endmodule
+`timescale 1ns / 1ps
+
+module Mod10(CLK_IN, 
+             CLK_OUT);
+
+    input CLK_IN;
+   output CLK_OUT;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   Counter0_9_MUSER_Mod10  XLXI_4 (.CE(XLXN_1), 
+                                  .Clock(CLK_IN), 
+                                  .R(XLXN_2), 
+                                  .Count(), 
+                                  .TC(CLK_OUT));
+   VCC  XLXI_5 (.P(XLXN_1));
+   GND  XLXI_6 (.G(XLXN_2));
+endmodule

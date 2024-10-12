@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : btw4.vf
+// /___/   /\     Timestamp : 10/12/2024 15:16:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem4/btw4.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem4/btw4.sch
+//Design Name: btw4
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module btw4(I, 
+            O0, 
+            O1, 
+            O2, 
+            O3);
+
+    input [3:0] I;
+   output O0;
+   output O1;
+   output O2;
+   output O3;
+   
+   
+   BUF  XLXI_1 (.I(I[0]), 
+               .O(O0));
+   BUF  XLXI_2 (.I(I[1]), 
+               .O(O1));
+   BUF  XLXI_3 (.I(I[2]), 
+               .O(O2));
+   BUF  XLXI_4 (.I(I[3]), 
+               .O(O3));
+endmodule

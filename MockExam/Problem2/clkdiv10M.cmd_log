@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan6 -refsym clkdiv10M /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem2/clkdiv10M.sch /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem2/clkdiv10M.sym 

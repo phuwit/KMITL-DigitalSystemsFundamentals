@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : main.vf
+// /___/   /\     Timestamp : 10/12/2024 13:44:11
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan6 -verilog /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem3/main.vf -w /home/phuwit/Programming/KMITL-DigitalSystemsFundamentals/MockExam/Problem3/main.sch
+//Design Name: main
+//Device: spartan6
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module main(SW0, 
+            SW1, 
+            SW2, 
+            SW3, 
+            SW4, 
+            LED0);
+
+    input SW0;
+    input SW1;
+    input SW2;
+    input SW3;
+    input SW4;
+   output LED0;
+   
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   wire XLXN_16;
+   
+   OR4  XLXI_1 (.I0(XLXN_16), 
+               .I1(XLXN_15), 
+               .I2(XLXN_14), 
+               .I3(XLXN_13), 
+               .O(LED0));
+   AND2  XLXI_3 (.I0(SW4), 
+                .I1(SW3), 
+                .O(XLXN_14));
+   AND2B1  XLXI_4 (.I0(SW1), 
+                  .I1(SW4), 
+                  .O(XLXN_13));
+   AND2B1  XLXI_5 (.I0(SW0), 
+                  .I1(SW2), 
+                  .O(XLXN_15));
+   AND2B1  XLXI_6 (.I0(SW4), 
+                  .I1(SW0), 
+                  .O(XLXN_16));
+endmodule
